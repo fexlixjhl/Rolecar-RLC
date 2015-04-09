@@ -1,0 +1,13 @@
+
+
+.list-detail 
+{
+	 text-align: left;
+	 background-color: #ECEDED;
+	 margin-bottom:15px;
+	 border-radius: 5px; /* nivel de redondeo (puedes poner cuatro valores, uno para cada esquina)*/
+     box-shadow: 5px 5px 5px #000; /* tamaño y color de la sombra*/
+     border:1px solid;
+     width: 90%;
+	 
+}

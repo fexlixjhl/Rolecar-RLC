@@ -1,0 +1,5 @@
+/* Home Version 1 */
+body .moover-slide .moover-text p img {visibility:hidden;}
+body .fallback {display:block;}
+body .fallback img {width:100%;height:auto;}
+body .moover_wraper .moover, body .moover_wraper .controls {display:none;visibility:hidden;}
