@@ -17,6 +17,10 @@
     	<fmt:setLocale value="${param.idioma}" scope="page"/>
       	<c:set var="local" value="${param.idioma}" scope="page"/>
 	</c:when>
+	<c:otherwise>
+		<fmt:setLocale value="es" scope="page"/>
+      	<c:set var="local" value="es" scope="page"/>
+	</c:otherwise>
 	
 </c:choose>
 <fmt:setBundle basename="com.rolecar.bundle.storefrontMsj" />
