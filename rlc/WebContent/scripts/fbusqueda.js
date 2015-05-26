@@ -7,7 +7,6 @@ var hora_act= hoy.getHours();
 var min_act=hoy.getMinutes();
 var totminAct=(hora_act*60)+min_act;
 
-
 $(function() {
 	
 		inicializarHoraInicio();
@@ -266,6 +265,7 @@ function cargarhorasminutosfinal()
 
 function inicializarFechas()
 {
+	alert("Hola");
 	$("#fini").datepicker({
 	 	minDate: 0,
 	 	dateFormat:"dd/mm/yy" ,
@@ -277,7 +277,7 @@ function inicializarFechas()
           var nextDay = new Date(year,month,day);
           var dayweek = nextDay.getDay();
           var addday=1;
-          //Cuestión de los domingos, inicialmente se añadian 2 días
+          //Cuestiï¿½n de los domingos, inicialmente se aï¿½adian 2 dï¿½as
           if(dayweek==6)
     	  {
     	    addday=1;
@@ -371,7 +371,7 @@ function HoraRecogidaValida()
 function borrarContenidoStation(id)
 {
 	var valor=$("#"+id).val();
-	if(valor=="Dónde" || valor=="A")
+	if(valor=="Dï¿½nde" || valor=="A")
 		$("#"+id).val("");
 }
 
@@ -389,10 +389,10 @@ function compararHoraActual_HInicio()
 		 HoraRecogidaValida();
 		 return false;
 	 }
-//Código que muestra mensaje por si se ha codigo origen con menos de dos horas de antelación
+//Cï¿½digo que muestra mensaje por si se ha codigo origen con menos de dos horas de antelaciï¿½n
 //	 else if(dif < 120)
 //	 {
-//		 jAlert("Error. La hora mínima de recogida es de 2 horas más, de la hora actual.Se coloca hora mas cercana valida","Error");
+//		 jAlert("Error. La hora mï¿½nima de recogida es de 2 horas mï¿½s, de la hora actual.Se coloca hora mas cercana valida","Error");
 //		 //inicializarHoraInicio();
 //		 HoraRecogidaValida();
 //		 return false;
