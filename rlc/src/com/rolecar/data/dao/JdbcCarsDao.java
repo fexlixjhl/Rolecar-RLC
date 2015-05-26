@@ -46,6 +46,7 @@ import com.rolecar.utils.Formatea;
 
 public class JdbcCarsDao
 {
+	private static final String TYPE_FURGO = "TR";
 	private static Log logger = LogFactory.getLog(JdbcCarsDao.class);
 	private static String carTypeG = "";
 	private static boolean haycontrato=true;
@@ -72,7 +73,7 @@ public class JdbcCarsDao
 	{
 		Set<String> contractIds = new HashSet<String>(); 
 		contractIds.add("52112176");
-		contractIds.add("52480793");
+
 		String request = "";
 		haycontrato=true;		
 		Vector<Car> vcars = new Vector<Car>();
@@ -88,6 +89,10 @@ public class JdbcCarsDao
 			reservation.setCheckouttime(checkouttime);
 			carTypeG =carType;
 			reservation.setCarType(carType);
+			//Si son furgonetas los dos contractId
+			if (TYPE_FURGO.equals(carType)){ 
+				contractIds.add("52480793");
+			}
 			//request = getRequestCars(reservation, carType,haycontrato);//true comrpuebo con contract id, aquí utilizaba el antiguo servicio getQuote
 			for (String contract : contractIds) {
 					
