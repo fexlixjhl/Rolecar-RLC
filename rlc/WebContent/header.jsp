@@ -7,7 +7,7 @@
 		<title>Rolecar</title>
 		
 		<!-- metas -->
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -18,23 +18,21 @@
 		<!--/ favicon -->
 		
 		<!-- styles -->
-		<link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/jquery.owl.carousel.css">
 		<link rel="stylesheet" href="js/rs-plugin/css/settings.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/color.css">
+		<link href="stylesheets/lang/polyglot-language-switcher.css" type="text/css" rel="stylesheet">
+		
+<!-- 		<script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script> -->
+		<script src="js/jquery.min.js"></script>
 		<script src="scripts/jquery-ui.min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="scripts/js_func.js" charset="utf-8"></script>
+		
 		<script src="scripts/jquery.bxslider.min.js"></script>
 		<script src="scripts/jquery.alerts.js"></script>
-		<!--  <link type="text/css" rel="stylesheet" href="jquery.dropdown.css" />
-		<script type="text/javascript" src="jquery.dropdown.js"></script>-->
-
-		<!--/ styles -->
-			<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.counter.js"></script>
 		<script src="js/jquery.knob.min.js"></script>
 		<script src="js/jquery.form.min.js"></script>
@@ -48,29 +46,11 @@
 		<script src="js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>	
 		<!--[if lt IE 10]><script src="js/jquery.placeholder.min.js"></script><![endif]-->
+		<script type="text/javascript" src="scripts/js_func.js" charset="utf-8"></script>
+		<script src="scripts/lang/jquery.polyglot.language.switcher.js" type="text/javascript"></script>
 		<script src="js/main.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-    <script src="js/responsive-tabs.js"></script>
-    <script type="text/javascript">
-      $( '#myTab a' ).click( function ( e ) {
-        e.preventDefault();
-        $( this ).tab( 'show' );
-      } );
+<!-- 		<script src="js/bootstrap.min.js"></script> -->
 
-      $( '#moreTabs a' ).click( function ( e ) {
-        e.preventDefault();
-        $( this ).tab( 'show' );
-      } );
-
-      ( function( $ ) {
-          // Test for making sure event are maintained
-          $( '.js-alert-test' ).click( function () {
-            alert( 'Button Clicked: Event was maintained' );
-          } );
-          fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
-      } )( jQuery );
-
-    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -79,6 +59,39 @@
 
       ga('create', 'UA-17600125-2', 'openam.github.io');
       ga('send', 'pageview');
+      
+      $( document ).ready(function() {
+//     	  $( "#lengua" ).change(function() {
+//     		  $("#idioma").val($( "#lengua option:selected" ).val());
+//     		  //alert( "Handler for .change() called: " + $( "#lengua option:selected" ).attr("value") );
+//     		  $("#formLang").submit();
+//     		});
+    	  $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
+    			effect: 'fade',
+              testMode: true,
+              onChange: function(evt){
+                  //alert("The selected language is: "+evt.selectedItem);
+                  $("#formLang").attr("action", "servletRolecar?accion=reservar");
+            	  $("#idioma").val(evt.selectedItem);
+            	  $("#formLang").submit();
+              }
+//              ,afterLoad: function(evt){
+//                  alert("The selected language has been loaded");
+//              },
+//              beforeOpen: function(evt){
+//                  alert("before open");
+//              },
+//              afterOpen: function(evt){
+//                  alert("after open");
+//              },
+//              beforeClose: function(evt){
+//                  alert("before close");
+//              },
+//              afterClose: function(evt){
+//                  alert("after close");
+//              }
+    		});
+    	});
     </script>
 	</head>
 	
@@ -121,6 +134,7 @@
 								</select>
 							</form>
 						</div>
+						<form id="formLang" action="servletRolecar?accion=reservar" method="post"><input name="idioma" id="idioma" type="hidden" value="es" /></form>
 				        </li>
 					</ul>
 					</div>

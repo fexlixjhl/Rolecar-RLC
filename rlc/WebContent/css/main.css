@@ -6052,7 +6052,7 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 	margin-top: 30px;
 	padding: 0 20px;
 	font-size: 13px;
-	line-height: 37px;
+	line-height: 33px;
 	transition: border-color 0.3s, background 0.3s, color 0.3s;
 }
 .block-pricing li:hover dt {

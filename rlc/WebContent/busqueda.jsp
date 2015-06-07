@@ -66,22 +66,22 @@ if(mensaj.length>0)
 <div class="container">
 	<form id="formBuscador" action="servletRolecar?accion=buscar"
 		method="post">
-		<ul class="nav nav-tabs" id="myTab">
-			<li class="test-class active"><a class="deco-none misc-class"
-				href="#how-to"><span class="glyphicon glyphicon-cog"></span>
-					Misma Oficina</a></li>
-			<li class="test-class"><a href="#features">Distinta Oficina</a></li>
-
-		</ul>
 
 		<div class="tab-content responsive">
+			<ul class="nav nav-tabs" id="myTab">
+				          <li class="test-class active"><a class="deco-none misc-class" href="#how-to"><span class="glyphicon glyphicon-cog"></span> <fmt:message key="busqueda.coches"/></a></li>
+				          <li class="test-class"><a href="#features"> <fmt:message key="busqueda.furgonetas"/></a></li>
+				          
+			</ul>
 			<div class="tab-pane active" id="how-to">
 				<div class="block block-catalog-toolbar clearfix">
 					<form>
+					
 						<div class="input_ciudad">
-							<input type="text" placeholder="Por ejem. Madrid">
+							<input id="station"  name="station" type="text" placeholder="<fmt:message key='busqueda.station.text'/>">
+							<input type="hidden" id="stationid" name="stationid" />
 						</div>
-						<a href="#" class="direction fa fa-arrow-up"></a>
+						<a href="#" class="direction fa fa-calendar"></a>
 						<div id="fechainicial" class="input_fecha">
 							<input id="fini"  name="fini" class="control-fecha" type="text"  readonly >
 						</div>
@@ -116,10 +116,11 @@ if(mensaj.length>0)
 									    }
 								    %>
 
-							</select> <input type="hidden" id="hini" name="hini" /> <input
-								type="hidden" id="mini" name="mini" />
+							</select> 
+							<input type="hidden" id="hini" name="hini" /> 
+							<input type="hidden" id="mini" name="mini" />
 						</div>
-						<a href="#" class="direction fa fa-arrow-up"></a>
+						<a href="#" class="direction fa fa-calendar"></a>
 						<div id="fechainicial" class="input_fecha">
 							<input id="ffin" name="ffin" type="text"  class="control-fecha" readonly />
 						</div>
@@ -161,9 +162,13 @@ if(mensaj.length>0)
 							name="buscar" value="<fmt:message key='busqueda.buscar'/>" />
 						<!--   <a href="#" id="buscar" name="buscar" class="direction_buscar" value="<fmt:message key='busqueda.buscar'/>">BUSCAR</a>-->
 				</div>
-
-
+			<div id="tsucursal" style="">
+					<input type="radio" id="tsucursal1" name="tsucursal" checked="checked" value="tsucursal1"><label for="tsucursal1"><fmt:message key="busqueda.misma.oficina"/></label>
+					<input type="radio" id="tsucursal2" name="tsucursal" value="tsucursal2"><label for="tsucursal2"><fmt:message key="busqueda.distinta.oficina"/></label>
+					
+				</div>
 			</div>
+			
 			<div class="tab-pane" id="features"></div>
 
 		</div>
@@ -264,5 +269,25 @@ if(mensaj.length>0)
 	</div>
 </div>
 <!--/ slideshow -->
-
+			<!-- page content -->
+			<div class="page-content">
+				<!-- page content section -->
+				
+			<div class="page-content-section">
+					<div class="grid-row">
+						<!-- about -->
+						<div class="block block-about">
+							<div class="block-head block-head-2">Rolecar se adapta a ti<i></i></div>
+							<div class="block-cont">
+								<h2>Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
+								<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
+								<a href="leerMas.html" class="button">Leer Más</a>
+								
+							</div>
+						</div>
+						<!--/ about -->
+					</div>
+				</div>
+			</div>
+			<!--/ page content -->
 <%@ include file="footer.jsp"%>
