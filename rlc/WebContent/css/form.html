@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wego</title>
+		
+		<!-- metas -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<!--/ metas -->
+	
+		
+		<!-- styles -->
+		<link rel="stylesheet" href="busqueda.css">
+
+
+		<!--/ styles -->
+	</head>
+	
+	<body>
+<div class="wrape homeone">
+
+    <div id="formularioBuscador" class="oneByOne_item"  >
+			<form id="formBuscador" action="servletRolecar?accion=buscar" method="post">
+			 	<div id="tvhiculo" >
+					<input type="radio" id="tvhiculo1" name="tvhiculo" checked="checked" value="CR"><label for="tvhiculo1">Coches</label>
+					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2">Furgonetas</label>
+				</div>
+				
+				<div id="Campos">
+				    <div class="campoleft visible">
+						<input id="station"  name="station" type="text" placeholder="p.ej., Madrid" />
+						<input type="hidden" id="stationid" name="stationid" />
+						
+					</div>
+					<div class="campoleft oculta">
+						<input id="stationOrig"  name="stationOrig" type="text"   placeholder="Dónde" />
+						<input type="hidden" id="stationOrigid" name="stationOrigid" />
+					</div>
+					<div class="campoleft oculta">
+						<input id="stationDest"  name="stationDest" type="text"   placeholder="A" />
+						<input type="hidden" id="stationDestid" name="stationDestid" />
+					</div>
+					<div class="campoleft">
+	 
+						  <span id="fechainicial" class="input-group"><i class="fa fa-calendar fa-fw"></i></span>
+				    </div>
+				    <div class="campoleft">
+						  <input id="fini"  name="fini" class="control-fecha" type="text"  readonly >
+					</div>
+					<div class="campoleft">
+					   		
+					   	<span id="horainicial" class="input-group"><i class="fa fa-clock-o fa-fw"></i></span>
+					</div>
+					<div class="campoleft sinborde" >		
+						<select id="hinis" class="seleccion horas" name="hinis" class="control-fecha" style="border:none;height:200px;" >
+						      
+						    	      <option value="00:00" >00:00</option>
+						    	      <option value="00:30">00:30</option>
+						    	     
+						    	      <option value="01:00" >01:00</option>
+						    	      <option value="01:30">01:30</option>
+						    	     
+						    	      <option value="02:00" >02:00</option>
+						    	      <option value="02:30">02:30</option>
+						    	     
+						    	      <option value="03:00" >03:00</option>
+						    	      <option value="03:30">03:30</option>
+						    	     
+						    	      <option value="04:00" >04:00</option>
+						    	      <option value="04:30">04:30</option>
+						    	     
+						    	      <option value="05:00" >05:00</option>
+						    	      <option value="05:30">05:30</option>
+						    	     
+						    	      <option value="06:00" >06:00</option>
+						    	      <option value="06:30">06:30</option>
+						    	     
+						    	      <option value="07:00" >07:00</option>
+						    	      <option value="07:30">07:30</option>
+						    	     
+						    	      <option value="08:00" >08:00</option>
+						    	      <option value="08:30">08:30</option>
+						    	     
+						    	      <option value="09:00" >09:00</option>
+						    	      <option value="09:30">09:30</option>
+						    	     
+						    	      <option value="10:00" >10:00</option>
+						    	      <option value="10:30">10:30</option>
+						    	     
+						    	      <option value="11:00" >11:00</option>
+						    	      <option value="11:30">11:30</option>
+						    	     
+						    	      <option value="12:00" selected='selected'>12:00</option>
+						    	      <option value="12:30">12:30</option>
+						    	     
+						    	      <option value="13:00" >13:00</option>
+						    	      <option value="13:30">13:30</option>
+						    	     
+						    	      <option value="14:00" >14:00</option>
+						    	      <option value="14:30">14:30</option>
+						    	     
+						    	      <option value="15:00" >15:00</option>
+						    	      <option value="15:30">15:30</option>
+						    	     
+						    	      <option value="16:00" >16:00</option>
+						    	      <option value="16:30">16:30</option>
+						    	     
+						    	      <option value="17:00" >17:00</option>
+						    	      <option value="17:30">17:30</option>
+						    	     
+						    	      <option value="18:00" >18:00</option>
+						    	      <option value="18:30">18:30</option>
+						    	     
+						    	      <option value="19:00" >19:00</option>
+						    	      <option value="19:30">19:30</option>
+						    	     
+						    	      <option value="20:00" >20:00</option>
+						    	      <option value="20:30">20:30</option>
+						    	     
+						    	      <option value="21:00" >21:00</option>
+						    	      <option value="21:30">21:30</option>
+						    	     
+						    	      <option value="22:00" >22:00</option>
+						    	      <option value="22:30">22:30</option>
+						    	     
+						    	      <option value="23:00" >23:00</option>
+						    	      <option value="23:30">23:30</option>
+						    	   
+										
+						</select>
+						<input type="hidden" id="hini" name="hini" />
+						<input type="hidden" id="mini" name="mini" />
+					</div>
+					
+					<div class="campoleft">
+					        <span id="fechafinal" class="input-group"><i class="fa fa-calendar fa-fw"></i></span>
+					</div>
+					<div class="campoleft">
+							<input id="ffin" name="ffin" type="text"  class="control-fecha" readonly />
+					</div>
+					<div class="campoleft">
+					    <span id="horafinal" class="input-group"><i class="fa fa-clock-o fa-fw"></i></span>
+					</div>
+					<div class="campoleft sinborde">
+						<select id="hfins" class="seleccion" name="hfins" class="control-fecha" style="border:none;height:200px;" >
+							   
+						    	      <option value="00:00" >00:00</option>
+						    	      <option value="00:30">00:30</option>
+						    	     
+						    	      <option value="01:00" >01:00</option>
+						    	      <option value="01:30">01:30</option>
+						    	     
+						    	      <option value="02:00" >02:00</option>
+						    	      <option value="02:30">02:30</option>
+						    	     
+						    	      <option value="03:00" >03:00</option>
+						    	      <option value="03:30">03:30</option>
+						    	     
+						    	      <option value="04:00" >04:00</option>
+						    	      <option value="04:30">04:30</option>
+						    	     
+						    	      <option value="05:00" >05:00</option>
+						    	      <option value="05:30">05:30</option>
+						    	     
+						    	      <option value="06:00" >06:00</option>
+						    	      <option value="06:30">06:30</option>
+						    	     
+						    	      <option value="07:00" >07:00</option>
+						    	      <option value="07:30">07:30</option>
+						    	     
+						    	      <option value="08:00" >08:00</option>
+						    	      <option value="08:30">08:30</option>
+						    	     
+						    	      <option value="09:00" >09:00</option>
+						    	      <option value="09:30">09:30</option>
+						    	     
+						    	      <option value="10:00" >10:00</option>
+						    	      <option value="10:30">10:30</option>
+						    	     
+						    	      <option value="11:00" >11:00</option>
+						    	      <option value="11:30">11:30</option>
+						    	     
+						    	      <option value="12:00" selected='selected'>12:00</option>
+						    	      <option value="12:30">12:30</option>
+						    	     
+						    	      <option value="13:00" >13:00</option>
+						    	      <option value="13:30">13:30</option>
+						    	     
+						    	      <option value="14:00" >14:00</option>
+						    	      <option value="14:30">14:30</option>
+						    	     
+						    	      <option value="15:00" >15:00</option>
+						    	      <option value="15:30">15:30</option>
+						    	     
+						    	      <option value="16:00" >16:00</option>
+						    	      <option value="16:30">16:30</option>
+						    	     
+						    	      <option value="17:00" >17:00</option>
+						    	      <option value="17:30">17:30</option>
+						    	     
+						    	      <option value="18:00" >18:00</option>
+						    	      <option value="18:30">18:30</option>
+						    	     
+						    	      <option value="19:00" >19:00</option>
+						    	      <option value="19:30">19:30</option>
+						    	     
+						    	      <option value="20:00" >20:00</option>
+						    	      <option value="20:30">20:30</option>
+						    	     
+						    	      <option value="21:00" >21:00</option>
+						    	      <option value="21:30">21:30</option>
+						    	     
+						    	      <option value="22:00" >22:00</option>
+						    	      <option value="22:30">22:30</option>
+						    	     
+						    	      <option value="23:00" >23:00</option>
+						    	      <option value="23:30">23:30</option>
+						    	   
+						</select>
+						<input type="hidden" id="hfin" name="hfin" />
+					    <input type="hidden" id="mfin" name="mfin" />
+					</div>
+					<div class="campoleft ajustar">
+						<input type="button" class="boton" id="buscar" name="buscar" value="BUSCAR"/>
+
+			        </div>
+				</div>
+				
+				
+				<div id="tsucursal" style="">
+					<input type="radio" id="tsucursal1" name="tsucursal" checked="checked" value="tsucursal1"><label for="tsucursal1">Misma Oficina</label>
+					<input type="radio" id="tsucursal2" name="tsucursal" value="tsucursal2"><label for="tsucursal2">Distinta Oficina</label>
+					
+				</div>
+				
+				
+			</form>
+		</div>
+        
+			
+
+	
+</div>
+</body>
+

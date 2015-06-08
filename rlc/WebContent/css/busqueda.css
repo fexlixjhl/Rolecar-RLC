@@ -1,0 +1,20 @@
+#tvhiculo
+{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	
+}
+input[type="text"]
+{
+	font-size: 11px;
+    font-weight: 200;
+    line-height: 1.2;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin-top: 8px;
+    border: none;
+    font-family: "PT Sans","Arial","Tahoma","Verdana",sans-serif;
+}

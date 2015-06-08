@@ -226,7 +226,7 @@ if(mensaj.length>0)
 		</div>
 
 </div>
-<div class="content_block">
+<%-- <div class="content_block">
 	<div class="text_bar">
 		<div class="wraper">
 			<h2>
@@ -247,22 +247,27 @@ if(mensaj.length>0)
 			<ul> </ul>
 		</div>
 	</div>
-</div>
-<!-- <div id="msgCargando" style="display:none;"> -->
-			
-<!-- 			<div id="cargando"  style="width:62px;height:77px;"> -->
-<!-- 				<div id='floatingBarsG'> -->
-<!-- 					<div class='blockG' id='rotateG_01'></div> -->
-<!-- 					<div class='blockG' id='rotateG_02'></div> -->
-<!-- 					<div class='blockG' id='rotateG_03'></div> -->
-<!-- 					<div class='blockG' id='rotateG_04'></div> -->
-<!-- 					<div class='blockG' id='rotateG_05'></div> -->
-<!-- 					<div class='blockG' id='rotateG_06'></div> -->
-<!-- 					<div class='blockG' id='rotateG_07'></div> -->
-<!-- 					<div class='blockG' id='rotateG_08'></div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- </div> -->
+</div> --%>
+	<!-- page content -->
+			<div class="page-content">
+				<!-- page content section -->
+				
+			<div class="page-content-section">
+					<div class="grid-row">
+						<!-- about -->
+						<div class="block block-about">
+							<div class="block-head block-head-2">Rolecar se adapta a ti<i></i></div>
+							<div class="block-cont">
+								<h2>Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
+								<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
+								<a href="leerMas.html" class="button">Leer Más</a>
+								
+							</div>
+						</div>
+						<!--/ about -->
+					</div>
+				</div>
+			</div>
 
 
 <%@ include file="footer.jsp" %>

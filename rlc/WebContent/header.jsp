@@ -20,6 +20,11 @@
 		<link rel='stylesheet' id='prettyphoto-css'  href='stylesheets/prettyPhoto.css?ver=3.9.1' type='text/css' media='all' />
 		<link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/jquery.alerts.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+		<!--  -->
+		
+		
+		<!--  -->
 		<link href="stylesheets/lang/polyglot-language-switcher.css" type="text/css" rel="stylesheet">
 		<script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script src="scripts/jquery-ui.min.js" type="text/javascript"></script>
@@ -51,43 +56,38 @@
         	  $("#idioma").val(evt.selectedItem);
         	  $("#formLang").submit();
           }
-//          ,afterLoad: function(evt){
-//              alert("The selected language has been loaded");
-//          },
-//          beforeOpen: function(evt){
-//              alert("before open");
-//          },
-//          afterOpen: function(evt){
-//              alert("after open");
-//          },
-//          beforeClose: function(evt){
-//              alert("before close");
-//          },
-//          afterClose: function(evt){
-//              alert("after close");
-//          }
+
 		});
 	});
 	
 		</script>
-		
-<!-- 		<link rel="icon" type="image/png" href="images/favicon4.png" /> -->
+		</head>
+
 	</head>
-	<body>
-		<div class="wraper" id="cabecera">
-	 		<header class="header">
-	  			<a class="logo" href=""><img src="images/logo3d.png" /></a>
-	  			<h2 id="title">&nbsp;<fmt:message key="header.title"/></h2>
-	  			<nav id="mobilenav">
-		     		<ul>
-		       			<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li>
-		     		</ul>
-	  			</nav>
-	    		<nav id="defaultnav">
+<body>
+		<div class="page">
+			<!-- page header top -->
+			<!-- page header bottom -->
+			<header id="page-header-bottom" class="page-header-bottom">
+				<div id="page-header-top" class="page-header-top">
+					<div class="social-nav-header">	
+						<a href=""><fmt:message key="header.inicio"/></a>
+						<a href="https://twitter.com/rolecar"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/rolecardrive"><i class="fa fa-facebook"></i></a>
+						<a href="https://plus.google.com/u/0/100151209502610081833/posts"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+	    		 <div class="grid-row">
+				
+					<!-- logo -->
+					<div class="logo">
+						<span><a href="inicio.html"><img src="img/logo.png" alt=""></a> <fmt:message key="header.title"/></span>
+					</div>
+					<div class="idioma">
 					<ul>
-						<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li>
+						
 				        <li style="background: none" class="wimage">
-<!-- 				        <fmt:message key="header.idiomas"/> -->
+
 				        <div id="polyglotLanguageSwitcher">
 							<form id="lenguaje" action="#">
 					        	<select id="polyglot-language-options" >
@@ -103,10 +103,8 @@
 								</select>
 							</form>
 						</div>
-				        </li>
-					</ul>
-				</nav> 
 	 		</header>
-		</div>
+		</div>  
+	 
 		<form id="formLang" action="servletRolecar?accion=reservar" method="post"><input name="idioma" id="idioma" type="hidden" value="es" /></form>
 		
