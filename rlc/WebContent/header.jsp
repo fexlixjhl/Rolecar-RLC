@@ -21,6 +21,14 @@
 		<link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/jquery.alerts.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/jquery.owl.carousel.css">
+		<link rel="stylesheet" href="css/color.css">
+		<link rel="stylesheet" href="js/rs-plugin/css/settings.css">
+		<link type="text/css" rel="stylesheet" href="jquery.dropdown.css" />
+		<script src="js/jquery.owl.carousel.min.js"></script>
+		<script src="js/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>	
 		<!--  -->
 		
 		
@@ -67,28 +75,35 @@
 <body>
 		<div class="page">
 			<!-- page header top -->
+		
+			
 			<!-- page header bottom -->
 			<header id="page-header-bottom" class="page-header-bottom">
 				<div id="page-header-top" class="page-header-top">
 					<div class="social-nav-header">	
-						<a href=""><fmt:message key="header.inicio"/></a>
-						<a href="https://twitter.com/rolecar"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.facebook.com/rolecardrive"><i class="fa fa-facebook"></i></a>
-						<a href="https://plus.google.com/u/0/100151209502610081833/posts"><i class="fa fa-google-plus"></i></a>
+						<a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
 					</div>
 				</div>
-	    		 <div class="grid-row">
+				<div class="grid-row">
 				
 					<!-- logo -->
 					<div class="logo">
-						<span><a href="inicio.html"><img src="img/logo.png" alt=""></a> <fmt:message key="header.title"/></span>
+						<span><a href="inicio.html"><img src="img/logo.png" alt=""></a>&nbsp;<fmt:message key="header.title"/></span>
 					</div>
 					<div class="idioma">
-					<ul>
-						
-				        <li style="background: none" class="wimage">
-
-				        <div id="polyglotLanguageSwitcher">
+					</div>
+					<div class="social-nav-header">	
+						<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+				<div id="page-header-top" class="page-header-top-mini"></div>
+				</div>
+				<div class="grid-rowIdioma"> <div id="polyglotLanguageSwitcher">
 							<form id="lenguaje" action="#">
 					        	<select id="polyglot-language-options" >
 		  							<option id="es" value="es" data-image="images/flags/spain.png" ${local eq 'es' or local eq null ? 'selected' : ''}><fmt:message key="header.idioma.es"/></option>
@@ -102,9 +117,8 @@
 		  							<option id="pt" value="pt" ${local eq 'pt' ? 'selected' : ''}><fmt:message key="header.idioma.pt"/></option>
 								</select>
 							</form>
-						</div>
-	 		</header>
-		</div>  
+						</div></div>
+				
 	 
 		<form id="formLang" action="servletRolecar?accion=reservar" method="post"><input name="idioma" id="idioma" type="hidden" value="es" /></form>
 		

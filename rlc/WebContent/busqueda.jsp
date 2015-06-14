@@ -63,16 +63,10 @@ if(mensaj.length>0)
 </script>
 <script src="scripts/fbusqueda.js"></script>
 <link rel="stylesheet" href="stylesheets/busqueda.css" type="text/css" media="screen">
-
-<div class="cargandobusqueda"  style="display:none;" >
-    <p align="center"><img src="images/busca_files/europcar.gif" alt="" height="58" width="186">
-  	<img src="images/busca_files/goldcarbw.gif" alt="" height="58" width="136">
-  	<img src="images/busca_files/hertzbw.gif" alt="" height="58" width="148">
-  	</p>
-	<p align="center"><img src="images/busca_files/rolecar.gif" alt="" height="90" width="300"></p>
-	<h2 align="center"><fmt:message key="busqueda.buscando"/></h2>
-	<p align="center"><img src="images/busca_files/avisbw.gif" alt="" height="58" width="151"> <img src="images/busca_files/sixtbw.gif" alt="" height="58" width="110"> <img src="images/busca_files/alamobw.gif" alt="" height="58" width="126"></p>
-</div>
+<link rel="stylesheet" href="css/jquery.owl.carousel.css">
+		<link rel="stylesheet" href="js/rs-plugin/css/settings.css">
+<h3></h3>
+<div class="container">
 <div class="wrape homeone">
     <div id="formularioBuscador" class="oneByOne_item"  >
 			<form id="formBuscador" action="servletRolecar?accion=buscar" method="post">
@@ -197,14 +191,11 @@ if(mensaj.length>0)
 				
 			</form>
 		</div>
-        
+ </div> <!-- /container -->
 			
-
-	
-</div>
-
-
-
+</header>
+<div></div>
+			<!--/ page header bottom -->
 <div class="publicidad">
 		<div class="oneByOne1" style="overflow: hidden;"> 
 			<div id="obo_slider" style="left: 0px;">
@@ -225,42 +216,21 @@ if(mensaj.length>0)
 			</div>
 		</div>
 
-</div>
-<%-- <div class="content_block">
-	<div class="text_bar">
-		<div class="wraper">
-			<h2>
-			<fmt:message key="busqueda.msj.tarifa"/>
-				<span><fmt:message key="busqueda.msj.descuento"/></span>
-			</h2>
-<!-- 			<a class="buy btn_l" href="servletRolecar?accion=reservar">Reserva ahora</a> -->
-			<div class="widget">
-				<h3><fmt:message key="busqueda.msj.adapta"/></h3>
-					<p align="justify"><fmt:message key="busqueda.msj.negocio"/>
-						<a href="modelonegocio.jsp"><fmt:message key="comun.leer"/></a>
-					</p>
-			</div>
-		</div>
-	</div>
-	<div class="wraper">
-		<div class="features_block">
-			<ul> </ul>
-		</div>
-	</div>
-</div> --%>
-	<!-- page content -->
+			<!-- page content -->
 			<div class="page-content">
 				<!-- page content section -->
-				
-			<div class="page-content-section">
+			
+			<!-- page content -->
+
+		<div class="page-content-section">
 					<div class="grid-row">
 						<!-- about -->
 						<div class="block block-about">
-							<div class="block-head block-head-2">Rolecar se adapta a ti<i></i></div>
+							<div class="block-head block-head-2"><fmt:message key="busqueda.msj.adapta"/><i></i></div>
 							<div class="block-cont">
-								<h2>Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
-								<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
-								<a href="leerMas.html" class="button">Leer Más</a>
+								<h2><fmt:message key="busqueda.msj.tarifa"/></h2>
+								<p><fmt:message key="busqueda.msj.descuento"/>. <fmt:message key="busqueda.msj.negocio"/></p>
+								<a href="modelonegocio.jsp" class="button"><fmt:message key="comun.leer"/></a>
 								
 							</div>
 						</div>
@@ -268,6 +238,8 @@ if(mensaj.length>0)
 					</div>
 				</div>
 			</div>
+			<!--/ page content -->
+
 
 
 <%@ include file="footer.jsp" %>

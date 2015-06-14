@@ -1,13 +1,6 @@
 /* CSS Document */
-body {height:100%;font-size:11px;color:#626363;}
-div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;} 
-header, section, footer, aside, nav, article, figure, figcaption {display: block;}
-table {border-collapse:collapse;}
-img {border:none;}
-ul, li {list-style:none;}
-a, a:active, a:visited {text-decoration:none;color:#3fa3c9;}
-a:hover {text-decoration:none;color:#3fa3c9;}
-input:focus, textarea:focus {outline:none;}
+
+
 
 /*  All  */
 
@@ -39,35 +32,6 @@ input:focus, textarea:focus {outline:none;}
 	text-align: center;
 	margin-bottom: 15px;
 }
-
-/* header */ 
-.header {padding-top:20px;position:relative;min-height:88px;z-index:1001;}
-.header .logo, .header .logo:visited {cursor:pointer;display:block;width:175px;height:37px;position:absolute;top:37px;left:0;}
-	/* top menu */
-.header nav {position:absolute;top:58px;right:0;}
-.header nav ul {zoom:1;}
-.header nav ul li {font-size:14px;font-weight:bold;float:left;padding:0 0 0 38px;position:relative;}
-.header nav ul li:after {content:'';background:url(../images/sprite.png) 6px 7px no-repeat;float:left;display:block;width:12px;height:12px;}
-.header nav ul li a, .header nav ul li a:visited {color:#434242;float:left;height:30px;}
-.header nav ul li a:hover {color:#3fa3c9;}
-.header nav ul li:hover > ul {display:block;}
-.header nav ul ul {display:none;position:absolute;top:25px;left:23px;z-index:99999;background:#f6f3f3;}
-.header nav ul ul ul {top:0;left:160px;}
-.header nav ul ul li {float:none;padding:0;display:block;font-size:12px;font-weight:normal;}
-.header nav ul ul a {float:none;padding:14px 16px 14px 12px;width:130px;height:auto;display:block;float:none;border:1px solid #dbe8ed;border-bottom:1px solid #e3e3e3;border-top:1px solid #fff;}
-.header nav ul ul li:after {display:none;}
-.header nav ul ul li:first-child a {border-top:1px solid #5eb2d1;}
-.header nav ul ul li:last-child a {border-bottom:1px solid #9acbdf;}
-.header nav ul ul li:first-child li a {border-top:1px solid #fff;}
-.header nav ul ul li li:first-child a {border-top:1px solid #b9d9e5;}
-.header nav ul ul li:last-child li a {border-bottom:1px solid #e3e3e3;}
-.header nav ul ul li:hover a {background:#fff;padding-left:24px;padding-right:4px;color:#3fa3c9;}
-.header nav ul ul li:hover li a {background:none;padding-left:12px;padding-right:16px;color:#626363;}
-.header nav ul ul li:hover li a:hover {background:#fff;padding-left:24px;padding-right:4px;color:#3fa3c9;}
-.header nav ul ul span {visibility:hidden;padding-right:10px;background:url(../images/arrow.gif) right 6px no-repeat;}
-.header nav ul ul li:hover span {visibility:visible;}
-.header nav ul ul li:hover li span {visibility:hidden;}
-.header nav ul ul li li:hover span {visibility:visible;}
 
 .content_block h4 {font-size:17px;color:#434242;}
 .content_block h4.bord {margin:0 0 25px 0;padding:10px 0;border-bottom:1px solid #e7e6e6;}
@@ -1383,43 +1347,7 @@ ul.arrows_list li:before {content:'';position:absolute;top:7px;left:0;display:bl
 .footer footer .section ul li:before {content:'';background:url(../images/sprite.png) 0 0 no-repeat;position:absolute;top:6px;left:0;display:block;width:5px;height:5px;}
 .footer footer .section ul li a, .footer footer .recent_posts ul li a:visited {color:#626363;}
 .footer footer .section ul li a:hover {color:#3fa3c9;}
-	/* subscribe block */
-.footer footer .subscribe_block {}
-.footer footer .subscribe_block p {padding:0 0 7px 0;}
-.footer footer .subscribe_block p:last-child {text-align:right;}
-.footer footer .subscribe_block p input {font-size:11px;color:#626363;border:1px solid #c0bebe;background:#f6f3f3;padding:5px 10px;width:190px;}
-.footer footer .subscribe_block p input[type="submit"] {cursor:pointer;font-weight:bold;font-style:italic;color:#3fa3c9;width:113px;height:42px;padding:0;border:none;background:url(../images/sprite.png) 0 -73px no-repeat;}
-.footer footer .subscribe_block p input[type="submit"]:hover {background-position:-119px -73px;}
-	/* copyright */
-.copyright {border-top:1px solid #e7e6e6;}
-.copyright p {font-size:11px;padding:20px 0;}
-.copyright p span:after, .copyright p a:before {content:'|';padding:0 5px;}
-.copyright p a, .copyright p a:visited {color:#626363;}
-.copyright p a:hover {color:#3fa3c9;}
-.copyright .top, .copyright .top:visited {color:#626363;font-size:11px;position:absolute;top:20px;right:0;padding-right:12px;}
-.copyright .top:hover {color:#3fa3c9;}
-.copyright .top:after {content:'';position:absolute;top:5px;right:0;background:url(../images/sprite.png) 6px 0 no-repeat;display:block;width:12px;height:5px;}
 h2 span.twitterwidget-title { display: none; }
-.footer footer li.widget.widget_twitter, .footer footer li.widget.tweets {float: left; width: 212px;}
-.footer footer li.widget.widget_twitter ul li, .footer footer li.widget.tweets ul li {padding-left: 0; margin-bottom: 19px; padding-bottom: 19px; border-bottom: 1px solid #d1cfcf;}
-.footer footer li.widget.widget_twitter ul li a, .footer footer li.widget.tweets ul li a {color: #3fa3c9;}
-.footer footer li.widget.widget_twitter ul li:last-child,.footer footer li.widget.tweets ul li:last-child {margin-bottom:0;padding-bottom:0px;border-bottom:none;}
-.footer footer li.widget.widget_twitter .intent-meta, .footer footer li.widget.tweets .intent-meta { display: none; }
-.footer footer li.widget.widget_twitter .follow-button, .footer footer li.widget.tweets .follow-button { margin-top: 19px; }
-
-body
-{
-	font-family:  "PT Sans", "Arial", "Tahoma", "Verdana", sans-serif;
- 	color: black;
-}
-.footer footer h3, .content_block h1, .content_block h2, .content_block h3, .content_block h4, .content_block h5, .content_block h6
-{
- 	font-family: "PT Sans", "Arial", "Tahoma", "Verdana", sans-serif;
-}
-.footer footer h3, .content_block h3, .content_block h4, .content_block h5, .content_block h6
-{
-	color: black;
-}
 .process ul li h3 span, .why_choose ul li::before, .wraper_typ ul.arrows_list li::before, .btn_col, .btn_col:visited, .homeone .oneByOne1, .blog_entries .post .img_wrap .date, .share_story ul li a:hover, .sidebar_tabs #s_tabs .tab_select li.active a, .sidebar_tabs #s_tabs .tab_select li.active a:visited, span.services_option2, .horizontal_tabs #h_tabs .tab_select li.active span, .content_block a.small-facebook:hover, .content_block a.small-tweeter:hover, .content_block a.small-linkedin:hover, .content_block a.small-baby:hover, .content_block a.small-rss:hover, .content_block a.small-google:hover, .content_block a.small-www:hover, .content_block a.large-facebook:hover, .content_block a.large-tweeter:hover, .content_block a.large-linkedin:hover, .content_block a.large-baby:hover, .content_block a.large-rss:hover, .content_block a.large-google:hover, .content_block a.large-www:hover, .flyout_area dt.selected h4::before, .team_option2 ul li .desc .social li a:hover, .team_option3 ul li .desc .social li a:hover, .team_option4 ul li .desc .social li a:hover, .team_option ul li .desc .social li a:hover::before, .single_full ul li .desc .things_list ul li::before, .faq_list .filter li.active a, .faq_list .filter li span, .process2 #tabs div ul li::before, .process2 #tabs .tab_select li.active span, .left_nav #tabs div ul li::before, .flex-control-paging li a.flex-active, .services_option2 #tabs div ul li::before, .our_clients .bx-pager a.pager-active, .our_clients .bx-pager a.pager-link:hover, .faq_list #faq li.simpleFAQShowing::before, .left_nav #tabs .tab_select li.active, .left_nav #tabs .tab_select li:before, .intro_text .bx-pager a.pager-active, .intro_text .bx-pager a.pager-link:hover, .services_option .right_desc ul li .circle, .flex-control-paging li a:hover, .acc_tabs #tabs .tab_select li.active a, .acc_tabs #tabs .tab_select li.active a:visited, .bullets ul li:before
 {
 	background-color: black;
