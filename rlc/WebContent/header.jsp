@@ -81,7 +81,7 @@
 			<header id="page-header-bottom" class="page-header-bottom">
 				<div id="page-header-top" class="page-header-top">
 					<div class="social-nav-header">	
-						<a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a>
+						<a href="#">Inicio</a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-google-plus"></i></a>
@@ -91,7 +91,7 @@
 				
 					<!-- logo -->
 					<div class="logo">
-						<span><a href="inicio.html"><img src="img/logo.png" alt=""></a>&nbsp;<fmt:message key="header.title"/></span>
+						<span><a href="inicio.html"><img src="img/logo.png" alt=""></a> TU BUSCADOR DE COCHES DE ALQUILER</span>
 					</div>
 					<div class="idioma">
 					</div>
@@ -102,23 +102,8 @@
 					</div>
 				</div>
 				<div id="page-header-top" class="page-header-top-mini"></div>
-				</div>
-				<div class="grid-rowIdioma"> <div id="polyglotLanguageSwitcher">
-							<form id="lenguaje" action="#">
-					        	<select id="polyglot-language-options" >
-		  							<option id="es" value="es" data-image="images/flags/spain.png" ${local eq 'es' or local eq null ? 'selected' : ''}><fmt:message key="header.idioma.es"/></option>
-		  							<option id="en" value="en" ${local eq 'en' ? 'selected' : ''}><fmt:message key="header.idioma.en"/></option>
-		  							<option id="us" value="us" ${local eq 'us' ? 'selected' : ''}><fmt:message key="header.idioma.us"/></option>
-		  							<option id="fr" value="fr" ${local eq 'fr' ? 'selected' : ''}><fmt:message key="header.idioma.fr"/></option>
-		  							<option id="de" value="de" ${local eq 'de' ? 'selected' : ''}><fmt:message key="header.idioma.de"/></option>
-		  							<option id="el" value="el" ${local eq 'el' ? 'selected' : ''}><fmt:message key="header.idioma.gr"/></option>
-		  							<option id="sq" value="sq" ${local eq 'sq' ? 'selected' : ''}><fmt:message key="header.idioma.ab"/></option>
-		  							<option id="it" value="it" ${local eq 'it' ? 'selected' : ''}><fmt:message key="header.idioma.it"/></option>
-		  							<option id="pt" value="pt" ${local eq 'pt' ? 'selected' : ''}><fmt:message key="header.idioma.pt"/></option>
-								</select>
-							</form>
-						</div></div>
 				
+
 	 
 		<form id="formLang" action="servletRolecar?accion=reservar" method="post"><input name="idioma" id="idioma" type="hidden" value="es" /></form>
 		
