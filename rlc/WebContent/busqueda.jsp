@@ -71,7 +71,8 @@ if(mensaj.length>0)
     <div id="formularioBuscador" class="oneByOne_item"  >
 			<form id="formBuscador" action="servletRolecar?accion=buscar" method="post">
 			 	<div id="tvhiculo" >
-					<input type="radio" id="tvhiculo1" name="tvhiculo" checked="checked" value="CR"><label for="tvhiculo1"><fmt:message key="busqueda.coches"/></label>
+					<input type="radio" id="tvhiculo1" name="tvhiculo" checked="checked" value="CR"><label for="tvhiculo1">
+					<fmt:message key="busqueda.coches"/></label>
 					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2"><fmt:message key="busqueda.furgonetas"/></label>
 				</div>
 				
@@ -175,10 +176,18 @@ if(mensaj.length>0)
 						<input type="hidden" id="hfin" name="hfin" />
 					    <input type="hidden" id="mfin" name="mfin" />
 					</div>
-					<div class="campoleft ajustar">
+					 <div class="campoleft ajustar">
 						<input type="button" class="boton" id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
-			        </div>
+			       </div>
+			       <div class="grid-row">
+					<!-- main search -->
+					<div id="main-search" class="main-search">
+						
+						
+							<button type="submit">vvv</button>
+					
+					</div>
 				</div>
 				
 				
