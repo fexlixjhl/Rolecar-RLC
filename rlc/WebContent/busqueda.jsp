@@ -176,18 +176,10 @@ if(mensaj.length>0)
 						<input type="hidden" id="hfin" name="hfin" />
 					    <input type="hidden" id="mfin" name="mfin" />
 					</div>
-					 <div class="campoleft ajustar">
-						<input type="button" class="boton" id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
-<!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
-			       </div>
-			       <div class="grid-row">
-					<!-- main search -->
-					<div id="main-search" class="main-search">
-						
-						
-							<button type="submit">vvv</button>
-					
+					<div class="block block-login">
+								<button type="submit" class="button"><fmt:message key='busqueda.buscar'/></button>
 					</div>
+			       
 				</div>
 				
 				
