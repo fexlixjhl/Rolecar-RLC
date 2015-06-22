@@ -107,13 +107,13 @@ select,
 textarea {
 	/**/
 	width: 100%;
-	height: 30px;
-	padding: 9px 15px;
+	height: 35px;
+	padding: 3px;
 	border: 1px solid #ddd;
 	border-radius: 0;
 	box-shadow: none;
 	box-sizing: border-box;
-	font: 400 14px/20px 'Open Sans', Helvetica, Arial, sans-serif;
+	font: 400 12px/20px 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #000;
 	appearance: none;
 	-webkit-appearance: none;
@@ -400,7 +400,7 @@ height:120px;
 /* grid */
 /**/
 .grid-row {
-	width: 1000px;
+	width: 80%;
 	margin: 0 auto;
 }
 .grid-rowIdioma {
@@ -454,6 +454,9 @@ height:120px;
 .grid-col-9 {
 	width: 870px;
 }
+.grid-col-12 {
+	width: 1070px;
+}
 @media screen and (max-width: 1200px) { /* laptop */
 	.grid-row {
 		width: 940px;
@@ -488,6 +491,9 @@ height:120px;
 	}
 	.grid-col-9 {
 		width: 700px;
+	}
+	.grid-col-12 {
+		width: 820px;
 	}
 }
 @media screen and (max-width: 980px) { /* pad */
@@ -524,6 +530,9 @@ height:120px;
 	}
 	.grid-col-9 {
 		width: 549px;
+	}
+	.grid-col-12 {
+		width: 738px;
 	}
 }
 @media screen and (max-width: 767px) { /* phone */
@@ -831,13 +840,13 @@ select,
 textarea {
 	/**/
 	width: 100%;
-	height: 30px;
-	padding: 9px 15px;
+	height: 35px;
+	padding: 3px;
 	border: 1px solid #ddd;
 	border-radius: 0;
 	box-shadow: none;
 	box-sizing: border-box;
-	font: 400 14px/20px 'Open Sans', Helvetica, Arial, sans-serif;
+	font: 400 12px/20px 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #000;
 	appearance: none;
 	-webkit-appearance: none;
@@ -889,7 +898,8 @@ li.test-class{
 
 }
 .show{display:block!important}
-.container{padding-top:10px;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.container{
+	padding-top:5px;padding-right:5px;padding-left:5px;margin-right:auto;margin-left:auto}
  .container:before,.container:after{display:table;content:" "}
  .container:after{clear:both}.container:before,.container:after{display:table;content:" "}
  .container:after{clear:both}.row{margin-right:-15px;margin-left:-15px}
@@ -1099,4 +1109,239 @@ li.test-class{
 	.block-login .button  {
 		width: 100px;
 	}
+}
+
+/**/
+/* fornulario principal */
+/**/
+.widget-feedback {
+	margin-bottom: 97px;
+	border: 1px solid rgba(255,255,255,0.3);
+	padding: 10px 69px 0;
+	text-align: center;
+}
+.widget-feedback input,
+.widget-feedback textarea {
+	height: 36px;
+	margin-top: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-color: #ecf0f1;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	transition: background 0.3s;
+}
+.
+@media screen and (max-width: 1200px) { /* laptop */
+	.widget-feedback {
+		padding-right: 59px;
+		padding-left: 59px;
+	}
+}
+@media screen and (max-width: 980px) { /* pad */
+	.widget-feedback {
+		padding-right: 44px;
+		padding-left: 44px;
+	}
+}
+@media screen and (max-width: 767px) { /* phone */
+	.widget-feedback {
+		margin-bottom: 67px;
+	}
+}
+/**/
+/* feedback */
+/**/
+.block-feedback .input {
+	position: relative;
+	float: left;
+	width: 33.33%;
+	padding: 0 0 30px 30px;
+	box-sizing: border-box;
+}
+.block-feedback .button {
+	float: right;
+	margin-top: 30px;
+	padding: 0 30px;
+	line-height: 36px;
+	
+}
+.block-feedback .inputSinBorde {
+	position: relative;
+	float: left;
+	width: auto;
+	padding: 0 0 10px 7px;
+	box-sizing: border-box;
+	border:none
+}
+
+.block-feedback .inputLoc {
+	position: relative;
+	float: left;
+	width: 15%;
+	padding: 0 0 30px 30px;
+	box-sizing: border-box;
+}
+.block-feedback .inputFecIcon {
+	position: relative;
+	float: left;
+	width: 5%;
+	padding: 10px 0px 0px 6px;
+	box-sizing: border-box;
+}
+.block-feedback .inputHoraIcon {
+	position: relative;
+	float: left;
+	width: 5%;
+	padding: 10px 30px 0px 10px;
+	box-sizing: border-box;
+}
+.block-feedback .inputFec {
+	position: relative;
+	float: left;
+	width: 12%;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.block-feedback .inputFecDer {
+	position: relative;
+	float: left;
+	width: 5%;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.block-feedback .campoleftOculta
+{
+	float:left;
+	display:table;
+	margin-left:-1px;
+	border: 1px solid #E3E3E3;
+    border-radius: 1px 1px 1px 1px;
+    height: 32px;
+    display:none;
+}
+.block-feedback .campoleft
+{
+	float:left;
+	display:table;
+	margin-left:-1px;
+	border: 1px solid #E3E3E3;
+    border-radius: 1px 1px 1px 1px;
+    height: 32px;
+}
+.visible{
+	display:block;
+}
+.block-feedback .input-group
+{
+ 
+	 display:table-cell;
+	 vertical-align: middle;
+	 width: 30px;
+ 
+}
+.block-feedback .input i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 38px;
+	height: 38px;
+	font-size: 14px;
+	line-height: 38px;
+	text-align: center;
+	color: #ccd3d7;
+	pointer-events: none;
+}
+.block-feedback .clearfix {
+	margin-left: -30px;
+	width: 100%;
+}
+
+.block-feedback .message {
+	display: none;
+	padding-top: 25px;
+	text-align: center;
+}
+.block-feedback .message i {
+	position: relative;
+	display: block;
+	margin: 0 auto 50px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	font-size: 60px;
+	line-height: 120px;
+	color: #2d3e50;
+}
+.block-feedback .message i:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 3px solid;
+	border-radius: 20% 0 20% 0;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.block-feedback .message i:before {
+	position: relative;
+	z-index: 1;
+}
+.block-feedback .block-head {
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 1.2;
+}
+.block-feedback.submitted .message {
+	display: block;
+}
+.block-feedback.submitted .block-cont {
+	display: none;
+}
+@media screen and (max-width: 1200px) { /* laptop */
+	.block-feedback .input {
+		padding: 0 0 20px 20px;
+	}
+	.block-feedback .button {
+		margin-top: 20px;
+	}
+	.block-feedback .clearfix {
+		margin-left: -20px;
+	}
+	.block-feedback .block-head {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 980px) { /* pad */
+	.block-feedback .input {
+		padding: 0 0 18px 18px;
+	}
+	.block-feedback .button {
+		margin-top: 18px;
+	}
+	.block-feedback .clearfix {
+		margin-left: -18px;
+	}
+	.block-feedback .block-head {
+		margin-bottom: 18px;
+	}
+}
+@media screen and (max-width: 767px) { /* phone */
+	.block-feedback .input {
+		float: none;
+		width: auto;
+		margin-left: 0;
+	}
+	.block-feedback textarea {
+		float: none;
+	}
+}
+.ui-selectmenu-button span.ui-selectmenu-text 
+{
+	font-size: 12px;
 }
