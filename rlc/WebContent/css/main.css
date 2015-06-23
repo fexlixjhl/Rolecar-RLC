@@ -107,8 +107,7 @@ select,
 textarea {
 	/**/
 	width: 100%;
-	height: 35px;
-	padding: 3px;
+	height: 30px;
 	border: 1px solid #ddd;
 	border-radius: 0;
 	box-shadow: none;
@@ -834,24 +833,7 @@ height:120px;
 	color: #fff;
 }
 
-/*form*/
-input,
-select,
-textarea {
-	/**/
-	width: 100%;
-	height: 35px;
-	padding: 3px;
-	border: 1px solid #ddd;
-	border-radius: 0;
-	box-shadow: none;
-	box-sizing: border-box;
-	font: 400 12px/20px 'Open Sans', Helvetica, Arial, sans-serif;
-	color: #000;
-	appearance: none;
-	-webkit-appearance: none;
-	transition: border-color 0.3s;
-}
+
 
 /**/
 /* map */
@@ -1153,8 +1135,32 @@ li.test-class{
 	}
 }
 /**/
-/* feedback */
+/*formulario ppal
 /**/
+.campoleft
+{
+	position: relative;
+	float:left;
+	height: 32px;
+  
+}
+#tvhiculo
+{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	
+}
+
+.control-fecha
+{
+	position: relative;
+	float: left;
+	width: 33.33%;
+	padding: 0 0 30px 30px;
+	box-sizing: border-box;
+	
+}
+
 .block-feedback .input {
 	position: relative;
 	float: left;
@@ -1162,6 +1168,7 @@ li.test-class{
 	padding: 0 0 30px 30px;
 	box-sizing: border-box;
 }
+
 .block-feedback .button {
 	float: right;
 	margin-top: 30px;
@@ -1220,17 +1227,16 @@ li.test-class{
 	margin-left:-1px;
 	border: 1px solid #E3E3E3;
     border-radius: 1px 1px 1px 1px;
-    height: 32px;
+    height: 30px;
     display:none;
 }
 .block-feedback .campoleft
 {
-	float:left;
-	display:table;
-	margin-left:-1px;
-	border: 1px solid #E3E3E3;
-    border-radius: 1px 1px 1px 1px;
-    height: 32px;
+	position: relative;
+	float: left;
+	width: 33.33%;
+	padding: 0 0 30px 30px;
+	box-sizing: border-box;
 }
 .visible{
 	display:block;
@@ -1344,4 +1350,474 @@ li.test-class{
 .ui-selectmenu-button span.ui-selectmenu-text 
 {
 	font-size: 12px;
+}
+
+
+/*listado*/
+/**/
+/* catalog list */
+/**/
+.block-catalog-list li {
+	position: relative;
+	min-height: 220px;
+	margin-top: 30px;
+	padding-left: 220px;
+	border: 1px solid #ecf0f1;
+}
+.block-catalog-list li:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 220px;
+	width: 1px;
+	height: 100%;
+	background: #ecf0f1;
+}
+.block-catalog-list li:first-child {
+	margin-top: 0;
+}
+.block-catalog-list li h3 {
+	padding: 15px 20px 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+.block-catalog-list li h3 a {
+	text-decoration: none;
+	color: #000;
+}
+.block-catalog-list li h3 a:hover {
+	text-decoration: underline;
+}
+.block-catalog-list li p {
+	min-height: 72px;
+	padding: 0 20px;
+	line-height: 24px;
+}
+.block-catalog-list .pic {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 100%;
+}
+.block-catalog-list .pic img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+.block-catalog-list .pic:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #2d3e50;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.block-catalog-list .pic:hover:after {
+	opacity: 0.8;
+}
+.block-catalog-list .badge {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+.block-catalog-list .badge span {
+	position: relative;
+}
+.block-catalog-list .badge + h3 {
+	padding-right: 70px;
+}
+.block-catalog-list .badge:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 20% 0 20% 0;
+	background: #2d3e50;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.block-catalog-list .price {
+	margin-bottom: 15px;
+	padding: 5px 20px 15px;
+	border-bottom: 1px solid #ecf0f1;
+	font-size: 24px;
+	color: #2d3e50;
+}
+.block-catalog-list .rating {
+	float: left;
+	margin: 1px 30px 0;
+}
+.block-catalog-list .actions {
+	height: 14px;
+	margin-top: 15px;
+	padding: 12px 20px;
+	background: #ecf0f1;
+}
+.block-catalog-list .actions i {
+	margin-right: 6px;
+	vertical-align: baseline;
+}
+.block-catalog-list .actions a {
+	float: left;
+	text-decoration: none;
+}
+.block-catalog-list .actions a:hover {
+	text-decoration: underline;
+}
+.block-catalog-list .actions .more {
+	float: right;
+	color: inherit;
+}
+.block-catalog-list .button {
+	display: block;
+	margin-top: 60px;
+	line-height: 40px;
+}
+.block-catalog-list .block-head {
+	font-size: 20px;
+	line-height: 24px;
+}
+.block-catalog-list .owl-prev,
+.block-catalog-list .owl-next {
+	position: absolute;
+	top: -54px;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #2d3e50;
+	background: #2d3e50;
+	text-align: center;
+	color: #fff;
+	transition: background 0.3s, color 0.3s;
+}
+.block-catalog-list .owl-next {
+	right: 0;
+}
+.block-catalog-list .owl-prev {
+	right: 30px;
+}
+.block-catalog-list .owl-prev i,
+.block-catalog-list .owl-next i {
+	display: block;
+	font-size: 18px;
+	line-height: 22px;
+}
+.block-catalog-list .owl-prev:hover,
+.block-catalog-list .owl-next:hover {
+	background: #fff;
+	color: #2d3e50;;
+}
+@media screen and (max-width: 980px) { /* pad */
+	.block-catalog-list .actions span {
+		display: none;
+	}	
+}
+@media screen and (max-width: 767px) { /* phone */
+	.block-catalog-list .rating {
+		float: right;
+		margin-right: 0;
+	}
+	.block-catalog-list .actions .more {
+		display: none;
+	}
+}
+@media screen and (max-width: 479px) { /* mini phone */
+	.block-catalog-list li {
+		padding-left: 0;
+	}
+	.block-catalog-list li:before {
+		display: none;
+	}
+	.block-catalog-list .pic {
+		position: relative;
+		width: auto;
+		height: 200px;
+		border-bottom: 1px solid #ecf0f1;
+	}
+}
+.block {
+	margin-bottom: 90px;
+}
+/**/
+/* categories filter */
+/**/
+.widget-categories-filter li {
+	margin-top: 10px;
+	line-height: 24px;
+	float:left;
+	width:17%;
+}
+.widget-categories-filter a {
+	display: block;
+	text-decoration: none;
+	color: #808b8d;
+}
+.widget-categories-filter a:hover {
+	color: #2d3e50;
+}
+.widget-categories-filter i {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	line-height: 24px;
+}
+.widget-categories-filter span {
+	float: right;
+	display: block;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #a0a8aa;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+}
+.widget-categories-filter .active {
+	color: #2d3e50;	
+}
+.widget-categories-filter .active span {
+	background: #2d3e50;
+}
+
+
+
+
+.page-intro {
+	position: relative;
+	border-top: 236px solid transparent;
+}
+.page-intro:after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	opacity: 0.7;
+}
+.page-intro:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -236px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background:  #fff;
+	opacity: 0.7;
+}
+.page-intro .pic {
+	position: absolute;
+	top: -236px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.page-intro .grid-row {
+	position: relative;
+	z-index: 2;
+	padding: 15px 0;
+}
+.page-content-section {
+	padding: 20px 0 1px;
+	background: #fff;
+}
+.page-content-section + .page-content-section {
+	border-top: 2px solid #ecf0f1;
+}
+.page-content-section-bg {
+	position: relative;
+	padding: 90px 0 1px;
+	background-color: #fff;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.page-content-section-bg > div {
+	position: relative;
+}
+.page-content-section-bg:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #2d3e50;
+	opacity: 0.8;
+}
+.page-content-section-bg:last-child {
+	border-bottom: 10px solid #fff;
+}
+.page-content-section-bg + .page-content-section-bg {
+	border-top: 10px solid #fff;
+}
+.page-content-section-alt {
+	padding: 90px 0 1px;
+	background: #ecf0f1;
+}
+.page-content-section-border {
+	border-top: 1px solid #2d3e50;
+}
+.page-content-section-parallaxed {
+	background-position: 50% 0;
+	background-size: auto;
+}
+.page-content-title {
+	margin: -30px 0 60px;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+.page-footer {
+	position: relative;
+	background: #2d3e50;
+}
+.page-footer-pic {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-position: 50% 50%;
+	background-size: cover;
+	opacity: 0.15;
+}
+.page-footer-section {
+	position: relative;
+	padding: 2px;
+}
+.page-footer-section + .page-footer-section {
+	border-top: 2px solid rgba(255,255,255,0.3);
+}
+@media screen and (max-width: 1200px) { /* laptop */
+.page-boxed {
+		max-width: 1000px;
+	}
+}
+@media screen and (max-width: 980px) { /* pad */
+	.page-boxed {
+		max-width: 788px;
+	}
+}
+@media screen and (max-width: 767px) { /* phone */
+	.page-header-bottom.fixed {
+		position: relative;
+		box-shadow: none;
+	}
+	.page-header-bottom.fixed + div {
+		display: none;
+	}
+}
+/**/
+/* page title */
+/**/
+.page-title {
+	float: left;
+	padding: 10px 0;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+
+/**/
+/* page subtitle */
+/**/
+.page-subtitle {
+	float: left;
+	margin-left: 20px;
+	padding: 10px 0 10px 20px;
+	border-left: 1px solid rgba(255,255,255,0.5);
+	font-size: 18px;
+	line-height: 30px;
+}
+@media screen and (max-width: 980px) { /* pad */
+	.page-subtitle {
+		display: none;
+	}
+}
+/**/
+/* bread crumbs */
+/**/
+.bread-crumbs {
+	float: right;
+	padding: 15px 0;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-size:small;
+}
+.bread-crumbs a {
+	text-decoration: none;
+	color: #fff;
+	font-size: small;
+}
+.bread-crumbs a:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 1200px) { /* laptop */
+	.bread-crumbs {
+		font-size: 2em;
+	}
+}
+@media screen and (max-width: 479px) { /* mini phone */
+	.bread-crumbs {
+		display: none;
+	}
+}
+
+
+/*carrusel*/
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
 }
