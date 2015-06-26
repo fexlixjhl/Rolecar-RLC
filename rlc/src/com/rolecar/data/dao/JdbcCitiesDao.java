@@ -46,6 +46,7 @@ public class JdbcCitiesDao
     	Connection con = conexionBBDD.getConnectionWeb();
     	try
     	{
+    		//Get online tables
     		String tablaOnline = conexionBBDD.getSchemaOnline();
     		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline).concat(" Order By idprovincia");
             PreparedStatement pStm= con.prepareStatement(sql);

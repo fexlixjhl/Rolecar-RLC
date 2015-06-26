@@ -19,6 +19,7 @@ String selec="";
 String mensaje="";
 //Vector<Station> vstat = (Vector<Station>) request.getSession().getAttribute("vStations");
 Vector<Station> vstat =null;
+//Control de sesiones
 vstat = (Vector<Station>) request.getAttribute("vStations");
 if (vstat == null ){
 	vstat=(Vector<Station>) request.getSession(false).getAttribute("vStations");

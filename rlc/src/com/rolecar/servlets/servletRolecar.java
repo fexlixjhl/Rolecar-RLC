@@ -165,6 +165,7 @@ public class servletRolecar extends HttpServlet
 	private void processRequestReservar (HttpServletRequest request,HttpServletResponse response ) throws ServletException, IOException
 	{
 		HttpSession sesion; 
+		//check sessions
 		sesion=request.getSession(true);
 		Hashtable<String,Country> htcountries= new Hashtable<String,Country>();
 		Hashtable<String,City> htcities = new Hashtable<String,City>();

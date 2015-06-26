@@ -106,6 +106,11 @@ public class conexionBBDD
 		}
 	}
 	
+	/**
+	 * Get on-line tables
+	 * @return String - suffix of online tables
+	 * @throws SQLException
+	 */
 	public static String getSchemaOnline() throws SQLException{
 		String schemaReturn = "";
 		Connection con = null;

@@ -99,6 +99,7 @@ $( document ).ready(function() {
 		{	
 			vcar=(Vector<Car>)request.getAttribute("Vehiculos");
 		}
+		//Control sesiones
 		if (request.getSession(false) != null){
 			request.getSession(false).removeAttribute("Vehiculossesion");
 			request.getSession(false).setAttribute("Vehiculossesion", vcar);

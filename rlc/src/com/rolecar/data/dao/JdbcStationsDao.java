@@ -273,6 +273,7 @@ public class JdbcStationsDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
+			//Get online tables
 			String tablaOnline = conexionBBDD.getSchemaOnline();
     		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += condicion;
