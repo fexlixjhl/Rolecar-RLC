@@ -46,8 +46,9 @@ public class JdbcCitiesDao
     	Connection con = conexionBBDD.getConnectionWeb();
     	try
     	{
-    		
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(" Order By idprovincia");
+    		//Get online tables
+    		String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline).concat(" Order By idprovincia");
             PreparedStatement pStm= con.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
             while(rs!=null && rs.next())
@@ -233,8 +234,8 @@ public class JdbcCitiesDao
     	Connection con = conexionBBDD.getConnectionWeb();//conexionBBDD.getConnectionWeb();
     	try
     	{
-    		
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla);
+    		String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += condicion;
             PreparedStatement pStm= con.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
