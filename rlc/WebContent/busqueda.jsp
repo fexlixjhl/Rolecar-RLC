@@ -19,14 +19,22 @@ String selec="";
 String mensaje="";
 //Vector<Station> vstat = (Vector<Station>) request.getSession().getAttribute("vStations");
 Vector<Station> vstat =null;
-vstat=(Vector<Station>)request.getSession(false).getAttribute("vStations");
-if(vstat!=null)
-	tama=vstat.size();
+vstat = (Vector<Station>) request.getAttribute("vStations");
+if (vstat == null ){
+	vstat=(Vector<Station>) request.getSession(false).getAttribute("vStations");
+}
+else{
+	request.getSession(true).setAttribute("vStations", vstat);
+}
+if(vstat!=null){
+	tama=vstat.size();  
+}
 
 if(request.getAttribute("mensa")!=null)
 	mensaje =(String)request.getAttribute("mensa");
-
-request.getSession(false).removeAttribute("Vehiculossesion");
+if (request.getSession(false) != null){
+	request.getSession(false).removeAttribute("Vehiculossesion");
+}
 
 %>
 

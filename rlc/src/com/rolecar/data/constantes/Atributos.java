@@ -14,6 +14,7 @@ public class Atributos
 	public static String TABLACOUNTRIES = "countries";
 	public static String TABLACITIES = "cities";
 	public static String TABLASTATIONS = "stations";
+	public static String TABLASWITCH = "schema_sw";
 	public static String TABLACARS = "cars";
 	public static String USER = "924486681";
 	public static String PASS = "11072014";

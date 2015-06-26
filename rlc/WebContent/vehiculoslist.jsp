@@ -63,13 +63,11 @@ $( document ).ready(function() {
 	String cartype="CR";//valor por defecto
 	Country pais=null;
 	int tama=0;
-	
 	boolean esMismaSucursal = true;
 	
 	//Muestra el mensaje de que no hay vehiculos si no se encuentra ninguno
 	String mensaje = "";
 	boolean haycoches = false;
-
 	if(request.getAttribute("mensaje")!=null)
 	{
 		mensaje = (String) request.getAttribute("mensaje");
@@ -78,16 +76,15 @@ $( document ).ready(function() {
 	 	     request.setAttribute("mens",mensaje);
 		}
 	}
-	
 	if(request.getAttribute("haycoches")!=null)
 	{
 		haycoches = ((Boolean)request.getAttribute("haycoches")).booleanValue();
 	}
-	
-	vstat=(Vector<Station>)request.getSession(false).getAttribute("vStations");
+	if (request.getSession(false) != null){
+		vstat=(Vector<Station>)request.getSession(false).getAttribute("vStations");
+	}
 	if(vstat!=null)
 		tama=vstat.size();
-	
 	if(haycoches)
 	{	
 		//Parte de la busqueda dentro del listado
@@ -98,12 +95,16 @@ $( document ).ready(function() {
 		
 		
 		//Obtenemos el resultado (Listado de coches) de la busqueda por fecha y estación
-		
 		if(request.getAttribute("Vehiculos")!=null)
 		{	
-		vcar=(Vector<Car>)request.getAttribute("Vehiculos");
-		request.getSession(false).removeAttribute("Vehiculossesion");
-		request.getSession(false).setAttribute("Vehiculossesion", vcar);
+			vcar=(Vector<Car>)request.getAttribute("Vehiculos");
+		}
+		if (request.getSession(false) != null){
+			request.getSession(false).removeAttribute("Vehiculossesion");
+			request.getSession(false).setAttribute("Vehiculossesion", vcar);
+		}
+		else{
+			request.getSession(true).setAttribute("Vehiculossesion", vcar);
 		}
 	}	
 	if(request.getAttribute("Reservation")!=null)

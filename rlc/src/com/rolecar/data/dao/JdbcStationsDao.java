@@ -11,15 +11,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Hashtable;
 import java.util.Vector;
+
 import javax.net.ssl.HttpsURLConnection;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+
 import com.rolecar.beans.City;
 import com.rolecar.beans.Country;
 import com.rolecar.beans.Station;
@@ -270,7 +273,8 @@ public class JdbcStationsDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla);
+			String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += condicion;
             PreparedStatement pStm= conn.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
@@ -323,7 +327,8 @@ public class JdbcStationsDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla);
+			String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += " where codstation = ?";
     		
 //    		String sql = "select s.*, c.codcountry  from ".concat(nombresch).concat(".").concat(nombretabla).concat(" s, ").concat(nombresch).concat(".cities c");
@@ -410,9 +415,9 @@ public class JdbcStationsDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-     		
+			String tablaOnline = conexionBBDD.getSchemaOnline();
      		String sql ="SELECT c.idcity,c.codcity,c.descr,c.codcountry,c.idprovincia,s.idstation,s.codstation,s.descr "+
-     					" FROM  rolecar.cities c, rolecar.stations s "+
+     					" FROM  rolecar.cities" + tablaOnline + " c, rolecar.stations" + tablaOnline + " s" +
      				    " where c.codcity=s.codcity "+
      					" and c.idprovincia=s.idprovincia "+// and s.idprovincia=743 "+ 
      					//" and s.descr like CONCAT('%',c.codcity ,'%') "+  
@@ -505,9 +510,9 @@ public class JdbcStationsDao
     	Connection con = conexionBBDD.getConnectionWeb(); 	
      	try
      	{
-     		
+     		String tablaOnline = conexionBBDD.getSchemaOnline();
      		String sql ="SELECT s.codstation,s.descr as estacion,c.codcountry,co.descr as pais,c.descr as ciudad"+
-     					" FROM  rolecar.cities c, rolecar.stations s, rolecar.countries co "+
+     					" FROM  rolecar.cities" + tablaOnline + " c, rolecar.stations" + tablaOnline + " s, rolecar.countries" + tablaOnline + " co"+
      					" where c.idprovincia=s.idprovincia "+//and s.idprovincia="+idprovincia+
      					" and s.idprovincia="+provincia+
      					" and c.codcity=s.codcity "+

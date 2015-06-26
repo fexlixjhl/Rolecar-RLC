@@ -165,7 +165,7 @@ public class servletRolecar extends HttpServlet
 	private void processRequestReservar (HttpServletRequest request,HttpServletResponse response ) throws ServletException, IOException
 	{
 		HttpSession sesion; 
-		sesion=request.getSession(false);
+		sesion=request.getSession(true);
 		Hashtable<String,Country> htcountries= new Hashtable<String,Country>();
 		Hashtable<String,City> htcities = new Hashtable<String,City>();
 		Vector<Station> vstat = new Vector<Station>();
@@ -187,7 +187,12 @@ public class servletRolecar extends HttpServlet
 			//Obtenemos el vector de Stations pasandole la hashtable de ciudades
 			vstat=JdbcStationsDao.getAllStation(htcities);
 			if(vstat!=null && vstat.size()>0)
-				sesion.setAttribute("vStations", vstat);
+				if (sesion != null){
+					sesion.setAttribute("vStations", vstat);
+				}
+				else{
+					request.setAttribute("vStations", vstat);
+				}
 		}
 		catch(Exception e)
 		{

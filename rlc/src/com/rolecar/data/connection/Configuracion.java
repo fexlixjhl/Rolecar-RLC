@@ -29,7 +29,8 @@ public class Configuracion
 	        }
 	        catch (Exception ex)
 	        {
-	            System.out.println("prueba" + ex);
+	        	informe.error("Error: " + ex.getMessage().toString());
+	        	ex.printStackTrace();
 	        }
 	    }//Configuration
 	 

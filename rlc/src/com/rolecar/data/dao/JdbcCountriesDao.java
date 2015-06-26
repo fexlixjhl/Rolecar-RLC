@@ -22,6 +22,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+
 import com.rolecar.beans.Country;
 import com.rolecar.data.connection.conexionBBDD;
 import com.rolecar.data.constantes.Atributos;
@@ -240,7 +241,8 @@ public class JdbcCountriesDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla);
+			String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += condicion;
             PreparedStatement pStm= conn.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
@@ -288,7 +290,8 @@ public class JdbcCountriesDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla);
+			String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += condicion;
             PreparedStatement pStm= conn.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
@@ -321,7 +324,8 @@ public class JdbcCountriesDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(" ");
+			String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline).concat(" ");
     		sql += condicion;
             PreparedStatement pStm= conn.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
@@ -362,7 +366,8 @@ public class JdbcCountriesDao
 		try
 		{
 			conn = conexionBBDD.getConnectionWeb();
-    		String sql = "select count(*) as numfilas from ".concat(nombresch).concat(".").concat(nombretabla);
+			String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select count(*) as numfilas from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
     		sql += " where codcountry = ?";
     		sql += condicion;
             PreparedStatement pStm= conn.prepareStatement(sql);
@@ -432,7 +437,8 @@ public class JdbcCountriesDao
 		Connection con = conexionBBDD.getConnectionWeb();
     	try
     	{
-    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla);
+    		String tablaOnline = conexionBBDD.getSchemaOnline();
+    		String sql = "select * from ".concat(nombresch).concat(".").concat(nombretabla).concat(tablaOnline);
             PreparedStatement pStm= con.prepareStatement(sql);
             ResultSet rs = pStm.executeQuery();
             while(rs!=null && rs.next())
