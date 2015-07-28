@@ -6,7 +6,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!-- 		<meta name="viewport" content="width=device-width, initial-scale=1"> -->
-		<title>Rolecar</title>
+			<title>Alquiler de Coche Barato. Alquiler de Furgoneta Barata. Desde 8 Euros por día en Coches de Alquiler. Alquiler de vehiculos Aeropuerto, Madrid, Barcelona, Mallorca, Ibiza, Menorca, Sevilla. Alquiler coches con Rolecar.com </title>
+			<meta name="keywords" content="Alquiler de coches,Alquiler de furgonetas,coche alquiler barato,alquiler vehiculo,rent a car,Alquiler coches,alquiler coches madrid,sevilla coche de alquiler,ibiza rent a car,alquiler coches baratos barcelona" />
+			<meta name="description" content="Alquiler de coches y furgonetas baratos. Desde 8 Euros por día en Coches de Alquiler. Alquiler de vehiculos Madrid, Barcelona, Mallorca, Ibiza, Menorca, Sevilla. Alquiler coches baratos con Rolecar.com. " />
 		
 		<link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">

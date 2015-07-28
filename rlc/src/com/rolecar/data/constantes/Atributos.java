@@ -20,6 +20,7 @@ public class Atributos
 	public static String USER = "924486681";
 	public static String PASS = "11072014";
 	public static String CONTRACTID = "52112176";
+	public static String CONTRACTID2 = "52480793"; 
 	public static String IATA ="01522830";
 	public static String MENSAJENOCOCHES = "No se han encontrado vehículos para la oficina, fecha u horarios indicados. Por favor modifica tu búsqueda o bien selecciona una oficina cercana (de la misma provincia) en la selección que te mostramos a la izquierda.";
 }

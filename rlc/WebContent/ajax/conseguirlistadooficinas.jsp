@@ -1,3 +1,4 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="com.rolecar.utils.CarComparator"%>
 <%@page import="java.util.Collections"%>
 <%@page import="com.rolecar.beans.Car"%>
@@ -5,6 +6,8 @@
 <%@page import="com.rolecar.data.dao.JdbcCarsDao"%>
 <%@page import="java.util.Vector"%>
 <%@page import="com.rolecar.data.dao.JdbcStationsDao"%>
+<%@page import="java.util.HashSet"%>
+<%@page import="java.util.Set"%>
 <%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1" --%>
 <%--     pageEncoding="ISO-8859-1"%> --%>
 <%@ include file="../language.jsp" %>
@@ -65,6 +68,7 @@ else
 	Vector<String> listcod = JdbcStationsDao.getClosestation(codstationori, provincia);
 	
 	Car car;
+	Set<Car> rcars = new HashSet<Car>();
 	Vector<Car> vcars = new Vector<Car>();
 	//String precio ="";%>
 	<c:set var="otro"><fmt:message key='list.otras.localidades'/></c:set>
@@ -86,14 +90,15 @@ else
 		   codigoestacionin=coddescr[0];
 		}
 		
-		car=JdbcCarsDao.recogeprimerVehiculolocalidad(codigoestacionin, checkindate, checkintime, coddescr[0], checkoutdate, checkouttime, carType,1,coddescr[2],coddescr[3],coddescr[4]);
+		car = (Car) JdbcCarsDao.recogeprimerVehiculolocalidad(codigoestacionin, checkindate, checkintime, coddescr[0], checkoutdate, checkouttime, carType,1,coddescr[2],coddescr[3],coddescr[4]);
 		
-		if(car.isHaytarifas())
-		{	
+//		vcars.addAll(rcars);
+		if(car != null && car.isHaytarifas())
+ 		{	
 				
-			vcars.add(car);
+ 			vcars.add(car);
 			
-		}
+ 		}
 		
 	}
 	

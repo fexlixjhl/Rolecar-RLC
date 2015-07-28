@@ -19,6 +19,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.Vector;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -39,6 +40,7 @@ import com.rolecar.beans.Quote;
 import com.rolecar.beans.Reservation;
 import com.rolecar.beans.Station;
 import com.rolecar.beans.Tax;
+import com.rolecar.data.connection.Configuracion;
 import com.rolecar.data.constantes.Atributos;
 import com.rolecar.utils.CarComparator;
 import com.rolecar.utils.Formatea;
@@ -46,11 +48,12 @@ import com.rolecar.utils.Formatea;
 
 public class JdbcCarsDao
 {
-	private static final String TYPE_FURGO = "TR";
+	private static final String CONTRACT_ID_2 = "contractId_2";
+	private static final String CONTRACT_ID_1 = "contractId_1";
+	//private static final String TYPE_FURGO = "TR";
 	private static Log logger = LogFactory.getLog(JdbcCarsDao.class);
 	private static String carTypeG = "";
 	private static boolean haycontrato=true;
-	//private static Vector<Car> vcars;
 	
 	
 	@SuppressWarnings("unchecked")
@@ -72,7 +75,8 @@ public class JdbcCarsDao
 	public static synchronized Vector<Car> recogeVehiculos(String checkinstationid, String checkindate, String checkintime, String checkoutstationid, String checkoutdate, String checkouttime, String carType, int orden) throws Exception
 	{
 		Set<String> contractIds = new HashSet<String>(); 
-		contractIds.add("52112176");
+        contractIds.add(Configuracion.getInstance().getProperty(CONTRACT_ID_1));
+		contractIds.add(Configuracion.getInstance().getProperty(CONTRACT_ID_2));
 
 		String request = "";
 		haycontrato=true;		
@@ -90,9 +94,10 @@ public class JdbcCarsDao
 			carTypeG =carType;
 			reservation.setCarType(carType);
 			//Si son furgonetas los dos contractId
-			if (TYPE_FURGO.equals(carType)){ 
-				contractIds.add("52480793");
-			}
+			// 4/7/2015 volvemos a poner los dos contractIds
+//			if (TYPE_FURGO.equals(carType)){ 
+//				contractIds.add("52480793");
+//			}
 			//request = getRequestCars(reservation, carType,haycontrato);//true comrpuebo con contract id, aquí utilizaba el antiguo servicio getQuote
 			for (String contract : contractIds) {
 					
@@ -1331,11 +1336,17 @@ public class JdbcCarsDao
     /******************************************Para coches en otras localidades*************************************************************/
     public static synchronized Car recogeprimerVehiculolocalidad(String checkinstationid, String checkindate, String checkintime, String checkoutstationid, String checkoutdate, String checkouttime, String carType, int orden, String codpais,String pais,String ciudad) throws Exception
 	{
+    	Set<String> contractIds = new HashSet<String>(); 
+        contractIds.add(Configuracion.getInstance().getProperty(CONTRACT_ID_1));
+		contractIds.add(Configuracion.getInstance().getProperty(CONTRACT_ID_2));
 		String request = "";
-		Car car = new Car();
+		Set<Car> sCar = new HashSet<Car>();
+		Map<Integer, Car> treeCar = new TreeMap<Integer, Car>();
+		//Car car = new Car();
 		haycontrato=true;
 		try
 		{
+			
 			logger.info("Recoge primer vehiculo mas barato");;
 			Reservation reservation = new Reservation();
 			reservation.setCheckinstationId(checkinstationid);
@@ -1345,26 +1356,34 @@ public class JdbcCarsDao
 			reservation.setCheckoutdate(checkoutdate);
 			reservation.setCheckouttime(checkouttime);
 			carTypeG =carType;
-			request = getRequestMultipleRateslocalidad(reservation,haycontrato);
-			if (request!=null && !request.equalsIgnoreCase(""))
-			{
-				car = getResponsePreciolocalidad(request,reservation);
-				car.getStationcheckout().setCodCountry(codpais);
-				car.getStationcheckout().setDescrCountry(pais);
-				car.getStationcheckout().setDescrCity(ciudad);
+			for (String contractId : contractIds) {
+				Car car = new Car();
+				request = getRequestMultipleRateslocalidad(reservation, haycontrato, contractId);
+				if (request!=null && !request.equalsIgnoreCase(""))
+				{
+					car = getResponsePreciolocalidad(request,reservation);
+					car.getStationcheckout().setCodCountry(codpais);
+					car.getStationcheckout().setDescrCountry(pais);
+					car.getStationcheckout().setDescrCity(ciudad);
+				}
+				if (car.isHaytarifas()){
+				
+					treeCar.put(new Double(car.getQuote().getTotalRateEstimateInBookingCurrency()).intValue(), car);
+				}
 			}
+			
 			//Collections.sort(vcars,new CarComparator(orden));
 		}
 		catch (Exception e)
 		{
 			logger.error(e.getMessage());
-			return car;
+			return new Car();
 		}
-		return car;
+		return (Car) treeCar.entrySet().iterator().next().getValue();
 	}
     
     
-    public static synchronized String getRequestMultipleRateslocalidad(Reservation reservation,boolean haycontractid)
+    public static synchronized String getRequestMultipleRateslocalidad(Reservation reservation, boolean haycontractid, String pContractId)
 	{
 		String request = "";
 		String contractid="";
@@ -1372,7 +1391,9 @@ public class JdbcCarsDao
 		{
 			if(haycontractid)
 			{
-				contractid=" contractID=\""+Atributos.CONTRACTID+"\" type=\"C\"";
+//				contractid=" contractID=\""+Atributos.CONTRACTID+"\" type=\"C\"";
+				contractid=" contractID=\""+pContractId+"\" type=\"C\"";
+
 			}
 			request += Atributos.CABECERAXML;
 			//Enviamos para recibir quote
@@ -1432,6 +1453,7 @@ public class JdbcCarsDao
     		}
     		in.close();
     		responseStr = response.toString();
+    		//System.out.println("RES:: " + responseStr);
     		con.disconnect();
     		if (!responseStr.contains("reservationRateList"))
     		{
