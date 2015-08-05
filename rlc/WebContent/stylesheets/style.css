@@ -1,6 +1,6 @@
 /* CSS Document */
 body {height:100%;font-size:11px;color:#626363;}
-div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;} 
+html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;} 
 header, section, footer, aside, nav, article, figure, figcaption {display: block;}
 table {border-collapse:collapse;}
 img {border:none;}
@@ -12,7 +12,7 @@ input:focus, textarea:focus {outline:none;}
 /*  All  */
 
 .content_block:after, .footer footer:after, .wraper:after, .features3_block:after, .most_popular:after, .features4_block:after, .flyout_area dd:after, .accordions dd:after, .intro_text:after, .features6_block ul:after, .why_choose_explore:after, .intro_text .intro_slider li:after, .process ul:after, .team_option ul:after, .services_option:after, .tab_select:after, .c_after:after, .post_medium:after, .leave_comment:after, .controls:after, .pricing_option:after {content:'';display:block;height:0;clear:both;}
-.wraper, .footer footer, body.index_v2 .social_block, body.index_v2 .footer {width:920px;margin:0 auto;position:relative;}
+.wraper, .footer footer, body.index_v2 .social_block, body.index_v2 .footer {margin:0 30px;position:relative;}
 .bwWrapper {position:relative;display:block;}
 
 .contact_us form p label.error {
@@ -42,11 +42,11 @@ input:focus, textarea:focus {outline:none;}
 
 /* header */ 
 .header {padding-top:20px;position:relative;min-height:88px;z-index:1001;}
-.header .logo, .header .logo:visited {cursor:pointer;display:block;width:175px;height:37px;position:absolute;top:37px;left:0;}
+.header .logo, .header .logo:visited {cursor:pointer;display:block;}
 	/* top menu */
 .header nav {position:absolute;top:58px;right:0;}
 .header nav ul {zoom:1;}
-.header nav ul li {font-size:14px;font-weight:bold;float:left;padding:0 0 0 38px;position:relative;}
+.header nav ul li {font-size:14px;font-weight:bold;float:left;padding:0 0 0 10px;position:relative;}
 .header nav ul li:after {content:'';background:url(../images/sprite.png) 6px 7px no-repeat;float:left;display:block;width:12px;height:12px;}
 .header nav ul li.wimage:after {content:'';background:none;float:left;display:block;width:12px;height:12px;}
 .header nav ul li a, .header nav ul li a:visited {color:#434242;float:left;height:30px;}
@@ -89,16 +89,7 @@ input:focus, textarea:focus {outline:none;}
 
 /* Home Version 1 */
 .fallback {display:none;}
-	/* text bar */
-.text_bar {clear:both;background:url(../images/text_bar.png);}
-.text_bar .wraper {min-height:60px;padding:28px 0;}
-.text_bar:after {content:'';display:block;width:100%;height:0;border-bottom:1px solid #e7e6e6;border-top:5px solid #fff;}
-.text_bar h2 {color:#434242;font-weight:bold;font-style:italic;font-size:22px;float:left;padding:0 36px 0 0;}
-.text_bar h2 span {color:#626363;font-weight:normal;font-size:16px;display:block;}
-.text_bar .buy, .text_bar .buy:visited {float:left;}
-.text_bar .widget {background:#fff;position:absolute;top:0;right:0;padding:25px 25px 5px 25px;width:205px;min-height:86px;}
-.text_bar .widget h3 {color:#434242;font-size:17px;padding-bottom:9px;}
-.text_bar .widget p a {background:url(../images/arrow.gif) right center no-repeat;padding-right:12px;}
+
 	/* features block */
 .features_block ul {padding:40px 0 45px 0;float:left;}
 .features_block ul li {position:relative;float:left;width:130px;padding:140px 75px 40px 0;background:url(../images/features/arrow.png) right 70px no-repeat;}
@@ -1440,14 +1431,14 @@ body
 {
 	border-left-color: black;
 }
-a, a:active, a:visited, .header nav ul li a:hover, .header nav ul ul li:hover a, .header nav ul ul li:hover li a:hover, .footer footer .subscribe_block p input[type="submit"], .btn_l, .btn_m, .btn_s, .our_clients .clients_slider li blockquote p:last-child, .pricing_option ul li .price span, .pricing_option ul li .price sup, .pricing_option ul li.active h4, .comments ul li .info i, .leave_comment form p input[type="submit"], .copyright .top:hover, #tabs .tab_select li.active a, .horizontal_tabs #h_tabs .tab_select li.active a, .services_option2 #tabs .tab_select li.active a, .horizontal_tabs #h_tabs .tab_select li:hover a, .blog_entries .post_full .desc blockquote, .portfolio_sidebar ul li .desc h5 span a, .portfolio_sidebar ul li .desc h5 span a:visited, .footer footer .section ul li a:hover, .pager_nav a:hover, .contact_us ul li strong, .single_full ul li .desc i, .process2 #tabs .tab_select li.active a, .long_text_layout ul li .desc h5 span a, .long_text_layout ul li .desc h5 span a, .copyright p a:hover, .features2_block #h_tabs ul li.active h4, .process2 #tabs .tab_select li:hover a, .contact_us form p input[type="submit"], .dropcap p::first-letter, .pager_nav a:hover, .pager_nav span, #obo_slider .oneByOne_item span.txt4 a, .leave_comment form p input[type="submit"]
+/*a, a:active, a:visited, .header nav ul li a:hover, .header nav ul ul li:hover a, .header nav ul ul li:hover li a:hover, .footer footer .subscribe_block p input[type="submit"], .btn_l, .btn_m, .btn_s, .our_clients .clients_slider li blockquote p:last-child, .pricing_option ul li .price span, .pricing_option ul li .price sup, .pricing_option ul li.active h4, .comments ul li .info i, .leave_comment form p input[type="submit"], .copyright .top:hover, #tabs .tab_select li.active a, .horizontal_tabs #h_tabs .tab_select li.active a, .services_option2 #tabs .tab_select li.active a, .horizontal_tabs #h_tabs .tab_select li:hover a, .blog_entries .post_full .desc blockquote, .portfolio_sidebar ul li .desc h5 span a, .portfolio_sidebar ul li .desc h5 span a:visited, .footer footer .section ul li a:hover, .pager_nav a:hover, .contact_us ul li strong, .single_full ul li .desc i, .process2 #tabs .tab_select li.active a, .long_text_layout ul li .desc h5 span a, .long_text_layout ul li .desc h5 span a, .copyright p a:hover, .features2_block #h_tabs ul li.active h4, .process2 #tabs .tab_select li:hover a, .contact_us form p input[type="submit"], .dropcap p::first-letter, .pager_nav a:hover, .pager_nav span, #obo_slider .oneByOne_item span.txt4 a, .leave_comment form p input[type="submit"]
 {
 	color: grey;
 }
 a:hover, .services_option2 #tabs .tab_select li:hover a
 {
 	color: grey;
-}
+}*/
 .top_title, .social_block, .text_bar2, .btn_col:hover, .team_option4 ul li .rate p span .blue
 {
 	background-color: #3FA3C9; /*white;*/
@@ -1473,7 +1464,7 @@ a:hover, .services_option2 #tabs .tab_select li:hover a
 #floatingBarsG{
 position:absolute;
 left:45%;
-top:40%;
+top:48%;
 width:62px;
 height:77px}
 
@@ -1697,14 +1688,7 @@ background-color:#FFFFFF}
 }
 /*************************************FInal de icono de carga*************************************************/
 
-/***************cabecera**************************************/
 
-.wraper .header>h2
-{
-	left: 190px;
-    position: absolute;
-    top: 57px;
-}
 
 /*************************************selecthora***************************************************************/
  #hinis-menu { height: 200px; }

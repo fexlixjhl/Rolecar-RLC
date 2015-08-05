@@ -79,7 +79,7 @@ $(document).ready(function(){
 				$("#fordenar").attr('action',accion);
 				$("#fordenar").submit();
 //				$('#otros').html('<div style="text-align:center;"><img src="images/iconocarga.gif" /></div>');
-//				$.ajax({ //Comunicación jQuery hacia JSP 
+//				$.ajax({ //Comunicaciï¿½n jQuery hacia JSP 
 //				    type: "POST",
 //				    url: "ajax/ordernarporprecio.jsp",
 //				    data: "checkoutdate="+fecharec+"&checkouttime="+horarec+"&checkindate="+fechaent+"&checkintime="+horaent+"&carType="+crtype+"&codstation="+codori,
@@ -100,7 +100,7 @@ $(document).ready(function(){
 //				    },
 //				    error: function()
 //				    {
-//				    	$("#otros").html("<p>Error en la localización</p>");
+//				    	$("#otros").html("<p>Error en la localizaciï¿½n</p>");
 //				    }
 //				});	
 				
@@ -371,7 +371,7 @@ $(document).ready(function(){
 				    },
 				    error: function()
 				    {
-				    	$("#otros").html("<p>Error en la localización</p>");
+				    	$("#otros").html("<p>Error en la localizaciï¿½n</p>");
 				    }
 				});
 				
@@ -387,7 +387,7 @@ $(document).ready(function(){
 									 return "<img src='images/asiento.png' alt='asientos'>capacidad de pasajeros:"+element.attr("asiento");
 								 }
 								 if ( element.is( "[eco]" ) ) {
-									 return "<img src='images/eco.png' alt='ecologico'>Vehiculo ecológico:"+element.attr("eco")+"g/km<p>Nivel A: hasta 100g/km</p>";
+									 return "<img src='images/eco.png' alt='ecologico'>Vehiculo ecolï¿½gico:"+element.attr("eco")+"g/km<p>Nivel A: hasta 100g/km</p>";
 								 }
 							 },
 					 position: {
@@ -407,7 +407,7 @@ $(document).ready(function(){
 				 $( "#dialog-condiciones" ).dialog({
 					 autoOpen: false,
 					 height: 600,
-					 width: 850,
+					 width: 980,
 					 modal: true
 					 });
 				 
@@ -518,72 +518,72 @@ $(document).ready(function(){
 					 });
 				   
 				 //Para que tanto el div de otras localidades y el de busqueda se queden fijos
-				 var otrasloca = $('#otros'), posicion = otrasloca.offset(), posicionbuscador = otrasloca.offset();
-				 var infofin = $('#infofinal');//, posicioninfofinal = infofin.offset();
-				 var infofintop;
-				 var margenSuperior = 15;
-				 //var alturaotraslocalidades = 300;
-				 var alturabusqueda = 455;
-				 var alturaslider = 500; //altura inicial de la capa del slider
-				 $(window).scroll(function(){
-//						 if($(this).scrollTop() > pos.top+otrasloca.height() && otrasloca.hasClass('content')){
-//							 		otrasloca.fadeOut('fast', function(){
-//							 				$(this).removeClass('').addClass('fixed').fadeIn('fast');
-//							 			});
-//						 } else if($(this).scrollTop() <= pos.top && otrasloca.hasClass('fixed')){
-//							 		menu.fadeOut('fast', function(){
-//							 			$(this).removeClass('fixed').addClass('default').fadeIn('fast');
-//							 		});
-//						 }
+//				 var otrasloca = $('#otros'), posicion = otrasloca.offset(), posicionbuscador = otrasloca.offset();
+//				 var infofin = $('#infofinal');//, posicioninfofinal = infofin.offset();
+//				 var infofintop;
+//				 var margenSuperior = 15;
+				 																//var alturaotraslocalidades = 300;
+//				 var alturabusqueda = 455;
+//				 var alturaslider = 500; //altura inicial de la capa del slider
+//				 $(window).scroll(function(){
+																				//						 if($(this).scrollTop() > pos.top+otrasloca.height() && otrasloca.hasClass('content')){
+																				//							 		otrasloca.fadeOut('fast', function(){
+																				//							 				$(this).removeClass('').addClass('fixed').fadeIn('fast');
+																				//							 			});
+																				//						 } else if($(this).scrollTop() <= pos.top && otrasloca.hasClass('fixed')){
+																				//							 		menu.fadeOut('fast', function(){
+																				//							 			$(this).removeClass('fixed').addClass('default').fadeIn('fast');
+																				//							 		});
+																				//						 }
 					 
-					 if ($(window).scrollTop() > posicion.top) {
-						 infofintop = infofin.position().top;
-						 var posotros= posicion.top;
-						 var posicionotros = $("#otros").css("margin-top");
-						 posicionotros = posicionotros.substring(0,posicionotros.length-2);
-						 posicionotros = parseInt(posicionotros);
-						 if((infofintop-alturaslider) > (posicionotros+alturabusqueda))
-						 {	 
-							 $("#otros").stop().animate({
-				                 marginTop: $(window).scrollTop() - posotros + margenSuperior
-				             });
-						 } else {
-				             $("#otros").stop().animate({
-				                 marginTop: 0
-				             });
-						 };
-			         } else {
-			             $("#otros").stop().animate({
-			                 marginTop: 0
-			             });
-			         };
-			         
-			         if ($(window).scrollTop() > posicionbuscador.top) {
-			        	 infofintop = infofin.position().top;
-			        	 var posbuscador = posicionbuscador.top;
-			        	 var posicionbusca = $("#busquedaestaciones").css("margin-top");
-			        	 
-			        	 posicionbusca = posicionbusca.substring(0,posicionbusca.length-2);
-			        	 posicionbusca = parseInt(posicionbusca);
-			        	 if((infofintop-alturaslider) > (posicionbusca+alturabusqueda))
-						 {
-				             $("#busquedaestaciones").stop().animate({
-				                 marginTop: $(window).scrollTop() - posbuscador + margenSuperior
-				             });
-						 }else {
-							
-							
-				             $("#busquedaestaciones").stop().animate({
-				                 marginTop: 0
-				             });
-				            
-						 };
-			         } else {
-			             $("#busquedaestaciones").stop().animate({
-			                 marginTop: 0
-			             });
-			         };
-				 }); 
+//					 if ($(window).scrollTop() > posicion.top) {
+//						 infofintop = infofin.position().top;
+//						 var posotros= posicion.top;
+//						 var posicionotros = $("#otros").css("margin-top");
+//						 posicionotros = posicionotros.substring(0,posicionotros.length-2);
+//						 posicionotros = parseInt(posicionotros);
+//						 if((infofintop-alturaslider) > (posicionotros+alturabusqueda))
+//						 {	 
+//							 $("#otros").stop().animate({
+//				                 marginTop: $(window).scrollTop() - posotros + margenSuperior
+//				             });
+//						 } else {
+//				             $("#otros").stop().animate({
+//				                 marginTop: 0
+//				             });
+//						 };
+//			         } else {
+//			             $("#otros").stop().animate({
+//			                 marginTop: 0
+//			             });
+//			         };
+//			         
+//			         if ($(window).scrollTop() > posicionbuscador.top) {
+//			        	 infofintop = infofin.position().top;
+//			        	 var posbuscador = posicionbuscador.top;
+//			        	 var posicionbusca = $("#busquedaestaciones").css("margin-top");
+//			        	 
+//			        	 posicionbusca = posicionbusca.substring(0,posicionbusca.length-2);
+//			        	 posicionbusca = parseInt(posicionbusca);
+//			        	 if((infofintop-alturaslider) > (posicionbusca+alturabusqueda))
+//						 {
+//				             $("#busquedaestaciones").stop().animate({
+//				                 marginTop: $(window).scrollTop() - posbuscador + margenSuperior
+//				             });
+//						 }else {
+//							
+//							
+//				             $("#busquedaestaciones").stop().animate({
+//				                 marginTop: 0
+//				             });
+//				            
+//						 };
+//			         } else {
+//			             $("#busquedaestaciones").stop().animate({
+//			                 marginTop: 0
+//			             });
+//			         };
+//				 }); 
 				 var estacionorigen = $("#stationid").val();
 				 var estaciondistorigen = $("#stationOrigid").val();
 				 if(estacionorigen!="")
@@ -734,7 +734,7 @@ $(document).ready(function(){
 			 }
 			 else if(dif < 120)
 			 {
-				 jAlert("Error. La hora mínima de recogida es de 2 horas más, de la hora actual.Se coloca hora mas cercana valida","Error");
+				 jAlert("Error. La hora mï¿½nima de recogida es de 2 horas mï¿½s, de la hora actual.Se coloca hora mas cercana valida","Error");
 				 //inicializarHoraInicio();
 				 HoraRecogidaValida();
 				 return false;

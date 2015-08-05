@@ -1,0 +1,459 @@
+*:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+
+#cabecera {
+  border-bottom: 8px solid #f4f1f1;
+  /*min-width: 1100px;/*1270px;*/ }
+
+.campoleft {
+  float: left;
+  display: table;
+  margin-left: -1px;
+  border: 1px solid #E3E3E3;
+  border-radius: 1px 1px 1px 1px;
+  height: 32px; }
+
+.ajustar {
+  border: none; }
+
+.oculta {
+  display: none; }
+
+.publicidad {
+  margin: auto; }
+
+.publicidad .oneByOne1 {
+  background: url("../images/moover/moover_shadow.png") no-repeat scroll center top #63b4d2;
+  clear: both; }
+
+.publicidad .oneByOne1 #obo_slider .oneByOne_item span.txt1, .publicidad .oneByOne1 #obo_slider .oneByOne_item span.txt2, .publicidad .oneByOne1 #obo_slider .oneByOne_item span.txt3 {
+  color: #FFFFFF !important; }
+
+#formularioBuscador {
+  margin: 0 auto;
+  min-width: 920px;
+  /*1270px;*/
+  white-space: nowrap;
+  /*max-width: 1100px;/*1270px;*/
+  height: 130px;
+  width: 920px;
+  /*width: 70%;*/ }
+
+input[type="text"] {
+  font-size: 11px;
+  font-weight: 200;
+  line-height: 1.2;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  background-color: #FFFFFF;
+  margin-top: 8px;
+  border: none;
+  font-family: "PT Sans","Arial","Tahoma","Verdana",sans-serif; }
+
+#station {
+  width: 320px;
+  /* 	height:32px; */ }
+
+#stationOrig {
+  width: 160px; }
+
+#stationDest {
+  width: 160px; }
+
+.input-group {
+  /* 	 padding: 8px 9px ; */
+  /* 	 border: 1px solid #E3E3E3; */
+  /* 	 margin-left:-1px; */
+  display: table-cell;
+  vertical-align: middle;
+  width: 30px;
+  /* 	 height: 32px; */ }
+
+.fa {
+  margin-left: 25%; }
+
+.control-fecha {
+  width: 60px;
+  /* 	height: 32px; */ }
+
+#hinis-button, #hfins-button {
+  /* 	border:none; */
+  border: 1px solid #E3E3E3;
+  height: 32px; }
+
+.sinborde {
+  border: none; }
+
+.ui-selectmenu-button span.ui-icon {
+  margin-top: -8px; }
+
+/***********************horas minutos********************************/
+.seleccion {
+  /* 	border: 1px solid #E3E3E3; */
+  /*     float: left; */
+  /*     -moz-appearance: none; */
+  /*     -webkit-appearance: none; */
+  /*     appearance: none; */
+  /*     -ms-appearance: none; */
+  width: 70px;
+  float: left; }
+
+.ui-buttonset {
+  display: block; }
+
+.ui-selectmenu-text {
+  /* 	padding-bottom: 0.6em; */
+  /* 	margin-left:-8px; */ }
+
+.ui-selectmenu-button span.ui-selectmenu-text {
+  padding-top: 0.6em;
+  padding-bottom: 0em; }
+
+/*****************botones********************************/
+.boton {
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3fa2c9), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3fa2c9, #65a9d7);
+  background: -moz-linear-gradient(top, #3fa2c9, #65a9d7);
+  background: -ms-linear-gradient(top, #3fa2c9, #65a9d7);
+  background: -o-linear-gradient(top, #3fa2c9, #65a9d7);
+  /*    padding: 9px 19px 8.8px 19px; */
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  color: white;
+  font-size: 12px;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-left: 5px;
+  border: none;
+  width: 100px;
+  height: 34px; }
+
+.boton:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc; }
+
+.boton:active {
+  border-top-color: #1b435e;
+  background: #1b435e; }
+
+/***********************checkbox******************/
+#tvhiculo {
+  margin-top: 50px;
+  margin-bottom: 10px; }
+
+#tsucursal {
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 9px;
+  width: 68.8%; }
+
+/***************************buscando coches********************************/
+#warningGradientOuterBarG {
+  height: 50px;
+  width: 400px;
+  border: 3px solid #FFFFFF;
+  overflow: hidden;
+  background-color: #63B4D2;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#63b4d2), to(white));
+  background: -moz-linear-gradient(top, #63b4d2, white);
+  background: -webkit-linear-gradient(top, #63b4d2, white);
+  background: -ms-linear-gradient(top, #63b4d2, white);
+  background: -o-linear-gradient(top, #63b4d2, white);
+  background: linear-gradient(top, #63b4d2, white);
+  margin: 0 0 0 36%; }
+
+.warningGradientBarLineG {
+  background-color: #63B4D2;
+  float: left;
+  width: 35px;
+  height: 300px;
+  margin-right: 60px;
+  margin-top: -70px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.warningGradientAnimationG {
+  width: 590px;
+  -moz-animation-name: warningGradientAnimationG;
+  -moz-animation-duration: 1.3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-name: warningGradientAnimationG;
+  -webkit-animation-duration: 1.3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -ms-animation-name: warningGradientAnimationG;
+  -ms-animation-duration: 1.3s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-animation-name: warningGradientAnimationG;
+  -o-animation-duration: 1.3s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: warningGradientAnimationG;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@-moz-keyframes warningGradientAnimationG {
+  0% {
+    margin-left: -95px; }
+
+  100% {
+    margin-left: 0px; } }
+@-webkit-keyframes warningGradientAnimationG {
+  0% {
+    margin-left: -95px; }
+
+  100% {
+    margin-left: 0px; } }
+@-ms-keyframes warningGradientAnimationG {
+  0% {
+    margin-left: -95px; }
+
+  100% {
+    margin-left: 0px; } }
+@-o-keyframes warningGradientAnimationG {
+  0% {
+    margin-left: -95px; }
+
+  100% {
+    margin-left: 0px; } }
+@keyframes warningGradientAnimationG {
+  0% {
+    margin-left: -95px; }
+
+  100% {
+    margin-left: 0px; } }
+.cargandobusqueda {
+  margin-top: 50px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.mensaje {
+  margin: 10% 0 0 45%; }
+
+.ui-datepicker-title {
+  color: white; }
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  margin: 0;
+  padding: 0; }
+
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  width: 100%;
+  display: block; }
+
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+html[xmlns] .slides {
+  display: block; }
+
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block; }
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider .slides li img {
+  background-color: #3fa3c9; }
+
+.flexslider.home {
+  margin: 0 auto;
+  min-height: 435px;
+  width: 1000px;
+  background: url(../images/moover/moover_bg.png) repeat-x;
+  position: relative;
+  zoom: 1; }
+
+.flexslider.home:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/moover/moover_shadow.png) center top no-repeat;
+  z-index: 1; }
+
+.flex-viewport {
+  max-height: 435px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.loading .flex-viewport {
+  max-height: 435px; }
+
+.flexslider .slides {
+  zoom: 1; }
+
+.flexslider .slides li {
+  position: relative; }
+
+.carousel li {
+  margin-right: 5px; }
+
+.flex-caption {
+  background: #000;
+  color: #fff;
+  padding: 18px 30px 0 30px;
+  height: 42px;
+  width: 940px;
+  position: absolute;
+  top: 368px;
+  left: 0;
+  opacity: .8; }
+
+/* Direction Nav */
+.flex-direction-nav a {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  display: block;
+  background: url(../images/flex/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: -1px;
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-transition: all .3s ease;
+  z-index: 10; }
+
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: 31px; }
+
+.flex-direction-nav .flex-prev {
+  right: 51px; }
+
+.flexslider:hover .flex-next:hover {
+  background-position: 100% -20px; }
+
+.flexslider:hover .flex-prev:hover {
+  background-position: 0 -20px; }
+
+/* Control Nav */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  text-align: center;
+  background: #fff; }
+
+.flex-control-nav li {
+  margin: 0 1px 0 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.flex-control-nav li:last-child {
+  margin-right: 0; }
+
+.flex-control-paging li a {
+  width: 166px;
+  height: 13px;
+  display: block;
+  background: #cccbcb;
+  cursor: pointer;
+  text-indent: -9999px; }
+
+.flex-control-nav li:last-child a {
+  width: 165px; }
+
+.flex-control-paging li a:hover {
+  background: #5eafcd; }
+
+.flex-control-paging li a.flex-active {
+  background: #5eafcd;
+  cursor: default; }
+
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0; }
+
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer; }
+
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+.flex-control-thumbs .active {
+  opacity: 1;
+  cursor: default; }
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0; }
+
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0; } }

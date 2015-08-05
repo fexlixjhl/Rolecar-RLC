@@ -1,0 +1,23 @@
+.amp-lista {
+	&-barraordenar {
+	    background-color: $blue-bg;
+	    color: $white;
+	    text-align: center;	
+	    padding: 6px 0;	
+	}
+	&-barratop {
+		border-bottom: 1px solid $grey-light;
+		&-nombrecoche {
+			margin-top: 10px;
+		}
+		&-similar {
+			margin-top: 9px;
+		}
+	}
+	&-condiciones {
+		display: block;
+    	padding-top: 13px;
+    	color: $blue-link;
+    	color: red;
+	}
+}

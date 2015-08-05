@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+.wraper {
+	min-width: 1203px;
+}
+
+input[type="text"] {
+	padding: 7px;
+	border: 1px solid $grey-light;
+}
+
+.amp-width-60 {
+    width: 60px; 
+}
+.amp-width-100 {
+    width: 100px; 
+}
+.amp-width-350 {
+    width: 350px; 
+}
+//margenes en proporcion aurea (redondeado)
+.amp-space-down-10 {
+	margin-bottom: 10px;
+}
+.amp-space-down-20 {
+	margin-bottom: 20px;
+}
+.amp-space-down-30 {
+	margin-bottom: 30px;
+}
+.amp-space-down-50 {
+	margin-bottom: 49px;
+}
+.amp-space-down-80 {
+	margin-bottom: 80px;
+}
+
+.amp-space-left-10 {
+	margin-left: 10px;
+}
+.amp-space-left-20 {
+	margin-left: 20px;
+}
+.amp-space-left-30 {
+	margin-left: 30px;
+}
+.amp-space-left-50 {
+	margin-left: 50px;
+}
+.amp-space-left-80 {
+	margin-left: 80px;
+}
+.amp-space-left-115 {
+	margin-left: 115px;
+}
+.amp-space-left-130 {
+	margin-left: 130px;
+}

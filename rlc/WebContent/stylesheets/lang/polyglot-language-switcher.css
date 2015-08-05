@@ -55,7 +55,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 	display: block;	
 	padding: 0.5em 6px 0.5em 28px; /* 6px 6px 6px 28px */
 	color: #444;
-	width: 7em; /* 84px; total width: 120px */
+	width: 8em; /* 84px; total width: 120px */
 	background-repeat: no-repeat;
 	background-position: 6px center; 
 }
@@ -69,7 +69,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 	background-color: #FFF;
 	border: 1px solid #E5E5E5;
 	border-radius: 3px;
-	height: 1.25em; /* 15px */
+	height: 2.25em; /* 15px */
 }
 
 #polyglotLanguageSwitcher a.current:hover, 
@@ -88,7 +88,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 	width: 9px;
 	height: 5px;
 	text-indent: -10000em;
-	top: 0.5em; /* 6px */
+	top: 0.8em; /* 6px */ 
 	right: 6px;
 }
 

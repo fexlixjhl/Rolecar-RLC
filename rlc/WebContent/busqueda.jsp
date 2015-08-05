@@ -71,25 +71,21 @@ if(mensaj.length>0)
 
 </script>
 <script src="scripts/fbusqueda.js"></script>
-<link rel="stylesheet" href="stylesheets/busqueda.css" type="text/css" media="screen">
 
-<div class="cargandobusqueda"  style="display:none;" >
-    <p align="center"><img src="images/busca_files/europcar.gif" alt="" height="58" width="186">
-  	<img src="images/busca_files/goldcarbw.gif" alt="" height="58" width="136">
-  	<img src="images/busca_files/hertzbw.gif" alt="" height="58" width="148">
-  	</p>
-	<p align="center"><img src="images/busca_files/rolecar.gif" alt="" height="90" width="300"></p>
-	<h2 align="center"><fmt:message key="busqueda.buscando"/></h2>
-	<p align="center"><img src="images/busca_files/avisbw.gif" alt="" height="58" width="151"> <img src="images/busca_files/sixtbw.gif" alt="" height="58" width="110"> <img src="images/busca_files/alamobw.gif" alt="" height="58" width="126"></p>
-</div>
-<div class="wrape homeone">
-    <div id="formularioBuscador" class="oneByOne_item"  >
+
+
+<div class="wraper homeone amp-space-down-30">
+    <div id="formularioBuscador" class="oneByOne_item amp-clear-floats"  >
 			<form id="formBuscador" action="servletRolecar?accion=buscar" method="post">
-			 	<div id="tvhiculo" >
+			 	<div id="tvhiculo" class="amp-contenedor-botones amp-space-down-30" style="display: none" >
 					<input type="radio" id="tvhiculo1" name="tvhiculo" checked="checked" value="CR"><label for="tvhiculo1"><fmt:message key="busqueda.coches"/></label>
 					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2"><fmt:message key="busqueda.furgonetas"/></label>
 				</div>
-				
+				<div id="tsucursal" style="" class="amp-contenedor-botones amp-space-down-10 ">
+					<input type="radio" id="tsucursal1" name="tsucursal" checked="checked" value="tsucursal1"><label for="tsucursal1"><fmt:message key="busqueda.misma.oficina"/></label>
+					<input type="radio" id="tsucursal2" name="tsucursal" value="tsucursal2"><label for="tsucursal2"><fmt:message key="busqueda.distinta.oficina"/></label>
+					
+				</div>	
 				<div id="Campos">
 				    <div class="campoleft visible">
 						<input id="station"  name="station" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
@@ -104,19 +100,19 @@ if(mensaj.length>0)
 						<input id="stationDest"  name="stationDest" type="text"   placeholder="<fmt:message key='busqueda.stationDest.text'/>" />
 						<input type="hidden" id="stationDestid" name="stationDestid" />
 					</div>
-					<div class="campoleft">
+					<div class="campoleft amp-space-left-30">
 	 
-						  <span id="fechainicial" class="input-group"><i class="fa fa-calendar fa-fw"></i></span>
+						  <span id="fechainicial" class="input-group amp-boton-icono "><i class="fa fa-arrow-up fa-fw"></i></span>
 				    </div>
-				    <div class="campoleft">
-						  <input id="fini"  name="fini" class="control-fecha" type="text"  readonly >
+				    <div class="campoleft amp-space-left-10">
+						  <input id="fini"  name="fini" class="control-fecha amp-width-100" type="text"  readonly >
 					</div>
-					<div class="campoleft">
+					<div class="campoleft amp-space-left-10">
 					   		
-					   	<span id="horainicial" class="input-group"><i class="fa fa-clock-o fa-fw"></i></span>
+					   	<span id="horainicial" class="input-group amp-boton-icono "><i class="fa fa-clock-o fa-fw"></i></span>
 					</div>
-					<div class="campoleft sinborde" >		
-						<select id="hinis" class="seleccion horas" name="hinis" class="control-fecha" style="border:none;height:200px;" >
+					<div class="campoleft sinborde amp-space-left-10" >		
+						<select id="hinis" class="seleccion horas" name="hinis" class="control-fecha " style="border:none;height:200px;" >
 						    <%
 						      for(int hor=0;hor<24;hor++)
 							    {
@@ -149,16 +145,16 @@ if(mensaj.length>0)
 						<input type="hidden" id="mini" name="mini" />
 					</div>
 					
-					<div class="campoleft">
-					        <span id="fechafinal" class="input-group"><i class="fa fa-calendar fa-fw"></i></span>
+					<div class="campoleft amp-space-left-30">
+					        <span id="fechafinal" class="input-group amp-boton-icono"><i class="fa fa-arrow-down fa-fw"></i></span>
 					</div>
-					<div class="campoleft">
-							<input id="ffin" name="ffin" type="text"  class="control-fecha" readonly />
+					<div class="campoleft amp-space-left-10">
+							<input id="ffin" name="ffin" type="text"  class="control-fecha amp-width-100" readonly />
 					</div>
-					<div class="campoleft">
-					    <span id="horafinal" class="input-group"><i class="fa fa-clock-o fa-fw"></i></span>
+					<div class="campoleft amp-space-left-10">
+					    <span id="horafinal" class="input-group amp-boton-icono"><i class="fa fa-clock-o fa-fw"></i></span>
 					</div>
-					<div class="campoleft sinborde">
+					<div class="campoleft sinborde amp-space-left-10">
 						<select id="hfins" class="seleccion" name="hfins" class="control-fecha" style="border:none;height:200px;" >
 							 <%
 						      for(int hor=0;hor<24;hor++)
@@ -190,18 +186,14 @@ if(mensaj.length>0)
 						<input type="hidden" id="hfin" name="hfin" />
 					    <input type="hidden" id="mfin" name="mfin" />
 					</div>
-					<div class="campoleft ajustar">
-						<input type="button" class="boton" id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
+					<div class="campoleft ajustar ">
+						<input type="button" class="boton amp-width-100 amp-space-left-30" id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
 			        </div>
 				</div>
 				
 				
-				<div id="tsucursal" style="">
-					<input type="radio" id="tsucursal1" name="tsucursal" checked="checked" value="tsucursal1"><label for="tsucursal1"><fmt:message key="busqueda.misma.oficina"/></label>
-					<input type="radio" id="tsucursal2" name="tsucursal" value="tsucursal2"><label for="tsucursal2"><fmt:message key="busqueda.distinta.oficina"/></label>
-					
-				</div>
+
 				
 				
 			</form>
@@ -212,51 +204,188 @@ if(mensaj.length>0)
 	
 </div>
 
+<div class="cargandobusqueda"  style="display:none;" >
+    <p align="center"><img src="images/busca_files/europcar.gif" alt="" height="58" width="186">
+  	<img src="images/busca_files/goldcarbw.gif" alt="" height="58" width="136">
+  	<img src="images/busca_files/hertzbw.gif" alt="" height="58" width="148">
+  	</p>
+	<p align="center"><img src="images/busca_files/rolecar.gif" alt="" height="90" width="300"></p>
+	<h2 align="center"><fmt:message key="busqueda.buscando"/></h2>
+	<p align="center"><img src="images/busca_files/avisbw.gif" alt="" height="58" width="151"> <img src="images/busca_files/sixtbw.gif" alt="" height="58" width="110"> <img src="images/busca_files/alamobw.gif" alt="" height="58" width="126"></p>
+</div>
 
-
-<div class="publicidad">
-		<div class="oneByOne1" style="overflow: hidden;"> 
-			<div id="obo_slider" style="left: 0px;">
-				<div id="buscador" class="oneByOne_item" style="display: block; left: 0px;">				
-						<img class="wp1_3 slide1_bot animate0 rotateInUpLeft" alt="" src="images/50001.png" width="auto" height="270px">
-						<br class="animate1 rotateInUpLeft">
-						<span class="txt1 animate2 rotateInUpLeft"><fmt:message key="busqueda.rotate.text1"/></span>
-						<br class="animate3 rotateInUpLeft">
-						<span class="txt2 animate4 rotateInUpLeft"><fmt:message key="busqueda.rotate.text2"/></span>
-						<br class="animate5 rotateInUpLeft">
-						<span class="txt3 short animate6 rotateInUpLeft"><fmt:message key="busqueda.rotate.text3"/></span>
-						<br class="animate7 rotateInUpLeft">
-<!-- 	 					<span class="txt4 txt4up animate8 bounceIn">  -->
-<!-- 	 						<a class="btn_l" href="servletRolecar?accion=reservar">Reservar</a>  -->
-<!-- 	 					</span>				  -->
-					<p></p>	
+<!-- slideshow -->
+<div class="slider-revolution amp-space-down-50">
+	<div id="slider-revolution">
+		<ul>
+			<li data-transition="cube">
+				<img src="images/audio.jpg" alt="">
+				<div class="tp-caption title skewfromrightshort tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="80"
+					data-y="center"
+					data-speed="500"
+					data-start="500"
+					data-easing="Power3.easeInOut"
+					data-splitin="chars"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">Encontramos para ti el mejor precio
 				</div>
-			</div>
+				<div class="tp-caption sft tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="-215"
+					data-y="center" 
+					data-voffset="-96"
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="3000"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">
+					<!--<i class="fa fa-clock-o"></i>-->
+				</div>
+				<div class="tp-caption sfl tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="-300"
+					data-y="center" 
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="3300"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">
+				</div>
+				<div class="tp-caption sfb tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="-215"
+					data-y="center" 
+					data-voffset="96"
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="3600"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">
+				</div>
+				<div class="tp-caption sfb tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="265"
+					data-y="center" 
+					data-voffset="91"
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="4000"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;"><!--<a href="#" class="button-my">Purchase Now</a>-->
+				</div>
+			</li>
+			<li data-transition="cube">
+				<img src="images/fiesta.jpg" alt="">
+				<div class="tp-caption title skewfromrightshort tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="80"
+					data-y="center"
+					data-speed="500"
+					data-start="500"
+					data-easing="Power3.easeInOut"
+					data-splitin="chars"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">Sin intermediarios. Grandes descuentos
+				</div>
+				<div class="tp-caption sft tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="-215"
+					data-y="center"
+					data-voffset="-96"
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="3000"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">
+				</div>
+				<div class="tp-caption sfl tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="-300"
+					data-y="center"
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="3300"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">
+				</div>
+				<div class="tp-caption sfb tp-resizeme rs-parallaxlevel-0"
+					data-x="center"
+					data-hoffset="-215"
+					data-y="center"
+					data-voffset="96"
+					data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+					data-speed="500"
+					data-start="3600"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-linktoslide="next"
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">
+				</div>
+				
+			</li>
+			s
+		</ul>
+	</div>
+</div>
+<!--/ slideshow -->
+<div class="amp-text-information">
+	<div class="amp-text-information-content">
+		<div class="amp-text-information-head">Rolecar se adapta a ti<i></i></div>
+		<div>
+			<h2>Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
+			<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
+			<a href="leerMas.html" class="amp-text-information-button">Leer Más</a>
+			
 		</div>
+	</div>
+</div>
 
-</div>
-<div class="content_block">
-	<div class="text_bar">
-		<div class="wraper">
-			<h2>
-			<fmt:message key="busqueda.msj.tarifa"/>
-				<span><fmt:message key="busqueda.msj.descuento"/></span>
-			</h2>
-<!-- 			<a class="buy btn_l" href="servletRolecar?accion=reservar">Reserva ahora</a> -->
-			<div class="widget">
-				<h3><fmt:message key="busqueda.msj.adapta"/></h3>
-					<p align="justify"><fmt:message key="busqueda.msj.negocio"/>
-						<a href="modelonegocio.jsp"><fmt:message key="comun.leer"/></a>
-					</p>
-			</div>
-		</div>
-	</div>
-	<div class="wraper">
-		<div class="features_block">
-			<ul> </ul>
-		</div>
-	</div>
-</div>
+<!-- 	esta ul vale pa algo? -->
+<!-- 	<div class="wraper"> -->
+<!-- 		<div class="features_block"> -->
+<!-- 			<ul> </ul> -->
+<!-- 		</div> -->
+<!-- 	</div> -->
+
 <!-- <div id="msgCargando" style="display:none;"> -->
 			
 <!-- 			<div id="cargando"  style="width:62px;height:77px;"> -->

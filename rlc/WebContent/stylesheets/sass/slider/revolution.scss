@@ -1,0 +1,128 @@
+/**/
+/* slideshow */
+/**/
+.slider-revolution {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+.slider-revolution .fa {
+	display: block;
+	min-width: 108px;
+	font-size: 40px;
+	line-height: 108px;
+	text-align: center;
+	color: #fff;
+}
+.slider-revolution .fa:before {
+	position: relative;
+	z-index: 1;
+}
+.slider-revolution .fa:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 20% 0 20% 0;
+	background: #2d3e50;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.slider-revolution .fa-2:after {
+	opacity: 0.75;
+}
+.slider-revolution .fa-3:after {
+	opacity: 0.5;
+}
+.slider-revolution .title {
+	padding: 30px 0;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ecf0f1;
+}
+.slider-revolution .button-my {
+	display: inline-block;
+	padding: 0 20px;
+	border: 2px solid #2d3e50;
+	background: #2d3e50;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: 0.5;
+	transition: background 0.3s, color 0.3s;
+}
+.slider-revolution .button-my:hover {
+	background: #fff;
+	color: #2d3e50;
+}
+.slider-revolution .tp-bullets {
+	display: none;
+}
+.slider-revolution .tp-bannertimer {
+	top: 100%;
+	left: 0;
+	height: 5px;
+	margin-top: -5px;
+}
+.slider-revolution .fa:hover {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.slider-revolution .fa-paw:hover:before,
+.slider-revolution .fa-pencil:hover:before,
+.slider-revolution .fa-clock-o:hover:before {
+	content: 'Sólo';
+}
+.slider-revolution .fa-home:hover:before,
+.slider-revolution .fa-heart:hover:before,
+.slider-revolution .fa-sitemap:hover:before {
+	content: 'un';
+}
+.slider-revolution .fa-send:hover:before,
+.slider-revolution .fa-cogs:hover:before,
+.slider-revolution .fa-leaf:hover:before {
+	content: 'click';
+}
+
+// color
+.slider-revolution .fa:after {
+	background-color: #2d3e50;
+}
+.slider-revolution .title {
+	border-top-color: 1px solid #2d3e50;
+	border-bottom-color: 1px solid #2d3e50;
+}
+.slider-revolution .button-my {
+	border-color: #2d3e50;
+	background-color: #2d3e50;
+}
+.slider-revolution .button-my:hover {
+	color: #61B4D4;
+}
+.block-about {
+	text-align: center;
+}
+.block-about h2 {
+	margin-bottom: 24px;
+	font-size: 24px;
+	line-height: 30px;
+	color: #000;
+}
+.block-about p {
+	margin-bottom: 30px;
+	line-height: 20px;
+}
+.block-about .button {
+	margin: -10px 0 30px;
+	padding: 2px 15px 0;
+	border: 1px solid #2d3e50;
+	background: #ecf0f1;
+	font-size: 12px;
+	line-height: 30px;
+	color: #2d3e50;
+}

@@ -6,10 +6,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!-- 		<meta name="viewport" content="width=device-width, initial-scale=1"> -->
-			<title>Alquiler de Coche Barato. Alquiler de Furgoneta Barata. Desde 8 Euros por día en Coches de Alquiler. Alquiler de vehiculos Aeropuerto, Madrid, Barcelona, Mallorca, Ibiza, Menorca, Sevilla. Alquiler coches con Rolecar.com </title>
-			<meta name="keywords" content="Alquiler de coches,Alquiler de furgonetas,coche alquiler barato,alquiler vehiculo,rent a car,Alquiler coches,alquiler coches madrid,sevilla coche de alquiler,ibiza rent a car,alquiler coches baratos barcelona" />
-			<meta name="description" content="Alquiler de coches y furgonetas baratos. Desde 8 Euros por día en Coches de Alquiler. Alquiler de vehiculos Madrid, Barcelona, Mallorca, Ibiza, Menorca, Sevilla. Alquiler coches baratos con Rolecar.com. " />
-		
+		<title>Rolecar</title>
+		<link rel="stylesheet" href="scripts/plugins/rs-plugin/css/settings.css">
 		<link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css" media="screen">
@@ -23,12 +21,17 @@
 		<link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/jquery.alerts.css" type="text/css" media="screen">
 		<link href="stylesheets/lang/polyglot-language-switcher.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/busqueda.css" type="text/css" media="screen">
+		<link href="stylesheets/main.css" type="text/css" rel="stylesheet" media="screen">
 		<script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script src="scripts/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="scripts/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="scripts/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>	
 		<script type="text/javascript" src="scripts/js_func.js" charset="utf-8"></script>
 		<script src="scripts/jquery.bxslider.min.js"></script>
 		<script src="scripts/jquery.alerts.js"></script>
 		<script src="scripts/lang/jquery.polyglot.language.switcher.js" type="text/javascript"></script>
+
 		<!-- 	Google Analytics -->
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -76,18 +79,29 @@
 <!-- 		<link rel="icon" type="image/png" href="images/favicon4.png" /> -->
 	</head>
 	<body>
-		<div class="wraper" id="cabecera">
+		<div class="dockbar">
+			<div class="wraper">
+				<div class="social-nav-header">	
+						<a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a>
+						<a href="https://twitter.com/rolecar"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/rolecardrive"><i class="fa fa-facebook"></i></a>
+						<a href="https://plus.google.com/u/0/100151209502610081833/posts"><i class="fa fa-google-plus"></i></a>
+				</div>
+				
+			</div>
+		</div>
+		<div id="cabecera" class="wraper amp-space-down-20">
 	 		<header class="header">
 	  			<a class="logo" href=""><img src="images/logo3d.png" /></a>
-	  			<h2 id="title">&nbsp;<fmt:message key="header.title"/></h2>
-	  			<nav id="mobilenav">
-		     		<ul>
-		       			<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li>
-		     		</ul>
-	  			</nav>
+	  			<h2 id="title" class="amp-titulo-lengenda">&nbsp;<fmt:message key="header.title"/></h2>
+<!-- 	  			<nav id="mobilenav"> -->
+<!-- 		     		<ul> -->
+<!-- 		       			<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li> -->
+<!-- 		     		</ul> -->
+<!-- 	  			</nav> -->
 	    		<nav id="defaultnav">
 					<ul>
-						<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li>
+<!-- 						<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li> -->
 				        <li style="background: none" class="wimage">
 <!-- 				        <fmt:message key="header.idiomas"/> -->
 				        <div id="polyglotLanguageSwitcher">
@@ -110,5 +124,6 @@
 				</nav> 
 	 		</header>
 		</div>
+		<hr class="blue-line amp-space-down-30"/>
 		<form id="formLang" action="servletRolecar?accion=reservar" method="post"><input name="idioma" id="idioma" type="hidden" value="es" /></form>
 		

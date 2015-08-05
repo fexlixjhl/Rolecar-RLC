@@ -1,0 +1,35 @@
+.ui-buttonset .ui-button {
+    margin-right: .1em;
+    border-radius: 5px 5px 0 0;
+}
+.ui-button-text-only .ui-button-text {
+    padding: 10px 15px;
+}
+.amp-contenedor-botones {
+    font-size: 1.4em;
+}
+.amp-boton-icono {
+    padding: 6px 4px ;
+    border: 1px solid $grey-light;
+    display:table-cell;
+    background: $blue-bg;
+    color: $white;
+    font-size: 1.36em;
+}
+
+.boton {
+  
+    background: #61b4d4;
+    color: white;
+    vertical-align: middle;
+    border: 1px solid $grey-light;
+    height: 34px;
+   }
+.boton:hover {
+   background: #28597a;
+   color: #ccc;
+   }
+.amp-lista-boton {
+    margin-top: 14px;
+    float: right;
+}

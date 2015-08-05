@@ -1,4 +1,3 @@
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="com.rolecar.utils.CarComparator"%>
 <%@page import="java.util.Collections"%>
 <%@page import="com.rolecar.beans.Car"%>
@@ -6,8 +5,6 @@
 <%@page import="com.rolecar.data.dao.JdbcCarsDao"%>
 <%@page import="java.util.Vector"%>
 <%@page import="com.rolecar.data.dao.JdbcStationsDao"%>
-<%@page import="java.util.HashSet"%>
-<%@page import="java.util.Set"%>
 <%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1" --%>
 <%--     pageEncoding="ISO-8859-1"%> --%>
 <%@ include file="../language.jsp" %>
@@ -68,7 +65,6 @@ else
 	Vector<String> listcod = JdbcStationsDao.getClosestation(codstationori, provincia);
 	
 	Car car;
-	Set<Car> rcars = new HashSet<Car>();
 	Vector<Car> vcars = new Vector<Car>();
 	//String precio ="";%>
 	<c:set var="otro"><fmt:message key='list.otras.localidades'/></c:set>
@@ -90,15 +86,14 @@ else
 		   codigoestacionin=coddescr[0];
 		}
 		
-		car = (Car) JdbcCarsDao.recogeprimerVehiculolocalidad(codigoestacionin, checkindate, checkintime, coddescr[0], checkoutdate, checkouttime, carType,1,coddescr[2],coddescr[3],coddescr[4]);
+		car=JdbcCarsDao.recogeprimerVehiculolocalidad(codigoestacionin, checkindate, checkintime, coddescr[0], checkoutdate, checkouttime, carType,1,coddescr[2],coddescr[3],coddescr[4]);
 		
-//		vcars.addAll(rcars);
-		if(car != null && car.isHaytarifas())
- 		{	
+		if(car.isHaytarifas())
+		{	
 				
- 			vcars.add(car);
+			vcars.add(car);
 			
- 		}
+		}
 		
 	}
 	
@@ -109,7 +104,7 @@ else
 		valornuevo=c.getStationcheckout().getCodstation().concat("::").concat(""+c.getStationcheckout().getIdprovincia()).concat("::").concat(c.getStationcheckout().getCodCountry());
 		valornuevo2=c.getStationcheckout().getDescr().concat(" , ").concat(c.getStationcheckout().getDescrCountry());
 		valornuevo2=valornuevo2.replace("\"", "'");
-		html=html+"<div id=\""+valornuevo+"\"  class=\"buscarloc\" estacion=\""+valornuevo2+"\"  ><p>"+c.getStationcheckout().getDescr()+": <strong style=\"float:right;\">"+Formatea.Importe2Decimales(c.getQuote().getTotalRateEstimateInBookingCurrency(),2)+" &#8364;</strong></p>";
+		html=html+"<div id=\""+valornuevo+"\"  class=\"buscarloc campoleft amp-width-350\" estacion=\""+valornuevo2+"\"  ><p>"+c.getStationcheckout().getDescr()+": <strong style=\"float:right;\">"+Formatea.Importe2Decimales(c.getQuote().getTotalRateEstimateInBookingCurrency(),2)+" &#8364;</strong></p>";
 		
 		html+="</div>";//"<input type=\"hidden\" value=\"".concat(valornuevo).concat("\" ></div>");
 		
