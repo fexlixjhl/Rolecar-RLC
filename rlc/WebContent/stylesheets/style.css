@@ -44,7 +44,7 @@ input:focus, textarea:focus {outline:none;}
 .header {padding-top:20px;position:relative;min-height:88px;z-index:1001;}
 .header .logo, .header .logo:visited {cursor:pointer;display:block;}
 	/* top menu */
-.header nav {position:absolute;top:58px;right:0;}
+
 .header nav ul {zoom:1;}
 .header nav ul li {font-size:14px;font-weight:bold;float:left;padding:0 0 0 10px;position:relative;}
 .header nav ul li:after {content:'';background:url(../images/sprite.png) 6px 7px no-repeat;float:left;display:block;width:12px;height:12px;}

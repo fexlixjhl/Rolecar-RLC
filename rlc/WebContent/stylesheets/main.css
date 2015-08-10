@@ -6,6 +6,9 @@
 .pull-text-right {
   text-align: right; }
 
+.amp-text-center {
+  text-align: center; }
+
 .amp-hidden {
   display: none; }
 
@@ -18,21 +21,9 @@
 * {
   box-sizing: border-box; }
 
-.wraper {
-  min-width: 1203px; }
-
 input[type="text"] {
-  padding: 7px;
+  padding: 9px;
   border: 1px solid #e3e3e3; }
-
-.amp-width-60 {
-  width: 60px; }
-
-.amp-width-100 {
-  width: 100px; }
-
-.amp-width-350 {
-  width: 350px; }
 
 .amp-space-down-10 {
   margin-bottom: 10px; }
@@ -49,26 +40,1944 @@ input[type="text"] {
 .amp-space-down-80 {
   margin-bottom: 80px; }
 
-.amp-space-left-10 {
-  margin-left: 10px; }
+.amp-space-down-130 {
+  margin-bottom: 130px; }
 
-.amp-space-left-20 {
-  margin-left: 20px; }
+.offset-xs-600 {
+  margin-left: 600px; }
 
-.amp-space-left-30 {
-  margin-left: 30px; }
+.offset-xs-595 {
+  margin-left: 595px; }
 
-.amp-space-left-50 {
-  margin-left: 50px; }
+.offset-xs-590 {
+  margin-left: 590px; }
 
-.amp-space-left-80 {
-  margin-left: 80px; }
+.offset-xs-585 {
+  margin-left: 585px; }
 
-.amp-space-left-115 {
+.offset-xs-580 {
+  margin-left: 580px; }
+
+.offset-xs-575 {
+  margin-left: 575px; }
+
+.offset-xs-570 {
+  margin-left: 570px; }
+
+.offset-xs-565 {
+  margin-left: 565px; }
+
+.offset-xs-560 {
+  margin-left: 560px; }
+
+.offset-xs-555 {
+  margin-left: 555px; }
+
+.offset-xs-550 {
+  margin-left: 550px; }
+
+.offset-xs-545 {
+  margin-left: 545px; }
+
+.offset-xs-540 {
+  margin-left: 540px; }
+
+.offset-xs-535 {
+  margin-left: 535px; }
+
+.offset-xs-530 {
+  margin-left: 530px; }
+
+.offset-xs-525 {
+  margin-left: 525px; }
+
+.offset-xs-520 {
+  margin-left: 520px; }
+
+.offset-xs-515 {
+  margin-left: 515px; }
+
+.offset-xs-510 {
+  margin-left: 510px; }
+
+.offset-xs-505 {
+  margin-left: 505px; }
+
+.offset-xs-500 {
+  margin-left: 500px; }
+
+.offset-xs-495 {
+  margin-left: 495px; }
+
+.offset-xs-490 {
+  margin-left: 490px; }
+
+.offset-xs-485 {
+  margin-left: 485px; }
+
+.offset-xs-480 {
+  margin-left: 480px; }
+
+.offset-xs-475 {
+  margin-left: 475px; }
+
+.offset-xs-470 {
+  margin-left: 470px; }
+
+.offset-xs-465 {
+  margin-left: 465px; }
+
+.offset-xs-460 {
+  margin-left: 460px; }
+
+.offset-xs-455 {
+  margin-left: 455px; }
+
+.offset-xs-450 {
+  margin-left: 450px; }
+
+.offset-xs-445 {
+  margin-left: 445px; }
+
+.offset-xs-440 {
+  margin-left: 440px; }
+
+.offset-xs-435 {
+  margin-left: 435px; }
+
+.offset-xs-430 {
+  margin-left: 430px; }
+
+.offset-xs-425 {
+  margin-left: 425px; }
+
+.offset-xs-420 {
+  margin-left: 420px; }
+
+.offset-xs-415 {
+  margin-left: 415px; }
+
+.offset-xs-410 {
+  margin-left: 410px; }
+
+.offset-xs-405 {
+  margin-left: 405px; }
+
+.offset-xs-400 {
+  margin-left: 400px; }
+
+.offset-xs-395 {
+  margin-left: 395px; }
+
+.offset-xs-390 {
+  margin-left: 390px; }
+
+.offset-xs-385 {
+  margin-left: 385px; }
+
+.offset-xs-380 {
+  margin-left: 380px; }
+
+.offset-xs-375 {
+  margin-left: 375px; }
+
+.offset-xs-370 {
+  margin-left: 370px; }
+
+.offset-xs-365 {
+  margin-left: 365px; }
+
+.offset-xs-360 {
+  margin-left: 360px; }
+
+.offset-xs-355 {
+  margin-left: 355px; }
+
+.offset-xs-350 {
+  margin-left: 350px; }
+
+.offset-xs-345 {
+  margin-left: 345px; }
+
+.offset-xs-340 {
+  margin-left: 340px; }
+
+.offset-xs-335 {
+  margin-left: 335px; }
+
+.offset-xs-330 {
+  margin-left: 330px; }
+
+.offset-xs-325 {
+  margin-left: 325px; }
+
+.offset-xs-320 {
+  margin-left: 320px; }
+
+.offset-xs-315 {
+  margin-left: 315px; }
+
+.offset-xs-310 {
+  margin-left: 310px; }
+
+.offset-xs-305 {
+  margin-left: 305px; }
+
+.offset-xs-300 {
+  margin-left: 300px; }
+
+.offset-xs-295 {
+  margin-left: 295px; }
+
+.offset-xs-290 {
+  margin-left: 290px; }
+
+.offset-xs-285 {
+  margin-left: 285px; }
+
+.offset-xs-280 {
+  margin-left: 280px; }
+
+.offset-xs-275 {
+  margin-left: 275px; }
+
+.offset-xs-270 {
+  margin-left: 270px; }
+
+.offset-xs-265 {
+  margin-left: 265px; }
+
+.offset-xs-260 {
+  margin-left: 260px; }
+
+.offset-xs-255 {
+  margin-left: 255px; }
+
+.offset-xs-250 {
+  margin-left: 250px; }
+
+.offset-xs-245 {
+  margin-left: 245px; }
+
+.offset-xs-240 {
+  margin-left: 240px; }
+
+.offset-xs-235 {
+  margin-left: 235px; }
+
+.offset-xs-230 {
+  margin-left: 230px; }
+
+.offset-xs-225 {
+  margin-left: 225px; }
+
+.offset-xs-220 {
+  margin-left: 220px; }
+
+.offset-xs-215 {
+  margin-left: 215px; }
+
+.offset-xs-210 {
+  margin-left: 210px; }
+
+.offset-xs-205 {
+  margin-left: 205px; }
+
+.offset-xs-200 {
+  margin-left: 200px; }
+
+.offset-xs-195 {
+  margin-left: 195px; }
+
+.offset-xs-190 {
+  margin-left: 190px; }
+
+.offset-xs-185 {
+  margin-left: 185px; }
+
+.offset-xs-180 {
+  margin-left: 180px; }
+
+.offset-xs-175 {
+  margin-left: 175px; }
+
+.offset-xs-170 {
+  margin-left: 170px; }
+
+.offset-xs-165 {
+  margin-left: 165px; }
+
+.offset-xs-160 {
+  margin-left: 160px; }
+
+.offset-xs-155 {
+  margin-left: 155px; }
+
+.offset-xs-150 {
+  margin-left: 150px; }
+
+.offset-xs-145 {
+  margin-left: 145px; }
+
+.offset-xs-140 {
+  margin-left: 140px; }
+
+.offset-xs-135 {
+  margin-left: 135px; }
+
+.offset-xs-130 {
+  margin-left: 130px; }
+
+.offset-xs-125 {
+  margin-left: 125px; }
+
+.offset-xs-120 {
+  margin-left: 120px; }
+
+.offset-xs-115 {
   margin-left: 115px; }
 
-.amp-space-left-130 {
-  margin-left: 130px; }
+.offset-xs-110 {
+  margin-left: 110px; }
+
+.offset-xs-105 {
+  margin-left: 105px; }
+
+.offset-xs-100 {
+  margin-left: 100px; }
+
+.offset-xs-95 {
+  margin-left: 95px; }
+
+.offset-xs-90 {
+  margin-left: 90px; }
+
+.offset-xs-85 {
+  margin-left: 85px; }
+
+.offset-xs-80 {
+  margin-left: 80px; }
+
+.offset-xs-75 {
+  margin-left: 75px; }
+
+.offset-xs-70 {
+  margin-left: 70px; }
+
+.offset-xs-65 {
+  margin-left: 65px; }
+
+.offset-xs-60 {
+  margin-left: 60px; }
+
+.offset-xs-55 {
+  margin-left: 55px; }
+
+.offset-xs-50 {
+  margin-left: 50px; }
+
+.offset-xs-45 {
+  margin-left: 45px; }
+
+.offset-xs-40 {
+  margin-left: 40px; }
+
+.offset-xs-35 {
+  margin-left: 35px; }
+
+.offset-xs-30 {
+  margin-left: 30px; }
+
+.offset-xs-25 {
+  margin-left: 25px; }
+
+.offset-xs-20 {
+  margin-left: 20px; }
+
+.offset-xs-15 {
+  margin-left: 15px; }
+
+.offset-xs-10 {
+  margin-left: 10px; }
+
+.offset-xs-5 {
+  margin-left: 5px; }
+
+@media (min-width: 1255px) {
+  .amp-width-1200 {
+    display: block;
+    float: left;
+    width: 1200px; }
+
+  .amp-width-1195 {
+    display: block;
+    float: left;
+    width: 1195px; }
+
+  .amp-width-1190 {
+    display: block;
+    float: left;
+    width: 1190px; }
+
+  .amp-width-1185 {
+    display: block;
+    float: left;
+    width: 1185px; }
+
+  .amp-width-1180 {
+    display: block;
+    float: left;
+    width: 1180px; }
+
+  .amp-width-1175 {
+    display: block;
+    float: left;
+    width: 1175px; }
+
+  .amp-width-1170 {
+    display: block;
+    float: left;
+    width: 1170px; }
+
+  .amp-width-1165 {
+    display: block;
+    float: left;
+    width: 1165px; }
+
+  .amp-width-1160 {
+    display: block;
+    float: left;
+    width: 1160px; }
+
+  .amp-width-1155 {
+    display: block;
+    float: left;
+    width: 1155px; }
+
+  .amp-width-1150 {
+    display: block;
+    float: left;
+    width: 1150px; }
+
+  .amp-width-1145 {
+    display: block;
+    float: left;
+    width: 1145px; }
+
+  .amp-width-1140 {
+    display: block;
+    float: left;
+    width: 1140px; }
+
+  .amp-width-1135 {
+    display: block;
+    float: left;
+    width: 1135px; }
+
+  .amp-width-1130 {
+    display: block;
+    float: left;
+    width: 1130px; }
+
+  .amp-width-1125 {
+    display: block;
+    float: left;
+    width: 1125px; }
+
+  .amp-width-1120 {
+    display: block;
+    float: left;
+    width: 1120px; }
+
+  .amp-width-1115 {
+    display: block;
+    float: left;
+    width: 1115px; }
+
+  .amp-width-1110 {
+    display: block;
+    float: left;
+    width: 1110px; }
+
+  .amp-width-1105 {
+    display: block;
+    float: left;
+    width: 1105px; }
+
+  .amp-width-1100 {
+    display: block;
+    float: left;
+    width: 1100px; }
+
+  .amp-width-1095 {
+    display: block;
+    float: left;
+    width: 1095px; }
+
+  .amp-width-1090 {
+    display: block;
+    float: left;
+    width: 1090px; }
+
+  .amp-width-1085 {
+    display: block;
+    float: left;
+    width: 1085px; }
+
+  .amp-width-1080 {
+    display: block;
+    float: left;
+    width: 1080px; }
+
+  .amp-width-1075 {
+    display: block;
+    float: left;
+    width: 1075px; }
+
+  .amp-width-1070 {
+    display: block;
+    float: left;
+    width: 1070px; }
+
+  .amp-width-1065 {
+    display: block;
+    float: left;
+    width: 1065px; }
+
+  .amp-width-1060 {
+    display: block;
+    float: left;
+    width: 1060px; }
+
+  .amp-width-1055 {
+    display: block;
+    float: left;
+    width: 1055px; }
+
+  .amp-width-1050 {
+    display: block;
+    float: left;
+    width: 1050px; }
+
+  .amp-width-1045 {
+    display: block;
+    float: left;
+    width: 1045px; }
+
+  .amp-width-1040 {
+    display: block;
+    float: left;
+    width: 1040px; }
+
+  .amp-width-1035 {
+    display: block;
+    float: left;
+    width: 1035px; }
+
+  .amp-width-1030 {
+    display: block;
+    float: left;
+    width: 1030px; }
+
+  .amp-width-1025 {
+    display: block;
+    float: left;
+    width: 1025px; }
+
+  .amp-width-1020 {
+    display: block;
+    float: left;
+    width: 1020px; }
+
+  .amp-width-1015 {
+    display: block;
+    float: left;
+    width: 1015px; }
+
+  .amp-width-1010 {
+    display: block;
+    float: left;
+    width: 1010px; }
+
+  .amp-width-1005 {
+    display: block;
+    float: left;
+    width: 1005px; }
+
+  .amp-width-1000 {
+    display: block;
+    float: left;
+    width: 1000px; }
+
+  .amp-width-995 {
+    display: block;
+    float: left;
+    width: 995px; }
+
+  .amp-width-990 {
+    display: block;
+    float: left;
+    width: 990px; }
+
+  .amp-width-985 {
+    display: block;
+    float: left;
+    width: 985px; }
+
+  .amp-width-980 {
+    display: block;
+    float: left;
+    width: 980px; }
+
+  .amp-width-975 {
+    display: block;
+    float: left;
+    width: 975px; }
+
+  .amp-width-970 {
+    display: block;
+    float: left;
+    width: 970px; }
+
+  .amp-width-965 {
+    display: block;
+    float: left;
+    width: 965px; }
+
+  .amp-width-960 {
+    display: block;
+    float: left;
+    width: 960px; }
+
+  .amp-width-955 {
+    display: block;
+    float: left;
+    width: 955px; }
+
+  .amp-width-950 {
+    display: block;
+    float: left;
+    width: 950px; }
+
+  .amp-width-945 {
+    display: block;
+    float: left;
+    width: 945px; }
+
+  .amp-width-940 {
+    display: block;
+    float: left;
+    width: 940px; }
+
+  .amp-width-935 {
+    display: block;
+    float: left;
+    width: 935px; }
+
+  .amp-width-930 {
+    display: block;
+    float: left;
+    width: 930px; }
+
+  .amp-width-925 {
+    display: block;
+    float: left;
+    width: 925px; }
+
+  .amp-width-920 {
+    display: block;
+    float: left;
+    width: 920px; }
+
+  .amp-width-915 {
+    display: block;
+    float: left;
+    width: 915px; }
+
+  .amp-width-910 {
+    display: block;
+    float: left;
+    width: 910px; }
+
+  .amp-width-905 {
+    display: block;
+    float: left;
+    width: 905px; }
+
+  .amp-width-900 {
+    display: block;
+    float: left;
+    width: 900px; }
+
+  .amp-width-895 {
+    display: block;
+    float: left;
+    width: 895px; }
+
+  .amp-width-890 {
+    display: block;
+    float: left;
+    width: 890px; }
+
+  .amp-width-885 {
+    display: block;
+    float: left;
+    width: 885px; }
+
+  .amp-width-880 {
+    display: block;
+    float: left;
+    width: 880px; }
+
+  .amp-width-875 {
+    display: block;
+    float: left;
+    width: 875px; }
+
+  .amp-width-870 {
+    display: block;
+    float: left;
+    width: 870px; }
+
+  .amp-width-865 {
+    display: block;
+    float: left;
+    width: 865px; }
+
+  .amp-width-860 {
+    display: block;
+    float: left;
+    width: 860px; }
+
+  .amp-width-855 {
+    display: block;
+    float: left;
+    width: 855px; }
+
+  .amp-width-850 {
+    display: block;
+    float: left;
+    width: 850px; }
+
+  .amp-width-845 {
+    display: block;
+    float: left;
+    width: 845px; }
+
+  .amp-width-840 {
+    display: block;
+    float: left;
+    width: 840px; }
+
+  .amp-width-835 {
+    display: block;
+    float: left;
+    width: 835px; }
+
+  .amp-width-830 {
+    display: block;
+    float: left;
+    width: 830px; }
+
+  .amp-width-825 {
+    display: block;
+    float: left;
+    width: 825px; }
+
+  .amp-width-820 {
+    display: block;
+    float: left;
+    width: 820px; }
+
+  .amp-width-815 {
+    display: block;
+    float: left;
+    width: 815px; }
+
+  .amp-width-810 {
+    display: block;
+    float: left;
+    width: 810px; }
+
+  .amp-width-805 {
+    display: block;
+    float: left;
+    width: 805px; }
+
+  .amp-width-800 {
+    display: block;
+    float: left;
+    width: 800px; }
+
+  .amp-width-795 {
+    display: block;
+    float: left;
+    width: 795px; }
+
+  .amp-width-790 {
+    display: block;
+    float: left;
+    width: 790px; }
+
+  .amp-width-785 {
+    display: block;
+    float: left;
+    width: 785px; }
+
+  .amp-width-780 {
+    display: block;
+    float: left;
+    width: 780px; }
+
+  .amp-width-775 {
+    display: block;
+    float: left;
+    width: 775px; }
+
+  .amp-width-770 {
+    display: block;
+    float: left;
+    width: 770px; }
+
+  .amp-width-765 {
+    display: block;
+    float: left;
+    width: 765px; }
+
+  .amp-width-760 {
+    display: block;
+    float: left;
+    width: 760px; }
+
+  .amp-width-755 {
+    display: block;
+    float: left;
+    width: 755px; }
+
+  .amp-width-750 {
+    display: block;
+    float: left;
+    width: 750px; }
+
+  .amp-width-745 {
+    display: block;
+    float: left;
+    width: 745px; }
+
+  .amp-width-740 {
+    display: block;
+    float: left;
+    width: 740px; }
+
+  .amp-width-735 {
+    display: block;
+    float: left;
+    width: 735px; }
+
+  .amp-width-730 {
+    display: block;
+    float: left;
+    width: 730px; }
+
+  .amp-width-725 {
+    display: block;
+    float: left;
+    width: 725px; }
+
+  .amp-width-720 {
+    display: block;
+    float: left;
+    width: 720px; }
+
+  .amp-width-715 {
+    display: block;
+    float: left;
+    width: 715px; }
+
+  .amp-width-710 {
+    display: block;
+    float: left;
+    width: 710px; }
+
+  .amp-width-705 {
+    display: block;
+    float: left;
+    width: 705px; }
+
+  .amp-width-700 {
+    display: block;
+    float: left;
+    width: 700px; }
+
+  .amp-width-695 {
+    display: block;
+    float: left;
+    width: 695px; }
+
+  .amp-width-690 {
+    display: block;
+    float: left;
+    width: 690px; }
+
+  .amp-width-685 {
+    display: block;
+    float: left;
+    width: 685px; }
+
+  .amp-width-680 {
+    display: block;
+    float: left;
+    width: 680px; }
+
+  .amp-width-675 {
+    display: block;
+    float: left;
+    width: 675px; }
+
+  .amp-width-670 {
+    display: block;
+    float: left;
+    width: 670px; }
+
+  .amp-width-665 {
+    display: block;
+    float: left;
+    width: 665px; }
+
+  .amp-width-660 {
+    display: block;
+    float: left;
+    width: 660px; }
+
+  .amp-width-655 {
+    display: block;
+    float: left;
+    width: 655px; }
+
+  .amp-width-650 {
+    display: block;
+    float: left;
+    width: 650px; }
+
+  .amp-width-645 {
+    display: block;
+    float: left;
+    width: 645px; }
+
+  .amp-width-640 {
+    display: block;
+    float: left;
+    width: 640px; }
+
+  .amp-width-635 {
+    display: block;
+    float: left;
+    width: 635px; }
+
+  .amp-width-630 {
+    display: block;
+    float: left;
+    width: 630px; }
+
+  .amp-width-625 {
+    display: block;
+    float: left;
+    width: 625px; }
+
+  .amp-width-620 {
+    display: block;
+    float: left;
+    width: 620px; }
+
+  .amp-width-615 {
+    display: block;
+    float: left;
+    width: 615px; }
+
+  .amp-width-610 {
+    display: block;
+    float: left;
+    width: 610px; }
+
+  .amp-width-605 {
+    display: block;
+    float: left;
+    width: 605px; }
+
+  .amp-width-600 {
+    display: block;
+    float: left;
+    width: 600px; }
+
+  .amp-width-595 {
+    display: block;
+    float: left;
+    width: 595px; }
+
+  .amp-width-590 {
+    display: block;
+    float: left;
+    width: 590px; }
+
+  .amp-width-585 {
+    display: block;
+    float: left;
+    width: 585px; }
+
+  .amp-width-580 {
+    display: block;
+    float: left;
+    width: 580px; }
+
+  .amp-width-575 {
+    display: block;
+    float: left;
+    width: 575px; }
+
+  .amp-width-570 {
+    display: block;
+    float: left;
+    width: 570px; }
+
+  .amp-width-565 {
+    display: block;
+    float: left;
+    width: 565px; }
+
+  .amp-width-560 {
+    display: block;
+    float: left;
+    width: 560px; }
+
+  .amp-width-555 {
+    display: block;
+    float: left;
+    width: 555px; }
+
+  .amp-width-550 {
+    display: block;
+    float: left;
+    width: 550px; }
+
+  .amp-width-545 {
+    display: block;
+    float: left;
+    width: 545px; }
+
+  .amp-width-540 {
+    display: block;
+    float: left;
+    width: 540px; }
+
+  .amp-width-535 {
+    display: block;
+    float: left;
+    width: 535px; }
+
+  .amp-width-530 {
+    display: block;
+    float: left;
+    width: 530px; }
+
+  .amp-width-525 {
+    display: block;
+    float: left;
+    width: 525px; }
+
+  .amp-width-520 {
+    display: block;
+    float: left;
+    width: 520px; }
+
+  .amp-width-515 {
+    display: block;
+    float: left;
+    width: 515px; }
+
+  .amp-width-510 {
+    display: block;
+    float: left;
+    width: 510px; }
+
+  .amp-width-505 {
+    display: block;
+    float: left;
+    width: 505px; }
+
+  .amp-width-500 {
+    display: block;
+    float: left;
+    width: 500px; }
+
+  .amp-width-495 {
+    display: block;
+    float: left;
+    width: 495px; }
+
+  .amp-width-490 {
+    display: block;
+    float: left;
+    width: 490px; }
+
+  .amp-width-485 {
+    display: block;
+    float: left;
+    width: 485px; }
+
+  .amp-width-480 {
+    display: block;
+    float: left;
+    width: 480px; }
+
+  .amp-width-475 {
+    display: block;
+    float: left;
+    width: 475px; }
+
+  .amp-width-470 {
+    display: block;
+    float: left;
+    width: 470px; }
+
+  .amp-width-465 {
+    display: block;
+    float: left;
+    width: 465px; }
+
+  .amp-width-460 {
+    display: block;
+    float: left;
+    width: 460px; }
+
+  .amp-width-455 {
+    display: block;
+    float: left;
+    width: 455px; }
+
+  .amp-width-450 {
+    display: block;
+    float: left;
+    width: 450px; }
+
+  .amp-width-445 {
+    display: block;
+    float: left;
+    width: 445px; }
+
+  .amp-width-440 {
+    display: block;
+    float: left;
+    width: 440px; }
+
+  .amp-width-435 {
+    display: block;
+    float: left;
+    width: 435px; }
+
+  .amp-width-430 {
+    display: block;
+    float: left;
+    width: 430px; }
+
+  .amp-width-425 {
+    display: block;
+    float: left;
+    width: 425px; }
+
+  .amp-width-420 {
+    display: block;
+    float: left;
+    width: 420px; }
+
+  .amp-width-415 {
+    display: block;
+    float: left;
+    width: 415px; }
+
+  .amp-width-410 {
+    display: block;
+    float: left;
+    width: 410px; }
+
+  .amp-width-405 {
+    display: block;
+    float: left;
+    width: 405px; }
+
+  .amp-width-400 {
+    display: block;
+    float: left;
+    width: 400px; }
+
+  .amp-width-395 {
+    display: block;
+    float: left;
+    width: 395px; }
+
+  .amp-width-390 {
+    display: block;
+    float: left;
+    width: 390px; }
+
+  .amp-width-385 {
+    display: block;
+    float: left;
+    width: 385px; }
+
+  .amp-width-380 {
+    display: block;
+    float: left;
+    width: 380px; }
+
+  .amp-width-375 {
+    display: block;
+    float: left;
+    width: 375px; }
+
+  .amp-width-370 {
+    display: block;
+    float: left;
+    width: 370px; }
+
+  .amp-width-365 {
+    display: block;
+    float: left;
+    width: 365px; }
+
+  .amp-width-360 {
+    display: block;
+    float: left;
+    width: 360px; }
+
+  .amp-width-355 {
+    display: block;
+    float: left;
+    width: 355px; }
+
+  .amp-width-350 {
+    display: block;
+    float: left;
+    width: 350px; }
+
+  .amp-width-345 {
+    display: block;
+    float: left;
+    width: 345px; }
+
+  .amp-width-340 {
+    display: block;
+    float: left;
+    width: 340px; }
+
+  .amp-width-335 {
+    display: block;
+    float: left;
+    width: 335px; }
+
+  .amp-width-330 {
+    display: block;
+    float: left;
+    width: 330px; }
+
+  .amp-width-325 {
+    display: block;
+    float: left;
+    width: 325px; }
+
+  .amp-width-320 {
+    display: block;
+    float: left;
+    width: 320px; }
+
+  .amp-width-315 {
+    display: block;
+    float: left;
+    width: 315px; }
+
+  .amp-width-310 {
+    display: block;
+    float: left;
+    width: 310px; }
+
+  .amp-width-305 {
+    display: block;
+    float: left;
+    width: 305px; }
+
+  .amp-width-300 {
+    display: block;
+    float: left;
+    width: 300px; }
+
+  .amp-width-295 {
+    display: block;
+    float: left;
+    width: 295px; }
+
+  .amp-width-290 {
+    display: block;
+    float: left;
+    width: 290px; }
+
+  .amp-width-285 {
+    display: block;
+    float: left;
+    width: 285px; }
+
+  .amp-width-280 {
+    display: block;
+    float: left;
+    width: 280px; }
+
+  .amp-width-275 {
+    display: block;
+    float: left;
+    width: 275px; }
+
+  .amp-width-270 {
+    display: block;
+    float: left;
+    width: 270px; }
+
+  .amp-width-265 {
+    display: block;
+    float: left;
+    width: 265px; }
+
+  .amp-width-260 {
+    display: block;
+    float: left;
+    width: 260px; }
+
+  .amp-width-255 {
+    display: block;
+    float: left;
+    width: 255px; }
+
+  .amp-width-250 {
+    display: block;
+    float: left;
+    width: 250px; }
+
+  .amp-width-245 {
+    display: block;
+    float: left;
+    width: 245px; }
+
+  .amp-width-240 {
+    display: block;
+    float: left;
+    width: 240px; }
+
+  .amp-width-235 {
+    display: block;
+    float: left;
+    width: 235px; }
+
+  .amp-width-230 {
+    display: block;
+    float: left;
+    width: 230px; }
+
+  .amp-width-225 {
+    display: block;
+    float: left;
+    width: 225px; }
+
+  .amp-width-220 {
+    display: block;
+    float: left;
+    width: 220px; }
+
+  .amp-width-215 {
+    display: block;
+    float: left;
+    width: 215px; }
+
+  .amp-width-210 {
+    display: block;
+    float: left;
+    width: 210px; }
+
+  .amp-width-205 {
+    display: block;
+    float: left;
+    width: 205px; }
+
+  .amp-width-200 {
+    display: block;
+    float: left;
+    width: 200px; }
+
+  .amp-width-195 {
+    display: block;
+    float: left;
+    width: 195px; }
+
+  .amp-width-190 {
+    display: block;
+    float: left;
+    width: 190px; }
+
+  .amp-width-185 {
+    display: block;
+    float: left;
+    width: 185px; }
+
+  .amp-width-180 {
+    display: block;
+    float: left;
+    width: 180px; }
+
+  .amp-width-175 {
+    display: block;
+    float: left;
+    width: 175px; }
+
+  .amp-width-170 {
+    display: block;
+    float: left;
+    width: 170px; }
+
+  .amp-width-165 {
+    display: block;
+    float: left;
+    width: 165px; }
+
+  .amp-width-160 {
+    display: block;
+    float: left;
+    width: 160px; }
+
+  .amp-width-155 {
+    display: block;
+    float: left;
+    width: 155px; }
+
+  .amp-width-150 {
+    display: block;
+    float: left;
+    width: 150px; }
+
+  .amp-width-145 {
+    display: block;
+    float: left;
+    width: 145px; }
+
+  .amp-width-140 {
+    display: block;
+    float: left;
+    width: 140px; }
+
+  .amp-width-135 {
+    display: block;
+    float: left;
+    width: 135px; }
+
+  .amp-width-130 {
+    display: block;
+    float: left;
+    width: 130px; }
+
+  .amp-width-125 {
+    display: block;
+    float: left;
+    width: 125px; }
+
+  .amp-width-120 {
+    display: block;
+    float: left;
+    width: 120px; }
+
+  .amp-width-115 {
+    display: block;
+    float: left;
+    width: 115px; }
+
+  .amp-width-110 {
+    display: block;
+    float: left;
+    width: 110px; }
+
+  .amp-width-105 {
+    display: block;
+    float: left;
+    width: 105px; }
+
+  .amp-width-100 {
+    display: block;
+    float: left;
+    width: 100px; }
+
+  .amp-width-95 {
+    display: block;
+    float: left;
+    width: 95px; }
+
+  .amp-width-90 {
+    display: block;
+    float: left;
+    width: 90px; }
+
+  .amp-width-85 {
+    display: block;
+    float: left;
+    width: 85px; }
+
+  .amp-width-80 {
+    display: block;
+    float: left;
+    width: 80px; }
+
+  .amp-width-75 {
+    display: block;
+    float: left;
+    width: 75px; }
+
+  .amp-width-70 {
+    display: block;
+    float: left;
+    width: 70px; }
+
+  .amp-width-65 {
+    display: block;
+    float: left;
+    width: 65px; }
+
+  .amp-width-60 {
+    display: block;
+    float: left;
+    width: 60px; }
+
+  .amp-width-55 {
+    display: block;
+    float: left;
+    width: 55px; }
+
+  .amp-width-50 {
+    display: block;
+    float: left;
+    width: 50px; }
+
+  .amp-width-45 {
+    display: block;
+    float: left;
+    width: 45px; }
+
+  .amp-width-40 {
+    display: block;
+    float: left;
+    width: 40px; }
+
+  .amp-width-35 {
+    display: block;
+    float: left;
+    width: 35px; }
+
+  .amp-width-30 {
+    display: block;
+    float: left;
+    width: 30px; }
+
+  .amp-width-25 {
+    display: block;
+    float: left;
+    width: 25px; }
+
+  .amp-width-20 {
+    display: block;
+    float: left;
+    width: 20px; }
+
+  .amp-width-15 {
+    display: block;
+    float: left;
+    width: 15px; }
+
+  .amp-width-10 {
+    display: block;
+    float: left;
+    width: 10px; }
+
+  .amp-width-5 {
+    display: block;
+    float: left;
+    width: 5px; }
+
+  .amp-space-left-600 {
+    margin-left: 600px; }
+
+  .amp-space-left-595 {
+    margin-left: 595px; }
+
+  .amp-space-left-590 {
+    margin-left: 590px; }
+
+  .amp-space-left-585 {
+    margin-left: 585px; }
+
+  .amp-space-left-580 {
+    margin-left: 580px; }
+
+  .amp-space-left-575 {
+    margin-left: 575px; }
+
+  .amp-space-left-570 {
+    margin-left: 570px; }
+
+  .amp-space-left-565 {
+    margin-left: 565px; }
+
+  .amp-space-left-560 {
+    margin-left: 560px; }
+
+  .amp-space-left-555 {
+    margin-left: 555px; }
+
+  .amp-space-left-550 {
+    margin-left: 550px; }
+
+  .amp-space-left-545 {
+    margin-left: 545px; }
+
+  .amp-space-left-540 {
+    margin-left: 540px; }
+
+  .amp-space-left-535 {
+    margin-left: 535px; }
+
+  .amp-space-left-530 {
+    margin-left: 530px; }
+
+  .amp-space-left-525 {
+    margin-left: 525px; }
+
+  .amp-space-left-520 {
+    margin-left: 520px; }
+
+  .amp-space-left-515 {
+    margin-left: 515px; }
+
+  .amp-space-left-510 {
+    margin-left: 510px; }
+
+  .amp-space-left-505 {
+    margin-left: 505px; }
+
+  .amp-space-left-500 {
+    margin-left: 500px; }
+
+  .amp-space-left-495 {
+    margin-left: 495px; }
+
+  .amp-space-left-490 {
+    margin-left: 490px; }
+
+  .amp-space-left-485 {
+    margin-left: 485px; }
+
+  .amp-space-left-480 {
+    margin-left: 480px; }
+
+  .amp-space-left-475 {
+    margin-left: 475px; }
+
+  .amp-space-left-470 {
+    margin-left: 470px; }
+
+  .amp-space-left-465 {
+    margin-left: 465px; }
+
+  .amp-space-left-460 {
+    margin-left: 460px; }
+
+  .amp-space-left-455 {
+    margin-left: 455px; }
+
+  .amp-space-left-450 {
+    margin-left: 450px; }
+
+  .amp-space-left-445 {
+    margin-left: 445px; }
+
+  .amp-space-left-440 {
+    margin-left: 440px; }
+
+  .amp-space-left-435 {
+    margin-left: 435px; }
+
+  .amp-space-left-430 {
+    margin-left: 430px; }
+
+  .amp-space-left-425 {
+    margin-left: 425px; }
+
+  .amp-space-left-420 {
+    margin-left: 420px; }
+
+  .amp-space-left-415 {
+    margin-left: 415px; }
+
+  .amp-space-left-410 {
+    margin-left: 410px; }
+
+  .amp-space-left-405 {
+    margin-left: 405px; }
+
+  .amp-space-left-400 {
+    margin-left: 400px; }
+
+  .amp-space-left-395 {
+    margin-left: 395px; }
+
+  .amp-space-left-390 {
+    margin-left: 390px; }
+
+  .amp-space-left-385 {
+    margin-left: 385px; }
+
+  .amp-space-left-380 {
+    margin-left: 380px; }
+
+  .amp-space-left-375 {
+    margin-left: 375px; }
+
+  .amp-space-left-370 {
+    margin-left: 370px; }
+
+  .amp-space-left-365 {
+    margin-left: 365px; }
+
+  .amp-space-left-360 {
+    margin-left: 360px; }
+
+  .amp-space-left-355 {
+    margin-left: 355px; }
+
+  .amp-space-left-350 {
+    margin-left: 350px; }
+
+  .amp-space-left-345 {
+    margin-left: 345px; }
+
+  .amp-space-left-340 {
+    margin-left: 340px; }
+
+  .amp-space-left-335 {
+    margin-left: 335px; }
+
+  .amp-space-left-330 {
+    margin-left: 330px; }
+
+  .amp-space-left-325 {
+    margin-left: 325px; }
+
+  .amp-space-left-320 {
+    margin-left: 320px; }
+
+  .amp-space-left-315 {
+    margin-left: 315px; }
+
+  .amp-space-left-310 {
+    margin-left: 310px; }
+
+  .amp-space-left-305 {
+    margin-left: 305px; }
+
+  .amp-space-left-300 {
+    margin-left: 300px; }
+
+  .amp-space-left-295 {
+    margin-left: 295px; }
+
+  .amp-space-left-290 {
+    margin-left: 290px; }
+
+  .amp-space-left-285 {
+    margin-left: 285px; }
+
+  .amp-space-left-280 {
+    margin-left: 280px; }
+
+  .amp-space-left-275 {
+    margin-left: 275px; }
+
+  .amp-space-left-270 {
+    margin-left: 270px; }
+
+  .amp-space-left-265 {
+    margin-left: 265px; }
+
+  .amp-space-left-260 {
+    margin-left: 260px; }
+
+  .amp-space-left-255 {
+    margin-left: 255px; }
+
+  .amp-space-left-250 {
+    margin-left: 250px; }
+
+  .amp-space-left-245 {
+    margin-left: 245px; }
+
+  .amp-space-left-240 {
+    margin-left: 240px; }
+
+  .amp-space-left-235 {
+    margin-left: 235px; }
+
+  .amp-space-left-230 {
+    margin-left: 230px; }
+
+  .amp-space-left-225 {
+    margin-left: 225px; }
+
+  .amp-space-left-220 {
+    margin-left: 220px; }
+
+  .amp-space-left-215 {
+    margin-left: 215px; }
+
+  .amp-space-left-210 {
+    margin-left: 210px; }
+
+  .amp-space-left-205 {
+    margin-left: 205px; }
+
+  .amp-space-left-200 {
+    margin-left: 200px; }
+
+  .amp-space-left-195 {
+    margin-left: 195px; }
+
+  .amp-space-left-190 {
+    margin-left: 190px; }
+
+  .amp-space-left-185 {
+    margin-left: 185px; }
+
+  .amp-space-left-180 {
+    margin-left: 180px; }
+
+  .amp-space-left-175 {
+    margin-left: 175px; }
+
+  .amp-space-left-170 {
+    margin-left: 170px; }
+
+  .amp-space-left-165 {
+    margin-left: 165px; }
+
+  .amp-space-left-160 {
+    margin-left: 160px; }
+
+  .amp-space-left-155 {
+    margin-left: 155px; }
+
+  .amp-space-left-150 {
+    margin-left: 150px; }
+
+  .amp-space-left-145 {
+    margin-left: 145px; }
+
+  .amp-space-left-140 {
+    margin-left: 140px; }
+
+  .amp-space-left-135 {
+    margin-left: 135px; }
+
+  .amp-space-left-130 {
+    margin-left: 130px; }
+
+  .amp-space-left-125 {
+    margin-left: 125px; }
+
+  .amp-space-left-120 {
+    margin-left: 120px; }
+
+  .amp-space-left-115 {
+    margin-left: 115px; }
+
+  .amp-space-left-110 {
+    margin-left: 110px; }
+
+  .amp-space-left-105 {
+    margin-left: 105px; }
+
+  .amp-space-left-100 {
+    margin-left: 100px; }
+
+  .amp-space-left-95 {
+    margin-left: 95px; }
+
+  .amp-space-left-90 {
+    margin-left: 90px; }
+
+  .amp-space-left-85 {
+    margin-left: 85px; }
+
+  .amp-space-left-80 {
+    margin-left: 80px; }
+
+  .amp-space-left-75 {
+    margin-left: 75px; }
+
+  .amp-space-left-70 {
+    margin-left: 70px; }
+
+  .amp-space-left-65 {
+    margin-left: 65px; }
+
+  .amp-space-left-60 {
+    margin-left: 60px; }
+
+  .amp-space-left-55 {
+    margin-left: 55px; }
+
+  .amp-space-left-50 {
+    margin-left: 50px; }
+
+  .amp-space-left-45 {
+    margin-left: 45px; }
+
+  .amp-space-left-40 {
+    margin-left: 40px; }
+
+  .amp-space-left-35 {
+    margin-left: 35px; }
+
+  .amp-space-left-30 {
+    margin-left: 30px; }
+
+  .amp-space-left-25 {
+    margin-left: 25px; }
+
+  .amp-space-left-20 {
+    margin-left: 20px; }
+
+  .amp-space-left-15 {
+    margin-left: 15px; }
+
+  .amp-space-left-10 {
+    margin-left: 10px; }
+
+  .amp-space-left-5 {
+    margin-left: 5px; } }
+/* @media (max-width: $desktop) {
+	.campoleft {
+		float: none;
+	}
+} */
+[class*="amp-width"] {
+  display: block;
+  width: 100%; }
+
+.amp-formulario-buscador [class*="amp-width"] {
+  display: block;
+  width: 100%; }
+
+input {
+  border-bottom: 10px; }
 
 .ui-buttonset .ui-button {
   margin-right: .1em;
@@ -81,13 +1990,18 @@ input[type="text"] {
   font-size: 1.4em; }
 
 .amp-boton-icono {
-  padding: 6px 4px;
+  width: 33px;
+  padding: 7px 4px;
   border: 1px solid #e3e3e3;
   display: table-cell;
   background: #61b4d4;
   color: white;
-  font-size: 1.36em; }
+  font-size: 1.36em;
+  text-align: center; }
 
+@media (min-width: 1023px) and (max-width: 1254px) {
+  .amp-boton-icono {
+    width: 33px; } }
 .boton {
   background: #61b4d4;
   color: white;
@@ -210,6 +2124,16 @@ input[type="text"] {
   .social-nav-header .fa {
     margin-left: 15px; }
 
+.amp-idiomas {
+  position: absolute;
+  top: 58px;
+  right: 0; }
+
+@media (max-width: 599px) {
+  .amp-idiomas {
+    position: absolute;
+    top: 8px;
+    right: 0; } }
 .amp-titulo-lengenda {
   color: #808b8d;
   text-transform: uppercase;
@@ -224,27 +2148,158 @@ input[type="text"] {
   border: #61b4d4 solid 1px;
   height: 2px; }
 
+.amp-formulario-buscador-titles {
+  display: inline-block;
+  width: 120px;
+  margin: 0 0 5px 238px;
+  font-weight: bold; }
+.amp-formulario-buscador .campoleft {
+  max-height: 32px;
+  margin-bottom: 15px;
+  overflow: hidden; }
+  .amp-formulario-buscador .campoleft .ui-selectmenu-button {
+    width: 100%; }
+.amp-formulario-buscador-container-boton.campoleft {
+  overflow: initial; }
+
+@media (min-width: 599px) and (max-width: 1023px) {
+  .amp-formulario-buscador .campoleft {
+    padding: 0 5px; }
+  .amp-formulario-buscador-container-boton.campoleft {
+    float: right; } }
+@media (min-width: 1023px) and (max-width: 1254px) {
+  .amp-formulario-buscador .amp-space-left-10 {
+    margin-left: 10px; }
+  .amp-formulario-buscador .amp-space-left-30 {
+    margin-left: 30px; } }
 .amp-otras-localidades div {
   padding: 2px 15px;
   width: 33.33%; }
 
-.amp-lista-barraordenar {
-  background-color: #61b4d4;
-  color: white;
-  text-align: center;
-  padding: 6px 0; }
-.amp-lista-barratop {
-  border-bottom: 1px solid #e3e3e3; }
-  .amp-lista-barratop-nombrecoche {
-    margin-top: 10px; }
-  .amp-lista-barratop-similar {
-    margin-top: 9px; }
-.amp-lista-condiciones {
-  display: block;
-  padding-top: 13px;
-  color: #4b8ceb;
-  color: red; }
+.amp-lista {
+  position: relative; }
+  .amp-lista-barraordenar {
+    background-color: #61b4d4;
+    color: white;
+    text-align: center;
+    padding: 6px 0; }
+  .amp-lista-barratop {
+    border-bottom: 1px solid #e3e3e3; }
+    .amp-lista-barratop-nombrecoche {
+      float: left;
+      margin-top: 10px; }
+    .amp-lista-barratop-similar {
+      float: left;
+      margin-top: 9px; }
+  .amp-lista-img {
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 13px; }
+  .amp-lista-detalles-content {
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 5px; }
+  .amp-lista-condiciones {
+    display: block;
+    color: #4b8ceb;
+    color: red; }
+  .amp-lista-precio {
+    margin: 5px 0; }
+    .amp-lista-precio-input {
+      float: left; }
+    .amp-lista-precio-total {
+      margin-left: 30px; }
 
+@media (max-width: 599px) {
+  .amp-lista {
+    position: initial; }
+    .amp-lista-barratop {
+      text-align: center; }
+      .amp-lista-barratop-nombrecoche {
+        display: inline-block;
+        float: none; }
+      .amp-lista-barratop-similar {
+        display: inline-block;
+        float: none; }
+      .amp-lista-barratop-container-icons {
+        text-align: center; }
+      .amp-lista-barratop-icon {
+        overflow: hidden;
+        display: inline-block;
+        float: none; }
+    .amp-lista-categoria {
+      text-align: center; }
+    .amp-lista-detalles-container {
+      text-align: center; }
+    .amp-lista-detalles-content {
+      text-align: left;
+      margin: 0; }
+    .amp-lista-container-precio {
+      display: table;
+      margin: 0 auto; }
+    .amp-lista-precio-input {
+      display: inline-block;
+      float: none;
+      vertical-align: top; }
+    .amp-lista-precio-text-container {
+      display: inline-block; }
+    .amp-lista-precio-total {
+      margin-left: 0; }
+    .amp-lista-boton {
+      position: initial;
+      margin-bottom: 14px;
+      width: 100%; } }
+@media (min-width: 599px) and (max-width: 1023px) {
+  .amp-lista {
+    position: relative; }
+    .amp-lista:nth-child(odd) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      float: none; }
+    .amp-lista:nth-child(even) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      float: none; }
+    .amp-lista-categoria {
+      margin-left: 115px; }
+    .amp-lista-condiciones {
+      margin-left: 115px; }
+    .amp-lista-boton {
+      position: absolute;
+      margin-top: 14px;
+      right: 20px;
+      bottom: 12px; } }
+@media (min-width: 1023px) and (max-width: 1254px) {
+  .amp-lista {
+    position: relative; }
+    .amp-lista-categoria {
+      margin-left: 115px; }
+    .amp-lista-condiciones {
+      margin-left: 115px; }
+    .amp-lista-boton {
+      position: absolute;
+      margin-top: 14px;
+      right: 20px;
+      bottom: 62px; }
+
+  .contend-list-cars:nth-child(even) {
+    margin-left: 2.3%; } }
+@media (min-width: 1255px) {
+  .amp-lista {
+    position: relative; }
+    .amp-lista-boton {
+      position: absolute;
+      margin-top: 14px;
+      right: 20px;
+      bottom: 62px; }
+
+  .contend-list-cars:nth-child(odd) {
+    margin-left: 0; }
+
+  .contend-list-cars:nth-child(even) {
+    margin-left: 30px; } }
 .amp-text-information-content {
   margin-bottom: 90px;
   text-align: center; }
@@ -321,6 +2376,9 @@ input[type="text"] {
   line-height: 30px;
   color: #2d3e50; }
 
+@media (max-width: 599px) {
+  .leftcond, .rightcond {
+    width: 100%; } }
 .amp-footer {
   background: #61b4d4;
   padding: 30px 30px;
@@ -331,9 +2389,18 @@ input[type="text"] {
   .amp-footer-contenido-social {
     float: right; }
     .amp-footer-contenido-social a {
-      margin-left: 60px;
+      margin-left: 53px;
+      margin-top: 4px;
       font-size: 1.9em;
       color: white; }
+      .amp-footer-contenido-social a:first-of-type {
+        margin-left: 0; }
   .amp-footer-contenido-copyright {
     text-align: center;
     margin-top: 10px; }
+
+@media (max-width: 599px) {
+  .amp-footer {
+    padding: 30px 0; }
+    .amp-footer-contenido-social a {
+      margin-left: 20px; } }

@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Rolecar</title>
 		<link rel="stylesheet" href="scripts/plugins/rs-plugin/css/settings.css">
 		<link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css" media="screen">
@@ -21,8 +21,10 @@
 		<link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/jquery.alerts.css" type="text/css" media="screen">
 		<link href="stylesheets/lang/polyglot-language-switcher.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/detalle.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="stylesheets/busqueda.css" type="text/css" media="screen">
 		<link href="stylesheets/main.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="stylesheets/bootstrap.css" type="text/css" rel="stylesheet" media="screen">
 		<script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script src="scripts/jquery-ui.min.js" type="text/javascript"></script>
 		<script src="scripts/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
@@ -99,7 +101,7 @@
 <!-- 		       			<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li> -->
 <!-- 		     		</ul> -->
 <!-- 	  			</nav> -->
-	    		<nav id="defaultnav">
+	    		<nav id="defaultnav" class="amp-idiomas">
 					<ul>
 <!-- 						<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li> -->
 				        <li style="background: none" class="wimage">

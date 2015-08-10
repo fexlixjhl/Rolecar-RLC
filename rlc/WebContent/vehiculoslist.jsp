@@ -191,7 +191,7 @@ $( document ).ready(function() {
 %>
 <!-- <head> -->
 <!-- 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
-    <link rel="stylesheet" href="stylesheets/detalle.css" type="text/css" media="screen">
+    
     
     <script>
 	
@@ -250,50 +250,53 @@ $( document ).ready(function() {
 	
 	</script>
 	<script src="scripts/flistado.js"></script>
-	
+	<script src="scripts/fbusqueda.js"></script>
 <!-- </head> -->
 <!-- <body> -->
 <!-- <div id="busquedaestaciones" class="content contentleft"> -->
-			<div class="wraper homeone">
-			   <form id="formBuscador" class="amp-clear-floats amp-space-down-30" action="servletRolecar?accion=buscar" method="post">
+			<div class="wraper homeone wraper-margin-horizon-respon">
+			   <form id="formBuscador" class="amp-clear-floats amp-space-down-30 amp-formulario-buscador" action="servletRolecar?accion=buscar" method="post">
 			 	<div id="tvhiculo" class="amp-contenedor-botones amp-space-down-30" style="display: none" >
 			 	    <input type="radio" id="tvhiculo1" name="tvhiculo" value="CR"><label for="tvhiculo1"><fmt:message key="list.busca.car"/></label>
 					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2"><fmt:message key="list.busca.van"/></label>
 				</div>
-				<div id="tsucursal" class="amp-contenedor-botones amp-space-down-10 ui-buttonset" >
-				    <label for="tsucursal1" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left" role="button"><span class="ui-button-text"><fmt:message key="busqueda.misma.oficina"/></span></label>
+				<div id="tsucursal" class="amp-contenedor-botones amp-space-down-10 ui-buttonset col-xs-12" >
+				    <label for="tsucursal1" class=" col-xs-12" role="button"><fmt:message key="busqueda.misma.oficina"/></label>
 				    <input id="tsucursal1" class="amp-hidden" type="radio"  name="tsucursal" value="tsucursal1">
-					<label for="tsucursal2" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right" role="button"><span class="ui-button-text"><fmt:message key="busqueda.distinta.oficina"/></span></label>
+					<label for="tsucursal2" class=" col-xs-12" role="button"><fmt:message key="busqueda.distinta.oficina"/></label>
 					<input id="tsucursal2" class="amp-hidden" type="radio"  name="tsucursal" value="tsucursal2">
 					
 				</div>
+				<span class="amp-formulario-buscador-titles hidden-xs hidden-sm">RECOGIDA</span>
+				<span class="amp-formulario-buscador-titles hidden-xs hidden-sm">DEVOLUCION</span>
 				<div id="Campos">
-				    <div class="campoleft">      
+				    <div class="campoleft visible col-xs-12 col-sm-12">      
 						<input id="station"  name="station" class="cajas" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
 						<input type="hidden" id="stationid" name="stationid" />
 						
 					</div>
-					<div class="campoleft">
+					<div class="campoleft oculta col-xs-12 col-sm-12">
 					    <input id="stationOrig"  name="stationOrig" class="cajas" type="text"  style="display: none;" placeholder="Dónde" onclick="borrarContenidoStation('stationOrig')"/>
 						<input type="hidden" id="stationOrigid" name="stationOrigid" />
 					</div>
-					<div class="campoleft">
+					<div class="campoleft oculta col-xs-12 col-sm-12">
 					    
 						<input id="stationDest"  name="stationDest" class="cajas" type="text"  style="display: none;" placeholder="A" onclick="borrarContenidoStation('stationDest')"/>
 						<input type="hidden" id="stationDestid" name="stationDestid" />
 					</div>
-					<div class="campoleft amp-space-left-30">
-						  <span class="input-group amp-boton-icono"><i class="fa fa-arrow-up fa-fw"></i></span>
+					<span class="amp-formulario-buscador-titles hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">RECOGIDA</span>
+					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
+						  <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-arrow-up fa-fw"></i></span>
 				    </div>
-				    <div class="campoleft  amp-space-left-10">
+				    <div class="campoleft  amp-space-left-10 col-xs-10 col-sm-5">
 						  <input id="fini"  name="fini" class="control-fecha amp-width-100" type="text" readonly />
 					</div>
-					<div class="campoleft  amp-space-left-10">
+					<div class="campoleft  amp-space-left-10 col-xs-2 col-sm-1">
 					   		
-					   	<span class="input-group amp-boton-icono"><i class="fa fa-clock-o fa-fw"></i></span>
+					   	<span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-clock-o fa-fw"></i></span>
 					   	
 					</div>
-					<div class="campoleft amp-space-left-10">		
+					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">		
 						<select id="hinis" class="seleccion horas" name="hinis">
 						    <%
 						      for(int hor=0;hor<24;hor++)
@@ -326,19 +329,19 @@ $( document ).ready(function() {
 						<input type="hidden" id="hini" name="hini" />
 						<input type="hidden" id="mini" name="mini" />
 					</div>
-					
-					<div class="campoleft amp-space-left-30">
-					        <span class="input-group amp-boton-icono"><i class="fa fa-arrow-down fa-fw"></i></span>
+					<span class="amp-formulario-buscador-titles hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">DEVOLUCION</span>
+					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
+					        <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-arrow-down fa-fw"></i></span>
 					        
 					</div>
-					<div class="campoleft amp-space-left-10">
+					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
 							<input id="ffin" name="ffin" type="text"  class="amp-width-100" readonly />
 					</div>
-					<div class="campoleft amp-space-left-10">
-					    <span class="input-group amp-boton-icono"><i class="fa fa-clock-o fa-fw"></i></span>
+					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
+					    <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-clock-o fa-fw"></i></span>
 					    
 					</div>
-					<div class="campoleft amp-space-left-10">
+					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
 						<select id="hfins" class="seleccion" name="hfins">
 							 <%
 						      for(int hor=0;hor<24;hor++)
@@ -377,7 +380,7 @@ $( document ).ready(function() {
 				
 
 				
-				<div class="campoleft">
+				<div class="campoleft amp-formulario-buscador-container-boton col-xs-12 col-sm-2">
 						<input type="button" class="boton amp-width-100 amp-space-left-30" id="buscar" name="buscar" value="<fmt:message key='list.busca.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
 			    </div>
@@ -472,7 +475,7 @@ $( document ).ready(function() {
 				<form id="fordenar" name="fordenar" method="post" 
 				action="servletRolecar?accion=ordenar&provincia=<%=provincia%>&stationorigid=<%=estacionorigen%>&stationdestid=<%=estaciondestino %>&codStationIn=<%=reser.getCheckinstationId()%>&checkindate=<%=reser.getCheckindate()%>&checkintime=<%=reser.getCheckintime()%>&codStationOut=<%=reser.getCheckoutstationId()%>&checkoutdate=<%=reser.getCheckoutdate()%>&checkouttime=<%=reser.getCheckouttime()%>&carType=<%=cartype%>&Country=<%=pais.getCodcountry()%>&mismaoficina=<%=esMismaSucursal%>&origen=<%=origen%>&destino=<%=destino%>"></form>
 		</div>
-		<div class="wraper homeone">
+		<div class="wraper homeone wraper-margin-horizon-respon">
 		<%} %>
 		   <div class="contentlistado">
 		        <%if(!haycoches){ %>
@@ -528,19 +531,19 @@ $( document ).ready(function() {
 								
 							}
 							%>
-							  <form id="reservaVehiculo<%=cont%>" class="contend-list-cars" name="reservaVehiculo<%=cont%>" action="servletRolecar?accion=contratar" method="post">
-								<div class="list-detail amp-space-down-50" >
+							  <form id="reservaVehiculo<%=cont%>" class="contend-list-cars amp-lista col-xs-12 col-sm-10" name="reservaVehiculo<%=cont%>" action="servletRolecar?accion=contratar" method="post">
+								<div id="coche<%=cont%>" class="list-detail amp-clear-floats amp-space-down-50 " >
 										<div class="padding clear amp-lista-barratop amp-space-down-10">
 										<%--TEST --<%=c.getContractId()%>--<%=c.getCarCategoryCode()%> --%>
 											<h2 class="amp-lista-barratop-nombrecoche"><%=c.getCarCategorySample()%></h2>
 											<p class="similar amp-lista-barratop-similar">&nbsp;<fmt:message key="list.similar"/></p>
 											
-											<div id="iconoscar<%=c.getCarCategoryCode()%>" >
+											<div id="iconoscar<%=c.getCarCategoryCode()%>" class="amp-lista-barratop-container-icons col-xs-12">
 											<%
 											  if(c.getCarCategoryType()!=null && c.getCarCategoryType().equalsIgnoreCase("Eco-responsable"))
 											  {
 											%>
-											   <div class="capaiconosfeature">
+											   <div class="capaiconosfeature amp-lista-barratop-icon">
 											    <img src="images/eco.png" alt="asientos" eco="<%=c.getCarCategoryCO2Quantity() %>" class="iconosfeature">
 											   </div>
 											<%
@@ -550,7 +553,7 @@ $( document ).ready(function() {
 											  if(c.getCarCategoryBaggageQuantity()!=null && !c.getCarCategoryBaggageQuantity().equalsIgnoreCase(""))
 											  {
 											%>
-											  <div class="capaiconosfeature">
+											  <div class="capaiconosfeature amp-lista-barratop-icon">
 											   <img src="images/maleta.png" alt="asientos" maleta="<%=c.getCarCategoryBaggageQuantity() %>" class="iconosfeature">
 											   <%=c.getCarCategoryBaggageQuantity()%>
 											  </div>
@@ -561,7 +564,7 @@ $( document ).ready(function() {
 											  if(c.getCarCategorySeats()!=null && !c.getCarCategorySeats().equalsIgnoreCase(""))
 											  {
 											%>
-											  <div class="capaiconosfeature">
+											  <div class="capaiconosfeature amp-lista-barratop-icon">
 											   <img src="images/asiento.png" alt="asientos" asiento="<%=c.getCarCategorySeats() %>" class="iconosfeature">
 											   <%=c.getCarCategorySeats()%>
 											  </div>
@@ -570,7 +573,10 @@ $( document ).ready(function() {
 											</div>
 											
 										</div>
-										<h3 class="amp-space-left-115"><b><fmt:message key="list.car.title"/>&nbsp;</b><span class="title-detail"><%=catName[0]%></span></h3>
+										<div class="column fixed thumb hidden-sm hidden-md hidden-lg col-xs-12 text-center">
+									        <img  id="imagenoriginal" src="https://applications.europcar.com/resaweb/carvisuals/<%=c.getCarCategoryCode()%>_<%=pais.getCodcountry()%>.jpg">
+									    </div>
+										<h3 class="amp-lista-categoria amp-space-left-115"><b><fmt:message key="list.car.title"/>&nbsp;</b><span class="title-detail"><%=catName[0]%></span></h3>
 									<input id="dateco" name="dateco" type="hidden" value="<%=res.getCheckoutdate()%>"/>
 									<input id="dateci" name="dateci" type="hidden" value="<%=res.getCheckindate()%>"/>
 									<input id="timeco" name="timeco" type="hidden" value="<%=res.getCheckouttime()%>"/>
@@ -589,13 +595,16 @@ $( document ).ready(function() {
 									<input id="PAISENTREGA" name="PAISENTREGA" type="hidden" value="<%=paisentrega %>" />
 									<input id="CNTRY" name="CNTRY" type="hidden" value="<%=pais.getCodcountry()%>" />
 									<input id="KM" name="KM" type="hidden" value="<%=c.getQuote().getIncludedKm()%>" />
-									<div class="vehicle-details" id="coche<%=cont%>">
+									<div class="vehicle-details col-xs-12 amp-lista-detalles-container" >
 
 										<div class="padding">
 										    <div class="fixed-left clear">
-										        <div class="features-container">
+										        <div class="column fixed thumb hidden-xs amp-lista-img">
+											    	<img  id="imagenoriginal" src="https://applications.europcar.com/resaweb/carvisuals/<%=c.getCarCategoryCode()%>_<%=pais.getCodcountry()%>.jpg">
+											    </div>
+										        <div class="features-container amp-lista-detalles-content">
 											         
-										             <div class="column fluid">
+										             <div class="column fluid ">
 										                 
 										                 <div class="clear" id="carac<%=c.getCarCategoryCode()%>">
 										                 	<div class="col1">
@@ -640,23 +649,23 @@ $( document ).ready(function() {
 										                 </div>
 										             </div>
 										        </div>
-										        <div class="column fixed thumb">
-											             <img  id="imagenoriginal" src="https://applications.europcar.com/resaweb/carvisuals/<%=c.getCarCategoryCode()%>_<%=pais.getCodcountry()%>.jpg">
-	<!-- 										             <div class="co2-info popin-link" style="position:static; display:inline-block; overflow:auto; float:left; clear:both; border:0px; margin:0px; padding:0px 2px;"></div> -->
-	<!-- 													 <div class="popin-link" style="position:static; display:inline-block; overflow:auto; float:left; clear:none; border:0px; margin:0px; padding:0px 2px; font-style:normal; font-weight:bold; text-decoration:underline; color:black;">Más información</div> -->
-											    </div>
+
 										    </div>
-										    <div class="more clear">
-										         <img src="images/logoeuropcar.png" alt="Logo"  class="logoempresa">
-										        <a class="rate amp-lista-condiciones amp-space-left-115" href=""  km="<%=c.getQuote().getIncludedKm()%>" titulo="<%=c.getCarCategorySample()%>" codigo="<%=c.getCarCategoryCode()%>" categoria="<%=catName[0]%>" imagen="<%=c.getCarCategoryCode()%>_<%=pais.getCodcountry()%>.jpeg"
+										    <a class="rate amp-lista-condiciones amp-space-left-115" href=""  km="<%=c.getQuote().getIncludedKm()%>" titulo="<%=c.getCarCategorySample()%>" codigo="<%=c.getCarCategoryCode()%>" categoria="<%=catName[0]%>" imagen="<%=c.getCarCategoryCode()%>_<%=pais.getCodcountry()%>.jpeg"
 										         proteccion="<%=proteccion%>" robo="<%=robo %>" colision="<%=colision %>" accidentesmej="<%=accidentesmej %>" accidentes="<%=accidentes %>" mercancias="<%=mercancias %>" multas="<%=multas %>" adicional="<%=adicional%>">
 										         <fmt:message key="list.car.condiciones"/></a>
+										    <div class="more clear">
+										         <img src="images/logoeuropcar.png" alt="Logo"  class="logoempresa">
+
 										    </div>
 										</div>
 									</div>
 									
 
-										<div class="precio" >
+										<div class="precio col-xs-12" >
+											<div class="amp-lista-container-precio">
+									
+
 										<%  
 										    float precioonline=0f;
 											float preciooficina=0f;
@@ -721,17 +730,17 @@ $( document ).ready(function() {
 											}
 										
 										%>
-										    <div class="option clear" <%=ocultoonline %> >
-															<input id="pp" type="radio" value="Y" name="reservac" <%=chequeadoonline %> >
-															<span>
-																<span class="pay"><fmt:message key="list.car.pago.online"/></span>
-																<span class="no-wrap">
-																    <%String moneda=(q.getCurrency().equalsIgnoreCase("EUR"))?q.getCurrency():"EUR"; %>
-																    <span class="pago" <%=fuentegrandeonline %>><%=moneda%> <%=Formatea.Importe2Decimales(q.getTotalRateEstimateInBookingCurrency(),2)%></span>
-																    <span class="small"><fmt:message key="list.car.pago.total"/></span>
+											    <div class="option clear amp-lista-precio" <%=ocultoonline %> >
+																<input id="pp" class="amp-lista-precio-input" type="radio" value="Y" name="reservac" <%=chequeadoonline %> >
+																<span class="amp-lista-precio-text-container">
+																	<span class="pay"><fmt:message key="list.car.pago.online"/></span>
+																	<span class="no-wrap amp-lista-precio-total">
+																	    <%String moneda=(q.getCurrency().equalsIgnoreCase("EUR"))?q.getCurrency():"EUR"; %>
+																	    <span class="pago" <%=fuentegrandeonline %>><%=moneda%> <%=Formatea.Importe2Decimales(q.getTotalRateEstimateInBookingCurrency(),2)%></span>
+																	    <span class="small"><fmt:message key="list.car.pago.total"/></span>
+																	</span>
 																</span>
-															</span>
-											</div>
+												</div>
 										
 										<%  if(q.getTotalRateEstimateInRentingCurrency()!=null && !q.getTotalRateEstimateInRentingCurrency().equalsIgnoreCase(""))
 											{ 
@@ -749,17 +758,17 @@ $( document ).ready(function() {
 											}
 										
 										%>
-											<div class="option clear" <%=ocultooficina %> >
-															<input id="pp" type="radio" value="N" name="reservac" <%=chequeadooficina %> >
-															<span>
-																<span class="pay"><fmt:message key="list.car.pago.oficina"/></span>
-																<span class="no-wrap">
-																    <span class="pago" <%=fuentegrandeoficina %>><%=moneda%> <%=Formatea.Importe2Decimales(q.getTotalRateEstimateInRentingCurrency(),2)%></span>
-																    <span class="small"><fmt:message key="list.car.pago.total"/></span>
+												<div class="option clear amp-lista-precio" <%=ocultooficina %> >
+																<input id="pp" class="amp-lista-precio-input" type="radio" value="N" name="reservac" <%=chequeadooficina %> >
+																<span class="amp-lista-precio-text-container">
+																	<span class="pay"><fmt:message key="list.car.pago.oficina"/></span>
+																	<span class="no-wrap amp-lista-precio-total">
+																	    <span class="pago" <%=fuentegrandeoficina %>><%=moneda%> <%=Formatea.Importe2Decimales(q.getTotalRateEstimateInRentingCurrency(),2)%></span>
+																	    <span class="small"><fmt:message key="list.car.pago.total"/></span>
+																	</span>
 																</span>
-															</span>
-											</div>
-										
+												</div>
+											</div>										
 <%-- 											<p><b>Pago online: </b><%=q.getCurrency()%> <%=q.getTotalRateEstimateInBookingCurrency()%> </p> --%>
 <%-- 											<p><b>Pago en Oficina: </b> <%=q.getCurrency()%> <%=q.getTotalRateEstimateInRentingCurrency()%> </p> --%>
                                             <div class="botones">
@@ -826,7 +835,7 @@ $( document ).ready(function() {
     
        <div class="container" >
           <div class="leftcond">
-              <div class="vehicle-details clear detail-dialog" style="min-width:400px;" >
+              <div class="vehicle-details clear detail-dialog"  >
                   <font class="cat">
                   <h3><fmt:message key="list.car.title"/><span id="typeV">rata</span></h3>
                   </font>

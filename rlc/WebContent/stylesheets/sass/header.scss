@@ -15,6 +15,18 @@
 	}
 
 }
+.amp-idiomas {
+	position:absolute;
+	top:58px;
+	right:0;
+}
+@media (max-width: $mobile) {
+	.amp-idiomas {
+		position:absolute;
+		top:8px;
+		right:0;
+	}	
+}
 .amp-titulo-lengenda {
 	color: $grey-text;
 	text-transform: uppercase;

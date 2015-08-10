@@ -9,14 +9,20 @@
     font-size: 1.4em;
 }
 .amp-boton-icono {
-    padding: 6px 4px ;
+    width: 33px;
+    padding: 7px 4px ;
     border: 1px solid $grey-light;
     display:table-cell;
     background: $blue-bg;
     color: $white;
     font-size: 1.36em;
+    text-align: center;
 }
-
+@media (min-width: $tablets-vertical) and (max-width: $tablets) {
+    .amp-boton-icono {
+        width: 33px;
+    }
+}
 .boton {
   
     background: #61b4d4;

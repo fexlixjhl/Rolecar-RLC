@@ -2,24 +2,11 @@
 	box-sizing: border-box;
 }
 
-.wraper {
-	min-width: 1203px;
-}
-
 input[type="text"] {
-	padding: 7px;
+	padding: 9px;
 	border: 1px solid $grey-light;
 }
 
-.amp-width-60 {
-    width: 60px; 
-}
-.amp-width-100 {
-    width: 100px; 
-}
-.amp-width-350 {
-    width: 350px; 
-}
 //margenes en proporcion aurea (redondeado)
 .amp-space-down-10 {
 	margin-bottom: 10px;
@@ -36,25 +23,82 @@ input[type="text"] {
 .amp-space-down-80 {
 	margin-bottom: 80px;
 }
+.amp-space-down-130 {
+	margin-bottom: 130px;
+}
 
-.amp-space-left-10 {
-	margin-left: 10px;
+
+$porcentage: 100;
+$max-width: 1200px;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
 }
-.amp-space-left-20 {
-	margin-left: 20px;
+
+$max-width-stripped: strip-units($max-width);
+$offset-step-px: 5;
+
+// phones
+$mobile: 599px;
+
+// phones landscape
+$mobile-landscape: new-breakpoint(min-width 533px max-width 599px);
+// tablets 
+$tablets: 1254px;
+$tablets-vertical: 1023px;
+
+//desktops
+$desktop: 1255px;
+
+
+
+
+$offset-xs: $max-width-stripped / 2;
+@while $offset-xs > 0 {
+  .offset-xs-#{$offset-xs} {
+    margin-left: #{$offset-xs}px;
+  }
+
+  $offset-xs: $offset-xs - $offset-step-px;
 }
-.amp-space-left-30 {
-	margin-left: 30px;
+
+@media (min-width: $desktop) {
+  $widthNumber: $max-width-stripped;
+  @while $widthNumber > 0 {
+    .amp-width-#{$widthNumber} {
+      display: block;
+      float: left;
+      width: #{$widthNumber}px;
+    }
+
+    $widthNumber: $widthNumber - 5;
+  }
+
+  $spaceNumber: $max-width-stripped / 2;
+  @while $spaceNumber > 0 {
+    .amp-space-left-#{$spaceNumber} {
+      margin-left: #{$spaceNumber}px;
+    }
+
+    $spaceNumber: $spaceNumber - $offset-step-px;
+  }
 }
-.amp-space-left-50 {
-	margin-left: 50px;
+
+/* @media (max-width: $desktop) {
+	.campoleft {
+		float: none;
+	}
+} */
+[class*="amp-width"] {
+  display: block;
+  width: 100%;
 }
-.amp-space-left-80 {
-	margin-left: 80px;
+.amp-formulario-buscador {
+  [class*="amp-width"] {
+    display: block;
+    width: 100%;
+  }
 }
-.amp-space-left-115 {
-	margin-left: 115px;
-}
-.amp-space-left-130 {
-	margin-left: 130px;
+input {
+  border-bottom: 10px;
 }

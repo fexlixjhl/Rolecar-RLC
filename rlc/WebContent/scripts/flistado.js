@@ -407,13 +407,18 @@ $(document).ready(function(){
 				 $( "#dialog-condiciones" ).dialog({
 					 autoOpen: false,
 					 height: 600,
-					 width: 980,
 					 modal: true
 					 });
 				 
 				 $( ".rate" ).click(function(event) {
 					 
 					 event.preventDefault();
+					 if ($( window ).width() <= 979) {
+						 var sizeScreen = $( window ).width();
+					 }
+					 else {
+						 var sizeScreen = 980;
+					 };					 
 					 var titulo = $(this).attr("titulo");
 					 var cod = $(this).attr("codigo");
 					 var cat = $(this).attr("categoria");
@@ -513,7 +518,7 @@ $(document).ready(function(){
 					 $(".featurescond").html(htmliconos);
 					 $("#imagencondicion").attr("src","http://microsite.europcar.com/ECI/mkt/epcarvisuals/600x350/"+imagen);
 					 
-					 $( "#dialog-condiciones" ).dialog({ title: titulo});
+					 $( "#dialog-condiciones" ).dialog({ title: titulo, width: sizeScreen});
 					 $( "#dialog-condiciones" ).dialog( "open" );
 					 });
 				   
@@ -681,7 +686,7 @@ $(document).ready(function(){
 			$("#fini").datepicker({
 			 	minDate: 0,
 			 	dateFormat:"dd/mm/yy" ,
-		        numberOfMonths: 2,
+		        numberOfMonths: 1,
 		        onSelect: function(selected) {
 		          $("#ffin").datepicker("option","minDate", selected);      
 		        }
@@ -690,7 +695,7 @@ $(document).ready(function(){
 		    	minDate: 0,
 		    	dateFormat:"dd/mm/yy" ,
 			 	//dateFormat:"d M, y" ,
-		        numberOfMonths: 2,
+		        numberOfMonths: 1,
 		        onSelect: function(selected) {
 		           $("#fini").datepicker("option","maxDate", selected);
 		        }

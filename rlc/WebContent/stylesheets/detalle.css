@@ -1,24 +1,17 @@
 *:before, *:after 
-{
-	
+{	
 	 -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
 }
-
 #buscador
 {
-	
 	margin-top:50px;
 }
-
 .bx-viewport
 {
 	border-radius:5px;
 }
-
-
-
 .clear:after {
     clear: both;
     content: ".";
@@ -42,12 +35,7 @@
     display: inline-block;
     width: 48.6%;
 }
-.contend-list-cars:nth-child(odd) {
-    margin-left: 0;
-}
-.contend-list-cars:nth-child(even) {
-    margin-left: 30px;
-}
+
 .list-detail:hover {
 	box-shadow:0 2px 10px #3FA3C9;
 	margin-left:0;
@@ -71,7 +59,7 @@
     line-height: 1.84em;
     margin-left: 0.5em;
     font-weight: normal;
-    float:left;
+
 }
 
 .list-detail h2 {
@@ -79,7 +67,6 @@
 }
 .list-detail h2 {
     color: #333333;
-    float: left;
     font-size: 1.3em;
     font-weight: normal;
     line-height: 1.2em;
@@ -99,30 +86,19 @@
 #imagencondicion
 {
     margin-top:50px;
-    width:380px;	
+    margin-bottom:50px;
+    /*width:380px;*/
+    width: 100%;	
 }
 
-/********************insercion de la imagen******************************/
- .vehicle-details .fixed-left .column.fixed {
-    margin-top: -80px;
-    width: 120px;
-    cursor: pointer;
-}
 
-.column.fixed {
-    float: left;
-    padding-bottom: 10px;
-}
 
 
 /****************************************insercion de detalles***********************/
 
 
 
-.vehicle-details .fixed-left .column.fluid {
-    margin: 0 0 0 115px;
-    padding-top: 5px;
-}
+
 
 .list-detail h3 {
     font-size: 1.3em;
@@ -155,28 +131,23 @@ ul.bullet li{
 .precio
 {
 	display: inline-block;
+    width: 29%;
     vertical-align: top;
 }
 
 .logoempresa
 {
-    float: left;
+
     height: 25px;
-    margin-right: 10%;
+
 }
 
 /**************************************precios****************/
 .precio .option input {
-    float: left;
     height: 15px;
     margin: 0 5px 0 8px;
     padding: 0;
     width: 13px;
-}
-
-.precio .option
-{
-    margin: 5px 0;
 }
 
 .precio .option .pay
@@ -188,7 +159,6 @@ ul.bullet li{
 {
 	display: block;
     font-weight: bold;
-    margin-left: 30px;
 }
  
 .precio .option .no-wrap .pago
@@ -367,7 +337,6 @@ top: auto;
 
 .imagencond
 {
-	height:300px;
 	border:1px solid #A6A6A6;
 	border-radius: 5px;
 	

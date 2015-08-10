@@ -1,0 +1,42 @@
+
+.amp-formulario-buscador {
+	&-titles {
+		display: inline-block;
+		width: 120px;
+    	margin: 0 0 5px 238px;
+	    font-weight: bold;
+	}
+	.campoleft {
+		max-height: 32px;
+		margin-bottom: 15px;
+		overflow: hidden;
+		.ui-selectmenu-button {
+			width: 100%;
+		}
+	}
+	&-container-boton.campoleft {
+		overflow: initial;
+	}	
+}
+
+@media (min-width: $mobile) and (max-width: $tablets-vertical) {
+	.amp-formulario-buscador {
+		.campoleft {
+			padding: 0 5px;
+		}
+		&-container-boton.campoleft {
+			float: right;
+		}	
+	}
+}
+@media (min-width: $tablets-vertical) and (max-width: $tablets) {
+	.amp-formulario-buscador {
+
+		.amp-space-left-10 {
+		    margin-left: 10px;
+		}
+		.amp-space-left-30 {
+		    margin-left: 30px;
+		}
+	}
+}

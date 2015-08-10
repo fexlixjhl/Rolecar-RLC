@@ -1,4 +1,5 @@
 .amp-lista {
+	position: relative;
 	&-barraordenar {
 	    background-color: $blue-bg;
 	    color: $white;
@@ -8,16 +9,191 @@
 	&-barratop {
 		border-bottom: 1px solid $grey-light;
 		&-nombrecoche {
+			float: left;
 			margin-top: 10px;
 		}
 		&-similar {
+			float: left;
 			margin-top: 9px;
 		}
 	}
+	&-img {
+		display: inline-block;
+		overflow: hidden;
+		margin-bottom: 13px;
+	}
+	&-detalles-content {
+		display: inline-block;
+		overflow: hidden;
+    	padding-top: 5px;
+	}
 	&-condiciones {
 		display: block;
-    	padding-top: 13px;
     	color: $blue-link;
     	color: red;
+	}
+	&-precio {
+    	margin: 5px 0;
+	    &-input {
+	    	float: left;
+	    }
+	    &-text-container {
+
+	    }
+	    &-total {
+			margin-left: 30px;
+	    }
+	}
+	&-boton {
+
+	}
+}
+
+@media (max-width: $mobile) {
+	.amp-lista {
+		position: initial;
+		&-barraordenar {
+		}
+		&-barratop {
+			text-align: center;
+			&-nombrecoche {
+				display: inline-block;
+				float: none;
+			}
+			&-similar {
+				display: inline-block;
+				float: none;
+			}
+			&-container-icons {
+				text-align: center;
+			}
+			&-icon {
+				overflow: hidden;
+				display: inline-block;
+				float: none;
+			}
+		}
+		&-categoria {
+			text-align: center;
+		}
+		&-detalles-container {
+			text-align: center;
+		}
+		&-detalles-content {
+			text-align: left;
+			margin: 0;
+		}
+		&-condiciones {
+
+		}
+		&-container-precio {
+		    display: table;
+		    margin: 0 auto;	
+		}
+		&-precio {
+		    &-input {
+		    	display: inline-block;
+			    float: none;
+			    vertical-align: top;
+		    }
+		    &-text-container {
+		    	display: inline-block;
+		    }
+		    &-total {
+		    	margin-left: 0;
+		    }
+		}
+		&-boton {
+			position: initial;
+		    margin-bottom: 14px;
+		    width: 100%;
+		}
+	}
+
+}
+@media (min-width: $mobile) and (max-width: $tablets-vertical) {
+	.amp-lista {
+		position: relative;
+		&:nth-child(odd) {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			float: none;
+		}
+		&:nth-child(even) {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			float: none;
+		}
+		&-barraordenar {
+
+		}
+		&-barratop {
+
+			&-nombrecoche {
+
+			}
+			&-similar {
+
+			}
+		}
+		&-categoria {
+			margin-left: 115px;
+		}
+		&-img {
+
+		}
+		&-detalles-content {
+
+		}
+		&-condiciones {
+			margin-left: 115px;
+		}
+
+		&-boton {
+			position: absolute;
+		    margin-top: 14px;
+		    right: 20px;
+		    bottom: 12px;
+		}
+	}
+}
+@media (min-width: $tablets-vertical) and (max-width: $tablets) {
+	.amp-lista {
+		position: relative;
+		&-categoria {
+			margin-left: 115px;
+		}
+		&-condiciones {
+			margin-left: 115px;
+		}
+		&-boton {
+			position: absolute;
+		    margin-top: 14px;
+		    right: 20px;
+		    bottom: 62px;
+		}
+	}
+	.contend-list-cars:nth-child(even) {
+	    margin-left: 2.3%;
+	}
+}
+
+@media (min-width: $desktop) {
+	.amp-lista {
+		position: relative;
+		&-boton {
+			position: absolute;
+		    margin-top: 14px;
+		    right: 20px;
+		    bottom: 62px;
+		}
+	}
+	.contend-list-cars:nth-child(odd) {
+	    margin-left: 0;
+	}
+	.contend-list-cars:nth-child(even) {
+	    margin-left: 30px;
 	}
 }

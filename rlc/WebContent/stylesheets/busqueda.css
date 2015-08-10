@@ -49,36 +49,17 @@
 }
 
 
-
-
-
-
-
-
-#station
-{
-	width:320px;
-/* 	height:32px; */
-}
-
 #stationOrig
 {
-	width:160px;
+	width:100%;
 	
 }
 
 #stationDest
 {
-	width:160px;
+	width:100%;
 	
 }
-
-
-
-
-
-
-
 
 #hinis-button,#hfins-button
 {
