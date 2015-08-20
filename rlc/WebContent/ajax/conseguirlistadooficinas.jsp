@@ -104,7 +104,7 @@ else
 		valornuevo=c.getStationcheckout().getCodstation().concat("::").concat(""+c.getStationcheckout().getIdprovincia()).concat("::").concat(c.getStationcheckout().getCodCountry());
 		valornuevo2=c.getStationcheckout().getDescr().concat(" , ").concat(c.getStationcheckout().getDescrCountry());
 		valornuevo2=valornuevo2.replace("\"", "'");
-		html=html+"<div id=\""+valornuevo+"\"  class=\"buscarloc campoleft amp-width-350\" estacion=\""+valornuevo2+"\"  ><p>"+c.getStationcheckout().getDescr()+": <strong style=\"float:right;\">"+Formatea.Importe2Decimales(c.getQuote().getTotalRateEstimateInBookingCurrency(),2)+" &#8364;</strong></p>";
+		html=html+"<div id=\""+valornuevo+"\"  class=\"buscarloc campoleft amp-width-350 col-xs-12 col-sm-6 col-md-6\" estacion=\""+valornuevo2+"\"  ><p>"+c.getStationcheckout().getDescr()+": <strong style=\"float:right;\">"+Formatea.Importe2Decimales(c.getQuote().getTotalRateEstimateInBookingCurrency(),2)+" &#8364;</strong></p>";
 		
 		html+="</div>";//"<input type=\"hidden\" value=\"".concat(valornuevo).concat("\" ></div>");
 		

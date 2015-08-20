@@ -261,17 +261,17 @@ $( document ).ready(function() {
 					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2"><fmt:message key="list.busca.van"/></label>
 				</div>
 				<div id="tsucursal" class="amp-contenedor-botones amp-space-down-10 ui-buttonset col-xs-12" >
-				    <label for="tsucursal1" class=" col-xs-12" role="button"><fmt:message key="busqueda.misma.oficina"/></label>
+				    <label for="tsucursal1" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left col-xs-12" role="button"><span class="ui-button-text"><fmt:message key="busqueda.misma.oficina"/></span></label>
 				    <input id="tsucursal1" class="amp-hidden" type="radio"  name="tsucursal" value="tsucursal1">
-					<label for="tsucursal2" class=" col-xs-12" role="button"><fmt:message key="busqueda.distinta.oficina"/></label>
+					<label for="tsucursal2" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right col-xs-12" role="button"><span class="ui-button-text"><fmt:message key="busqueda.distinta.oficina"/></span></label>
 					<input id="tsucursal2" class="amp-hidden" type="radio"  name="tsucursal" value="tsucursal2">
 					
 				</div>
-				<span class="amp-formulario-buscador-titles hidden-xs hidden-sm">RECOGIDA</span>
-				<span class="amp-formulario-buscador-titles hidden-xs hidden-sm">DEVOLUCION</span>
+				<span class="amp-formulario-buscador-title1 hidden-xs hidden-sm">RECOGIDA</span>
+				<span class="amp-formulario-buscador-title2 hidden-xs hidden-sm">DEVOLUCION</span>
 				<div id="Campos">
 				    <div class="campoleft visible col-xs-12 col-sm-12">      
-						<input id="station"  name="station" class="cajas" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
+						<input id="station"  name="station" class="cajas amp-formulario-buscador-estacion col-xs-12 col-sm-12" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
 						<input type="hidden" id="stationid" name="stationid" />
 						
 					</div>
@@ -284,11 +284,11 @@ $( document ).ready(function() {
 						<input id="stationDest"  name="stationDest" class="cajas" type="text"  style="display: none;" placeholder="A" onclick="borrarContenidoStation('stationDest')"/>
 						<input type="hidden" id="stationDestid" name="stationDestid" />
 					</div>
-					<span class="amp-formulario-buscador-titles hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">RECOGIDA</span>
+					<span class="amp-formulario-buscador-title1 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">RECOGIDA</span>
 					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
-						  <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-arrow-up fa-fw"></i></span>
+						  <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-calendar fa-fw"></i></span>
 				    </div>
-				    <div class="campoleft  amp-space-left-10 col-xs-10 col-sm-5">
+				    <div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
 						  <input id="fini"  name="fini" class="control-fecha amp-width-100" type="text" readonly />
 					</div>
 					<div class="campoleft  amp-space-left-10 col-xs-2 col-sm-1">
@@ -329,12 +329,12 @@ $( document ).ready(function() {
 						<input type="hidden" id="hini" name="hini" />
 						<input type="hidden" id="mini" name="mini" />
 					</div>
-					<span class="amp-formulario-buscador-titles hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">DEVOLUCION</span>
+					<span class="amp-formulario-buscador-title2 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">DEVOLUCION</span>
 					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
-					        <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-arrow-down fa-fw"></i></span>
+					        <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-calendar fa-fw"></i></span>
 					        
 					</div>
-					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
+					<div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
 							<input id="ffin" name="ffin" type="text"  class="amp-width-100" readonly />
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
@@ -379,13 +379,17 @@ $( document ).ready(function() {
 				
 				
 
-				
-				<div class="campoleft amp-formulario-buscador-container-boton col-xs-12 col-sm-2">
-						<input type="button" class="boton amp-width-100 amp-space-left-30" id="buscar" name="buscar" value="<fmt:message key='list.busca.buscar'/>"/>
+			    <div class="amp-formulario-buscador-container-checkbox">
+				    <label>
+						<input id="misma-oficina" type="checkbox"  name="misma-oficina">Devolver el coche en la misma oficina
+					</label>			    
+			    </div>				
+				<div class="campoleft amp-formulario-buscador-container-boton col-xs-12 col-sm-2 amp-space-left-10">
+						<input type="button" class="boton amp-width-100 " id="buscar" name="buscar" value="<fmt:message key='list.busca.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
 			    </div>
-				
-				
+
+
 			</form>
 			
 <!-- 			</div> -->
@@ -463,10 +467,15 @@ $( document ).ready(function() {
 
 		</div>
 		</div>
-		<div id="otros" class="amp-otras-localidades content contentleft amp-clear-floats amp-space-down-50 ">
-			<h2><fmt:message key="list.otras.localidades"/></h2>
-			
+		<div class="amp-otras-localidades content amp-space-down-50 ">
+			<div id="map" class="amp-map col-md-4 col-sm-12 col-xs-12">
+			</div>
+			<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-8 col-sm-12 col-xs-12">
+				<h2><fmt:message key="list.otras.localidades"/></h2>
+	
+			</div>		
 		</div>
+
 		<div id="ordenapor" class="amp-lista-barraordenar amp-space-down-50" >
 			<fmt:message key="list.order.text"/>
 				<a id="precio" href="#" style="color:white;font-weight: bold;">&nbsp;<fmt:message key="list.order.pvp"/></a> |
@@ -545,6 +554,7 @@ $( document ).ready(function() {
 											%>
 											   <div class="capaiconosfeature amp-lista-barratop-icon">
 											    <img src="images/eco.png" alt="asientos" eco="<%=c.getCarCategoryCO2Quantity() %>" class="iconosfeature">
+											    <div style="display: inline-block; content: ''; width: 6px; height: 12px;"></div>
 											   </div>
 											<%
 											  }
@@ -555,7 +565,7 @@ $( document ).ready(function() {
 											%>
 											  <div class="capaiconosfeature amp-lista-barratop-icon">
 											   <img src="images/maleta.png" alt="asientos" maleta="<%=c.getCarCategoryBaggageQuantity() %>" class="iconosfeature">
-											   <%=c.getCarCategoryBaggageQuantity()%>
+											   <div style="display: inline-block"><%=c.getCarCategoryBaggageQuantity()%></div>
 											  </div>
 											<%
 											  }
@@ -566,7 +576,7 @@ $( document ).ready(function() {
 											%>
 											  <div class="capaiconosfeature amp-lista-barratop-icon">
 											   <img src="images/asiento.png" alt="asientos" asiento="<%=c.getCarCategorySeats() %>" class="iconosfeature">
-											   <%=c.getCarCategorySeats()%>
+											   <div style="display: inline-block"><%=c.getCarCategorySeats()%></div>
 											  </div>
 											<%}
 											%>

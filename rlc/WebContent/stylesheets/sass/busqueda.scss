@@ -1,21 +1,38 @@
 
 .amp-formulario-buscador {
-	&-titles {
+	position: relative;
+	max-width: 1000px;
+	#tsucursal {
+		display: none;
+	}
+	&-title1 {
 		display: inline-block;
 		width: 120px;
-    	margin: 0 0 5px 238px;
+    	margin: 0 0 5px 401px;
 	    font-weight: bold;
+	}
+	&-title2 {
+		display: inline-block;
+		width: 120px;
+    	margin: 0 0 5px 155px;
+	    font-weight: bold;
+	}
+	&-estacion {
+		width: 326px;
 	}
 	.campoleft {
 		max-height: 32px;
 		margin-bottom: 15px;
-		overflow: hidden;
 		.ui-selectmenu-button {
 			width: 100%;
 		}
 	}
 	&-container-boton.campoleft {
 		overflow: initial;
+	}
+	&-container-checkbox {
+		width: 100%;
+		overflow: hidden;
 	}	
 }
 
@@ -37,6 +54,20 @@
 		}
 		.amp-space-left-30 {
 		    margin-left: 30px;
+		}
+		&-container-boton {
+			position: absolute;
+			top: 17px;
+			right: 0;
+		}
+	}
+}
+@media (min-width: $desktop) {
+	.amp-formulario-buscador {
+		&-container-boton {
+			position: absolute;
+			top: 17px;
+			right: 0;
 		}
 	}
 }

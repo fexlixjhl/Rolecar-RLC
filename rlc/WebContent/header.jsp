@@ -33,6 +33,7 @@
 		<script src="scripts/jquery.bxslider.min.js"></script>
 		<script src="scripts/jquery.alerts.js"></script>
 		<script src="scripts/lang/jquery.polyglot.language.switcher.js" type="text/javascript"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
 
 		<!-- 	Google Analytics -->
 		<script>

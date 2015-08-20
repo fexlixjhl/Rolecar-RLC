@@ -28,10 +28,10 @@ $(document).ready(function(){
 				 $(".Listado").hide();
 		     }
 			
-		        
+
 		    if(mismasucursal)
 	             {
-	         	   $("#tsucursal1" ).prop( "checked", true );
+		    		$('input[type=checkbox][name=misma-oficina]').prop( "checked", true );
 	         	   $("#stationOrig").css("display","none");
 	         	   $("#ofientrega").css("display","none");
 	               $("#stationDest").css("display","none");
@@ -42,7 +42,8 @@ $(document).ready(function(){
 	             }
 	        else
 	             {
-	         	    $("#tsucursal2" ).prop( "checked", true );
+	        	$('input[type=checkbox][name=misma-oficina]').prop( "checked", false );
+	        		$(".oculta").css("display","inline-block");
 	            	$("#stationOrig").css("display","");
 	            	$("#ofientrega").css("display","");
 	            	$("#stationDest").css("display","");

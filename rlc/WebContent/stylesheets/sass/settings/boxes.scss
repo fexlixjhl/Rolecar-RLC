@@ -3,7 +3,7 @@
 }
 
 input[type="text"] {
-	padding: 9px;
+	padding: 10px 9px 9px 9px;
 	border: 1px solid $grey-light;
 }
 
@@ -89,12 +89,9 @@ $offset-xs: $max-width-stripped / 2;
 		float: none;
 	}
 } */
-[class*="amp-width"] {
-  display: block;
-  width: 100%;
-}
+
 .amp-formulario-buscador {
-  [class*="amp-width"] {
+  [class*="amp-width-100"] {
     display: block;
     width: 100%;
   }

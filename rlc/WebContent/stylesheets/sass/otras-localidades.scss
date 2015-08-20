@@ -1,7 +1,14 @@
+.amp-map {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
 .amp-otras-localidades {
-	div {
-	    padding: 2px 15px;
-	    width: 33.33%;
+	padding: 15px 15px;
+	overflow: hidden;
+	&-box-right {
+		div {
+		    padding: 2px 15px;
+		}		
 	}
-
 }

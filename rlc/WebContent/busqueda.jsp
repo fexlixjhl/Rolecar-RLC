@@ -81,16 +81,12 @@ if(mensaj.length>0)
 					<input type="radio" id="tvhiculo1" name="tvhiculo" checked="checked" value="CR"><label for="tvhiculo1"><fmt:message key="busqueda.coches"/></label>
 					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2"><fmt:message key="busqueda.furgonetas"/></label>
 				</div>
-				<div id="tsucursal" style="" class="amp-contenedor-botones amp-space-down-10 col-xs-12">
-					<input type="radio" id="tsucursal1" name="tsucursal" checked="checked" value="tsucursal1">
-					<label for="tsucursal1" class="col-xs-12"><fmt:message key="busqueda.misma.oficina"/></label>
-					<input type="radio" id="tsucursal2" name="tsucursal" value="tsucursal2">
-					<label for="tsucursal2" class="col-xs-12"><fmt:message key="busqueda.distinta.oficina"/></label>
-					
-				</div>	
+
+				<span class="amp-formulario-buscador-title1 hidden-xs hidden-sm">RECOGIDA</span>
+				<span class="amp-formulario-buscador-title2 hidden-xs hidden-sm">DEVOLUCION</span>	
 				<div id="Campos">
 				    <div class="campoleft visible col-xs-12 col-sm-12">
-						<input id="station" class="amp-width-320" name="station" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
+						<input id="station" class="cajas amp-formulario-buscador-estacion col-xs-12 col-sm-12" name="station" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
 						<input type="hidden" id="stationid" name="stationid" />
 						
 					</div>
@@ -102,11 +98,11 @@ if(mensaj.length>0)
 						<input id="stationDest"  name="stationDest" type="text"   placeholder="<fmt:message key='busqueda.stationDest.text'/>" />
 						<input type="hidden" id="stationDestid" name="stationDestid" />
 					</div>
-					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
-	 
-						  <span id="fechainicial" class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-arrow-up fa-fw"></i></span>
+					<span class="amp-formulario-buscador-title1 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">RECOGIDA</span>
+					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">	 
+						  <span id="fechainicial" class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-calendar fa-fw"></i></span>
 				    </div>
-				    <div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
+				    <div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
 						  <input id="fini"  name="fini" class="control-fecha amp-width-100" type="text"  readonly >
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
@@ -146,11 +142,11 @@ if(mensaj.length>0)
 						<input type="hidden" id="hini" name="hini" />
 						<input type="hidden" id="mini" name="mini" />
 					</div>
-					
+					<span class="amp-formulario-buscador-title2 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">DEVOLUCION</span>
 					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
-					        <span id="fechafinal" class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-arrow-down fa-fw"></i></span>
+					        <span id="fechafinal" class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-calendar fa-fw"></i></span>
 					</div>
-					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
+					<div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
 							<input id="ffin" name="ffin" type="text"  class="control-fecha amp-width-100" readonly />
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
@@ -188,12 +184,21 @@ if(mensaj.length>0)
 						<input type="hidden" id="hfin" name="hfin" />
 					    <input type="hidden" id="mfin" name="mfin" />
 					</div>
-					<div class="amp-formulario-buscador-container-boton campoleft ajustar col-xs-12 col-sm-2">
-						<input type="button" class="boton amp-width-100 amp-space-left-30" id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
+					<div class="amp-formulario-buscador-container-boton campoleft ajustar col-xs-12 col-sm-2 amp-space-left-30">
+						<input type="button" class="boton amp-width-100 " id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
 			        </div>
+				    <div class="amp-formulario-buscador-container-checkbox">
+					    <label>
+							<input id="misma-oficina" type="checkbox" checked  name="misma-oficina">Devolver el coche en la misma oficina
+						</label>			    
+				    </div>
 				</div>
-				
+				<div id="tsucursal" style="" class="amp-contenedor-botones amp-space-down-10 col-xs-12">
+					<input type="radio" id="tsucursal1" name="tsucursal" checked="checked" value="tsucursal1"><label for="tsucursal1" class="col-xs-12"><fmt:message key="busqueda.misma.oficina"/></label>
+					<input type="radio" id="tsucursal2" name="tsucursal" value="tsucursal2"><label for="tsucursal2" class="col-xs-12"><fmt:message key="busqueda.distinta.oficina"/></label>
+					
+				</div>	
 				
 
 				
@@ -215,7 +220,14 @@ if(mensaj.length>0)
 	<h2 align="center"><fmt:message key="busqueda.buscando"/></h2>
 	<p align="center"><img src="images/busca_files/avisbw.gif" alt="" height="58" width="151"> <img src="images/busca_files/sixtbw.gif" alt="" height="58" width="110"> <img src="images/busca_files/alamobw.gif" alt="" height="58" width="126"></p>
 </div>
+<div class="amp-otras-localidades content amp-space-down-50 ">
+	<div id="map" class="amp-map col-md-4 col-sm-12 col-xs-12">
+	</div>
+	<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-8 col-sm-12 col-xs-12">
+		<h2><fmt:message key="list.otras.localidades"/></h2>
 
+	</div>		
+</div>
 <!-- slideshow -->
 <div class="slider-revolution amp-space-down-50">
 	<div id="slider-revolution">

@@ -240,5 +240,36 @@ $("document").ready(function(){
 				videoJsPath:"rs-plugin/videojs/",
 				fullScreenOffsetContainer: ""	
 			});
+	
+	//GOOGLE MAPS
+	if($("#map").length){
+		var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		var labelIndex = 0;
+		var limites = new google.maps.LatLngBounds(); 
+		  var bangalore = { lat: 12.97, lng: 77.59 };
+		  var madrid = { lat: 23.97, lng: 77.59 };
+		  var yokese = { lat: 26.97, lng: 74.59 };
+//		  var datos = "lat: 12.97, lng: 77.59 + lat: 23.97, lng: 77.59 + lat: 26.97, lng: 74.59"
+//		  var cordenadas = datos.split("+");
+
+		  var misMarcadores = [madrid, bangalore, yokese];
+		  var map = new google.maps.Map(document.getElementById('map'), {
+
+		  });
+
+		for (var i = 0; i <  misMarcadores.length; i++) { // Aquí creamos el marcador  
+			  var marcador = new google.maps.Marker({
+			    position: new google.maps.LatLng( misMarcadores[i].lat,  misMarcadores[i].lng),
+			    label: labels[labelIndex++ % labels.length],
+			    map: map
+			  });
+
+			  // Extendemos el objeto LatLngBound 
+			  limites.extend(marcador.position);
+			}
+			map.fitBounds(limites);		
+	}
+
+
 });
 
