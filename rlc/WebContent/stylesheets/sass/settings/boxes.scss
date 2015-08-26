@@ -6,7 +6,12 @@ input[type="text"] {
 	padding: 10px 9px 9px 9px;
 	border: 1px solid $grey-light;
 }
+input[type="button"] {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
 
+ /* allow space for check mark */
 //margenes en proporcion aurea (redondeado)
 .amp-space-down-10 {
 	margin-bottom: 10px;
@@ -41,16 +46,33 @@ $offset-step-px: 5;
 // phones
 $mobile: 599px;
 
-// phones landscape
-$mobile-landscape: new-breakpoint(min-width 533px max-width 599px);
+
 // tablets 
-$tablets: 1254px;
+$min-tablets-vertical: 600px;
 $tablets-vertical: 1023px;
+$min-tablets: 1024px;
+$tablets: 1254px;
 
 //desktops
 $desktop: 1255px;
 
 
+.wraper-margin-horizon-respon {
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+@media (min-width: $desktop) {
+  .wraper-margin-horizon-respon {
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1203px;
+    margin: 0 auto;
+  }
+  .wraper {
+    max-width: 1203px;
+    margin: 0 auto;
+  }
+}
 
 
 $offset-xs: $max-width-stripped / 2;

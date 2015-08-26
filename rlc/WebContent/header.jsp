@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Rolecar</title>
 		<link rel="stylesheet" href="scripts/plugins/rs-plugin/css/settings.css">
 		<link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css" media="screen">
@@ -80,10 +81,12 @@
 		</script>
 		
 <!-- 		<link rel="icon" type="image/png" href="images/favicon4.png" /> -->
+
+		
 	</head>
 	<body>
 		<div class="dockbar">
-			<div class="wraper">
+			<div class="wraper wraper-margin-horizon-respon">
 				<div class="social-nav-header">	
 						<a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a>
 						<a href="https://twitter.com/rolecar"><i class="fa fa-twitter"></i></a>
@@ -93,10 +96,10 @@
 				
 			</div>
 		</div>
-		<div id="cabecera" class="wraper amp-space-down-20">
+		<div id="cabecera" class="wraper wraper-margin-horizon-respon amp-space-down-20">
 	 		<header class="header">
-	  			<a class="logo" href=""><img src="images/logo3d.png" /></a>
-	  			<h2 id="title" class="amp-titulo-lengenda">&nbsp;<fmt:message key="header.title"/></h2>
+	  			<a class="logo col-md-12 col-sm-12 col-xs-12" href=""><img src="images/logo3d.png" /></a>
+	  			<h2 id="title" class="amp-titulo-lengenda col-md-12 col-sm-12 col-xs-12">&nbsp;<fmt:message key="header.title"/></h2>
 <!-- 	  			<nav id="mobilenav"> -->
 <!-- 		     		<ul> -->
 <!-- 		       			<li><a href="principalinicial.jsp"><fmt:message key="header.inicio"/></a></li> -->

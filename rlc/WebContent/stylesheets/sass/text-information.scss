@@ -11,7 +11,8 @@
 		p {
 			margin-bottom: 30px;
 			line-height: 20px;
-			    color: $grey-text;
+			color: $grey-text;
+			font-size: 14px;
 		}
 	}
 	&-head {
@@ -31,7 +32,7 @@
 			width: 10px;
 			height: 10px;
 			margin: -5px 0 0 -5px;
-			background: #2d3e50;
+			background: $blue-bg;
 			transform: rotate(-45deg);
 			-webkit-transform: rotate(-45deg);
 		}
@@ -80,11 +81,17 @@
 	}
 	&-button {
 		margin: -10px 0 30px;
-		padding: 2px 15px 0;
-		border: 1px solid #2d3e50;
+		padding: 9px 15px;
+		border: 1px solid $blue-bg;
 		background: #ecf0f1;
 		font-size: 12px;
 		line-height: 30px;
-		color: #2d3e50;	
+		color: $blue-bg;
+		text-transform: uppercase;
+    	transition: background 0.3s, color 0.3s;
+		&:hover {
+			background: $blue-bg;
+    		color:$white;
+		}
 	}
 }

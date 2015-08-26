@@ -30,7 +30,6 @@
 	&-condiciones {
 		display: block;
     	color: $blue-link;
-    	color: red;
 	}
 	&-precio {
     	margin: 5px 0;
@@ -111,7 +110,7 @@
 	}
 
 }
-@media (min-width: $mobile) and (max-width: $tablets-vertical) {
+@media (min-width: $min-tablets-vertical) and (max-width: $tablets-vertical) {
 	.amp-lista {
 		position: relative;
 		&:nth-child(odd) {
@@ -126,26 +125,9 @@
 			display: block;
 			float: none;
 		}
-		&-barraordenar {
 
-		}
-		&-barratop {
-
-			&-nombrecoche {
-
-			}
-			&-similar {
-
-			}
-		}
 		&-categoria {
 			margin-left: 115px;
-		}
-		&-img {
-
-		}
-		&-detalles-content {
-
 		}
 		&-condiciones {
 			margin-left: 115px;
@@ -159,7 +141,7 @@
 		}
 	}
 }
-@media (min-width: $tablets-vertical) and (max-width: $tablets) {
+@media (min-width: $min-tablets) and (max-width: $tablets) {
 	.amp-lista {
 		position: relative;
 		&-categoria {

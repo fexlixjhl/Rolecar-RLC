@@ -1,18 +1,21 @@
 
 <!-- footer amp-->
 <footer class="amp-footer">
-	<div class="wraper amp-footer-contenido">
-		<a class= "amp-footer-contenido-home"href="principalinicial.jsp"><i class="fa fa-home"></i></a>
-		<div class="amp-footer-contenido-social">
-			<a href="https://twitter.com/rolecar"><i class="fa fa-twitter"></i></a>
-			<a href="https://www.facebook.com/rolecardrive"><i class="fa fa-facebook"></i></a>
-			<a href="https://plus.google.com/u/0/100151209502610081833/posts"><i class="fa fa-google-plus"></i></a>
+	<div class="wraper wraper-margin-horizon-respon amp-footer-contenido">
+		<div class="col-xs-12 col-sm-12">
+			<a class= "amp-footer-contenido-home"href="principalinicial.jsp"><i class="fa fa-home"></i></a>
+			<div class="amp-footer-contenido-social">
+				<a href="https://twitter.com/rolecar"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/rolecardrive"><i class="fa fa-facebook"></i></a>
+				<a href="https://plus.google.com/u/0/100151209502610081833/posts"><i class="fa fa-google-plus"></i></a>
+			</div>
+			<div class= amp-footer-contenido-copyright>
+				<span >
+					<fmt:message key="footer.copyright"/>
+				</span>
+			</div>
 		</div>
-		<div class= amp-footer-contenido-copyright>
-			<span >
-				<fmt:message key="footer.copyright"/>
-			</span>
-		</div>
+
 	</div>
 </footer>
 

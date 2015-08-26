@@ -167,6 +167,15 @@ function formateaFechaDateDDMMYYYY(someDate)
 /* slider revolution HOME*/
 /**/
 $("document").ready(function(){
+	if ($("window").width() < 1024 && $("window").width() >= 481) {
+		$('img[data-slyder=image1]').attr("src", "images/audio-tablet.jpg" );
+		$('img[data-slyder=image2]').attr("src", "images/fiesta-tablet.jpg" );
+	}
+	else if ($("window").width() < 480){
+		$('img[data-slyder=image1]').attr("src", "images/audio-mobile.jpg" );
+		$('img[data-slyder=image2]').attr("src", "images/fiesta-mobile.jpg" );		
+	}
+	
 	$('#slider-revolution').revolution(
 			{
 				dottedOverlay:"none",

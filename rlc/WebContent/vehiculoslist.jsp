@@ -268,7 +268,7 @@ $( document ).ready(function() {
 					
 				</div>
 				<span class="amp-formulario-buscador-title1 hidden-xs hidden-sm">RECOGIDA</span>
-				<span class="amp-formulario-buscador-title2 hidden-xs hidden-sm">DEVOLUCION</span>
+				<span class="amp-formulario-buscador-title2 hidden-xs hidden-sm">DEVOLUCIÓN</span>
 				<div id="Campos">
 				    <div class="campoleft visible col-xs-12 col-sm-12">      
 						<input id="station"  name="station" class="cajas amp-formulario-buscador-estacion col-xs-12 col-sm-12" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
@@ -286,14 +286,14 @@ $( document ).ready(function() {
 					</div>
 					<span class="amp-formulario-buscador-title1 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">RECOGIDA</span>
 					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
-						  <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-calendar fa-fw"></i></span>
+						  <span class="input-group amp-boton-icono amp-boton-icono-calendar col-xs-12 col-sm-12"></span>
 				    </div>
 				    <div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
-						  <input id="fini"  name="fini" class="control-fecha amp-width-100" type="text" readonly />
+						  <input id="fini"  name="fini" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100" type="text" readonly />
 					</div>
 					<div class="campoleft  amp-space-left-10 col-xs-2 col-sm-1">
 					   		
-					   	<span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-clock-o fa-fw"></i></span>
+					   	<span class="input-group amp-boton-icono amp-boton-icono-clock col-xs-12 col-sm-12"></span>
 					   	
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">		
@@ -329,16 +329,16 @@ $( document ).ready(function() {
 						<input type="hidden" id="hini" name="hini" />
 						<input type="hidden" id="mini" name="mini" />
 					</div>
-					<span class="amp-formulario-buscador-title2 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">DEVOLUCION</span>
+					<span class="amp-formulario-buscador-title2 hidden-md hidden-lg col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1-1">DEVOLUCIÓN</span>
 					<div class="campoleft amp-space-left-30 col-xs-2 col-sm-1">
-					        <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-calendar fa-fw"></i></span>
+					        <span class="input-group amp-boton-icono amp-boton-icono-calendar col-xs-12 col-sm-12"></span>
 					        
 					</div>
 					<div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
-							<input id="ffin" name="ffin" type="text"  class="amp-width-100" readonly />
+							<input id="ffin" name="ffin" type="text"  class="amp-formulario-buscador-calendario-input amp-width-100" readonly />
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
-					    <span class="input-group amp-boton-icono col-xs-12 col-sm-12"><i class="fa fa-clock-o fa-fw"></i></span>
+					    <span class="input-group amp-boton-icono amp-boton-icono-clock col-xs-12 col-sm-12"></span>
 					    
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
@@ -380,8 +380,9 @@ $( document ).ready(function() {
 				
 
 			    <div class="amp-formulario-buscador-container-checkbox">
-				    <label>
-						<input id="misma-oficina" type="checkbox"  name="misma-oficina">Devolver el coche en la misma oficina
+			    	<input id="misma-oficina" type="checkbox"  name="misma-oficina" class="amp-formulario-buscador-check-input">
+				    <label for="misma-oficina" class="amp-formulario-buscador-check-label">
+						Devolver el coche en la misma oficina
 					</label>			    
 			    </div>				
 				<div class="campoleft amp-formulario-buscador-container-boton col-xs-12 col-sm-2 amp-space-left-10">
@@ -468,12 +469,14 @@ $( document ).ready(function() {
 		</div>
 		</div>
 		<div class="amp-otras-localidades content amp-space-down-50 ">
-			<div id="map" class="amp-map col-md-4 col-sm-12 col-xs-12">
-			</div>
-			<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-8 col-sm-12 col-xs-12">
-				<h2><fmt:message key="list.otras.localidades"/></h2>
-	
-			</div>		
+			<div class="wraper wraper-margin-horizon-respon">
+				<div id="map" class="amp-map col-md-4 col-sm-12 col-xs-12">
+				</div>
+				<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-8 col-sm-12 col-xs-12">
+					<h2><fmt:message key="list.otras.localidades"/></h2>
+			
+				</div>	
+			</div>	
 		</div>
 
 		<div id="ordenapor" class="amp-lista-barraordenar amp-space-down-50" >
@@ -804,19 +807,19 @@ $( document ).ready(function() {
 			
 <!-- 		</div>Fin buscador -->
 
-
-	</div><!-- Fin wrap homeone -->
-<div class="amp-text-information">
-	<div class="amp-text-information-content">
-		<div class="amp-text-information-head">Rolecar se adapta a ti<i></i></div>
-		<div>
-			<h2>Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
-			<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
-			<a href="leerMas.html" class="amp-text-information-button">Leer Más</a>
-			
+		<div class="amp-text-information">
+			<div class="amp-text-information-content">
+				<div class="amp-text-information-head">Rolecar se adapta a ti<i></i></div>
+				<div>
+					<h2>¡Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
+					<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
+<!-- 					<a href="leerMas.html" class="amp-text-information-button">Leer Más</a> -->
+					
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
+	</div><!-- Fin wrap homeone -->
+
 <!-- 		esta ul vale pa algo? -->
 <!-- 		<div class="wraper"> -->
 <!-- 			<div class="features_block"> -->

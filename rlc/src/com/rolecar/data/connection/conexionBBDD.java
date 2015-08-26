@@ -122,10 +122,14 @@ public class conexionBBDD
             ResultSet rs = pStm.executeQuery();
             while(rs!=null && rs.next())
             {
+            	//schemaReturn = "_c";
             	String online = rs.getString("schema_on");
             	if ("B".equals(online)){
             		schemaReturn = "_b";
             	}
+//            	else if("C".equals(online)){
+//            		schemaReturn = "_c";
+//            	}
             }
 		}
 		catch(SQLException e){informe.error(e.getMessage());con.close(); ;return schemaReturn;}

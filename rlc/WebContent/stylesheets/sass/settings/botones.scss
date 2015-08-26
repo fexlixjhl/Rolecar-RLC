@@ -9,14 +9,24 @@
     font-size: 1.4em;
 }
 .amp-boton-icono {
-    width: 33px;
+    width: 34px;
+    height: 33px;
     padding: 7px 4px ;
-    border: 1px solid $grey-light;
+    border: 1px solid black;
     display:table-cell;
-    background: $blue-bg;
     color: $white;
     font-size: 1.36em;
     text-align: center;
+    background-color: $blue-bg;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &-clock {
+        background-image: url("../images/icon-clock.png");
+    }
+    &-calendar {
+        background-image: url("../images/icon-calendar.png");
+    }
 }
 @media (min-width: $tablets-vertical) and (max-width: $tablets) {
     .amp-boton-icono {
