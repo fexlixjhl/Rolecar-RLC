@@ -167,14 +167,6 @@ function formateaFechaDateDDMMYYYY(someDate)
 /* slider revolution HOME*/
 /**/
 $("document").ready(function(){
-	if ($("window").width() < 1024 && $("window").width() >= 481) {
-		$('img[data-slyder=image1]').attr("src", "images/audio-tablet.jpg" );
-		$('img[data-slyder=image2]').attr("src", "images/fiesta-tablet.jpg" );
-	}
-	else if ($("window").width() < 480){
-		$('img[data-slyder=image1]').attr("src", "images/audio-mobile.jpg" );
-		$('img[data-slyder=image2]').attr("src", "images/fiesta-mobile.jpg" );		
-	}
 	
 	$('#slider-revolution').revolution(
 			{
@@ -222,7 +214,7 @@ $("document").ready(function(){
 				soloArrowRightVOffset:0,
 						
 				shadow:0,
-				fullWidth:"on",
+				fullWidth:"off",
 				fullScreen:"off",
 				
 				spinner:"spinner4",
@@ -242,7 +234,7 @@ $("document").ready(function(){
 				hideArrowsOnMobile:"off",
 				hideThumbsUnderResolution:0,
 				
-				hideSliderAtLimit:0,
+				hideSliderAtLimit:1025,
 				hideCaptionAtLimit:0,
 				hideAllCaptionAtLilmit:0,
 				startWithSlide:0,
@@ -279,6 +271,37 @@ $("document").ready(function(){
 			map.fitBounds(limites);		
 	}
 
+//bxSlider portada
+	if ($("div[data-slider='bxslider-home']").length == 1 ){
+		
+		var windowScreen = $(window).width();
+		
+		if ($(window).width() < 1025 && $(window).width() >= 481) {
+			$('img[data-slyder=image1]').attr("src", "images/audio-tablet.jpg" );
+			$('img[data-slyder=image2]').attr("src", "images/fiesta-tablet.jpg" );
+		}
+		else {
+			$('img[data-slyder=image1]').attr("src", "images/audio-mobile.jpg" );
+			$('img[data-slyder=image2]').attr("src", "images/fiesta-mobile.jpg" );				
+		}
+		$( window ).resize(function() {
+			if ($(window).width() < 1025 && $(window).width() >= 481) {
+				$('img[data-slyder=image1]').attr("src", "images/audio-tablet.jpg" );
+				$('img[data-slyder=image2]').attr("src", "images/fiesta-tablet.jpg" );
+			}
+			else {
+				$('img[data-slyder=image1]').attr("src", "images/audio-mobile.jpg" );
+				$('img[data-slyder=image2]').attr("src", "images/fiesta-mobile.jpg" );				
+			}
+		});
 
+		$('.bxslider').bxSlider({
+			  auto: true,
+			  captions: true,
+			  controls: false
+		});
+
+
+	}
 });
 

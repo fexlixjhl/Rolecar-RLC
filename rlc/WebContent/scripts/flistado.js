@@ -408,18 +408,41 @@ $(document).ready(function(){
 				 $( "#dialog-condiciones" ).dialog({
 					 autoOpen: false,
 					 height: 600,
+					 resizable: false,
 					 modal: true
 					 });
 				 
+				 //heights for mobile
+				 if ($( window ).height() <= 600) {
+					 $( "#dialog-condiciones" ).dialog({
+						 height: 480
+					});						 
+				 }
+				 if ($( window ).height() <= 479) {
+					 $( "#dialog-condiciones" ).dialog({
+						 height: 320
+					});						 
+				 }
+				 
+				 //close button
+				 $("div[role='dialog']").on("click", "button", function() {
+					 $("html").css({"height": "initial", "overflow": "initial"});
+				 });
+
 				 $( ".rate" ).click(function(event) {
 					 
 					 event.preventDefault();
+					 //off scroll html on modal
+
+					 $("html").css({"height": "100%", "overflow": "hidden"});
+					 
 					 if ($( window ).width() <= 979) {
 						 var sizeScreen = $( window ).width();
 					 }
 					 else {
 						 var sizeScreen = 980;
-					 };					 
+					 };
+
 					 var titulo = $(this).attr("titulo");
 					 var cod = $(this).attr("codigo");
 					 var cat = $(this).attr("categoria");

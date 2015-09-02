@@ -234,7 +234,7 @@ if(mensaj.length>0)
 	<div id="slider-revolution">
 		<ul>
 			<li data-transition="cube">
-				<img data-slyder="image1" src="images/audio.jpg" alt="">
+				<img src="images/audio.jpg" alt="">
 				<div class="tp-caption title skewfromrightshort tp-resizeme rs-parallaxlevel-0"
 					data-x="center"
 					data-hoffset="80"
@@ -314,7 +314,7 @@ if(mensaj.length>0)
 				</div>
 			</li>
 			<li data-transition="cube">
-				<img data-slyder="image2" src="images/fiesta.jpg" alt="">
+				<img src="images/fiesta.jpg" alt="">
 				<div class="tp-caption title skewfromrightshort tp-resizeme rs-parallaxlevel-0"
 					data-x="center"
 					data-hoffset="80"
@@ -382,6 +382,31 @@ if(mensaj.length>0)
 	</div>
 </div>
 <!--/ slideshow -->
+<!-- slyder movil -->
+
+<div class="wrape homeone wraper-margin-horizon-respon" data-slider="bxslider-home">
+
+	    <ul class="bxslider">
+	    	<li class="text-color-white">
+
+		     		<div  id="bx-slider-img-1">
+		      			<div><img src="images/audio-mobile.jpg" title="ENCONTRAMOS PARA TI EL MEJOR PRECIO" data-slyder="image1"></div>
+		     		</div>
+
+	    	</li>
+	    	<li class="text-color-gray">
+
+			      <div  id="bx-slider-img-2">
+				      <div><img src="images/fiesta-mobile.jpg" title="SIN INTERMEDIARIOS, GRANDES DESCUENTOS" data-slyder="image2"></div>
+			     </div>		     
+   		
+	    	</li>
+	    </ul>
+
+</div>
+
+
+<!--/slider movil -->
 <div class="amp-text-information wraper homeone wraper-margin-horizon-respon">
 	<div class="amp-text-information-content">
 		<div class="amp-text-information-head">Rolecar se adapta a ti<i class="amp-text-information-head-2"></i></div>
