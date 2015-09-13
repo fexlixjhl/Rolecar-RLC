@@ -82,8 +82,8 @@ if(mensaj.length>0)
 					<input type="radio" id="tvhiculo2" name="tvhiculo" value="TR" ><label for="tvhiculo2"><fmt:message key="busqueda.furgonetas"/></label>
 				</div>
 
-				<span class="amp-formulario-buscador-title1 hidden-xs hidden-sm">RECOGIDA</span>
-				<span class="amp-formulario-buscador-title2 hidden-xs hidden-sm">DEVOLUCIÓN</span>	
+				<span class="amp-formulario-buscador-title1 hidden-xs hidden-sm"><fmt:message key="list.busca.recogida"/></span>
+				<span class="amp-formulario-buscador-title2 hidden-xs hidden-sm"><fmt:message key="list.busca.entrega"/></span>	
 				<div id="Campos">
 				    <div class="campoleft visible col-xs-12 col-sm-12">
 						<input id="station" class="cajas amp-formulario-buscador-estacion col-xs-12 col-sm-12" name="station" type="text" placeholder="<fmt:message key='busqueda.station.text'/>" />
@@ -248,7 +248,7 @@ if(mensaj.length>0)
 					data-splitout="none"
 					data-elementdelay="0.1"
 					data-endelementdelay="0.1"
-					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">Encontramos para ti el mejor precio
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;"><fmt:message key="busqueda.rotate.text1"/>&nbsp;<fmt:message key="busqueda.rotate.text2"/>
 				</div>
 				<div class="tp-caption sft tp-resizeme rs-parallaxlevel-0"
 					data-x="center"
@@ -328,7 +328,8 @@ if(mensaj.length>0)
 					data-splitout="none"
 					data-elementdelay="0.1"
 					data-endelementdelay="0.1"
-					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;">Sin intermediarios. Grandes descuentos
+					style="z-index: 1; max-width: auto; max-height: auto; white-space: nowrap;"><fmt:message key="busqueda.rotate.text4"/>
+					<!-- Sin intermediarios. Grandes descuentos -->
 				</div>
 				<div class="tp-caption sft tp-resizeme rs-parallaxlevel-0"
 					data-x="center"
@@ -392,7 +393,7 @@ if(mensaj.length>0)
 	    	<li class="text-color-white">
 
 		     		<div  id="bx-slider-img-1">
-		      			<div><img src="images/audio-mobile.jpg" title="ENCONTRAMOS PARA TI EL MEJOR PRECIO" data-slyder="image1"></div>
+		      			<div><img src="images/audio-mobile.jpg" title="<fmt:message key="busqueda.rotate.text1"/><fmt:message key="busqueda.rotate.text2"/>" data-slyder="image1"></div>
 		     		</div>
 
 	    	</li>
@@ -411,10 +412,10 @@ if(mensaj.length>0)
 <!--/slider movil -->
 <div class="amp-text-information wraper homeone wraper-margin-horizon-respon">
 	<div class="amp-text-information-content">
-		<div class="amp-text-information-head">Rolecar se adapta a ti<i class="amp-text-information-head-2"></i></div>
+		<div class="amp-text-information-head"><fmt:message key="busqueda.msj.adapta"/><i class="amp-text-information-head-2"></i></div>
 		<div>
-			<h2>¡Rolecar te ofrece la mejor tarifa! ¡Sin intermediarios!</h2>
-			<p>Consigue descuentos de hasta un 70% y reservalo directamente. Negociamos con las mejores compañías de alquiler para ofrecerte el mejor precio.</p>
+			<h2><fmt:message key="busqueda.msj.tarifa"/></h2>
+			<p><fmt:message key="busqueda.msj.descuento"/><fmt:message key="busqueda.msj.negocio"/></p>
 <!-- 			<a href="leerMas.html" class="amp-text-information-button">Leer Más</a> -->
 			
 		</div>
