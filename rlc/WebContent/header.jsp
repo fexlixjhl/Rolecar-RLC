@@ -85,6 +85,7 @@
 		
 	</head>
 	<body>
+	<div data-js="container-hidden-modal">
 		<div class="dockbar">
 			<div class="wraper wraper-margin-horizon-respon">
 				<div class="social-nav-header">	
@@ -98,7 +99,7 @@
 		</div>
 		<div id="cabecera" class="wraper wraper-margin-horizon-respon amp-space-down-20">
 	 		<header class="header">
-	  			<a class="logo col-md-12 col-sm-12 col-xs-12" href=""><img src="images/logo3d.png" /></a>
+	  			<a class="logo col-md-12 col-sm-12 col-xs-12" href="principalinicial.jsp"><img src="images/logo3d.png" /></a>
 	  			<h2 id="title" class="amp-titulo-lengenda col-md-12 col-sm-12 col-xs-12">&nbsp;<fmt:message key="header.title"/></h2>
 <!-- 	  			<nav id="mobilenav"> -->
 <!-- 		     		<ul> -->
@@ -132,4 +133,5 @@
 		</div>
 		<hr class="blue-line amp-space-down-30"/>
 		<form id="formLang" action="servletRolecar?accion=reservar" method="post"><input name="idioma" id="idioma" type="hidden" value="es" /></form>
+	</div>
 		

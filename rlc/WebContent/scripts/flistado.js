@@ -409,32 +409,33 @@ $(document).ready(function(){
 					 autoOpen: false,
 					 height: 600,
 					 resizable: false,
-					 modal: true
+					 modal: true,
+					 draggable: false
 					 });
 				 
-				 //heights for mobile
-				 if ($( window ).height() <= 600) {
-					 $( "#dialog-condiciones" ).dialog({
-						 height: 480
-					});						 
-				 }
-				 if ($( window ).height() <= 479) {
-					 $( "#dialog-condiciones" ).dialog({
-						 height: 320
-					});						 
-				 }
+
+
 				 
 				 //close button
 				 $("div[role='dialog']").on("click", "button", function() {
-					 $("html").css({"height": "initial", "overflow": "initial"});
+						 $("html").css({"height": "initial", "overflow": "initial"});
+						 $("[data-js='container-hidden-modal']").css("display", "block");
 				 });
 
 				 $( ".rate" ).click(function(event) {
-					 
+					 //heights for mobile
+					 if ($( window ).width() <= 1024) {
+						 $( "#dialog-condiciones" ).dialog({
+							 height: $( window ).height()
+						});						 
+					 }					 
 					 event.preventDefault();
 					 //off scroll html on modal
+					 if ($( window ).width() <= 1024) {
+						 $("[data-js='container-hidden-modal']").css("display", "none");
+						 $("html").css({"height": "100%", "overflow": "hidden"});
+					 }
 
-					 $("html").css({"height": "100%", "overflow": "hidden"});
 					 
 					 if ($( window ).width() <= 979) {
 						 var sizeScreen = $( window ).width();

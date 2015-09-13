@@ -8,6 +8,7 @@
 <%@page import="com.rolecar.utils.Formatea"%>
 <%@page import="java.util.Vector"%>
 <%@ include file="header.jsp" %>
+
 <script type="text/javascript">
 $( document ).ready(function() {
 	  $(":button").click(function() {
@@ -254,6 +255,7 @@ $( document ).ready(function() {
 <!-- </head> -->
 <!-- <body> -->
 <!-- <div id="busquedaestaciones" class="content contentleft"> -->
+<div data-js="container-hidden-modal">
 			<div class="wraper homeone wraper-margin-horizon-respon">
 			   <form id="formBuscador" class="amp-clear-floats amp-space-down-30 amp-formulario-buscador" action="servletRolecar?accion=buscar" method="post">
 			 	<div id="tvhiculo" class="amp-contenedor-botones amp-space-down-30" style="display: none" >
@@ -289,7 +291,8 @@ $( document ).ready(function() {
 						  <span class="input-group amp-boton-icono amp-boton-icono-calendar col-xs-12 col-sm-12"></span>
 				    </div>
 				    <div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
-						  <input id="fini"  name="fini" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100" type="text" readonly />
+						  <input id="fini"  name="fini" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-xs hidden-sm" type="text" readonly />
+						  <input id="finidevice"  name="finidevice" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-md hidden-lg" type="date">
 					</div>
 					<div class="campoleft  amp-space-left-10 col-xs-2 col-sm-1">
 					   		
@@ -297,7 +300,7 @@ $( document ).ready(function() {
 					   	
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">		
-						<select id="hinis" class="seleccion horas" name="hinis">
+						<select id="hinis" class="seleccion horas amp-width-100 visible-sm-block visible-xs-block" name="hinis">
 						    <%
 						      for(int hor=0;hor<24;hor++)
 							    {
@@ -335,14 +338,15 @@ $( document ).ready(function() {
 					        
 					</div>
 					<div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
-							<input id="ffin" name="ffin" type="text"  class="amp-formulario-buscador-calendario-input amp-width-100" readonly />
+							<input id="ffin" name="ffin" type="text"  class="amp-formulario-buscador-calendario-input amp-width-100 hidden-xs hidden-sm" readonly />
+							<input id="ffindevice"  name="ffindevice" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-md hidden-lg" type="date">
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
 					    <span class="input-group amp-boton-icono amp-boton-icono-clock col-xs-12 col-sm-12"></span>
 					    
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-10 col-sm-5">
-						<select id="hfins" class="seleccion" name="hfins">
+						<select id="hfins" class="seleccion amp-width-100 visible-sm-block visible-xs-block" name="hfins">
 							 <%
 						      for(int hor=0;hor<24;hor++)
 							    {
@@ -386,7 +390,7 @@ $( document ).ready(function() {
 					</label>			    
 			    </div>				
 				<div class="campoleft amp-formulario-buscador-container-boton col-xs-12 col-sm-2 amp-space-left-10">
-						<input type="button" class="boton amp-width-100 " id="buscar" name="buscar" value="<fmt:message key='list.busca.buscar'/>"/>
+						<input type="button" class="amp-boton amp-width-100 " id="buscar" name="buscar" value="<fmt:message key='list.busca.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
 			    </div>
 
@@ -470,9 +474,13 @@ $( document ).ready(function() {
 		</div>
 		<div class="amp-otras-localidades content amp-space-down-50 ">
 			<div class="wraper wraper-margin-horizon-respon">
-				<div id="map" class="amp-map col-md-4 col-sm-12 col-xs-12">
+				<div id="map" class="amp-map col-md-4 col-sm-12 col-xs-12" style="display: none">
 				</div>
-				<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-8 col-sm-12 col-xs-12">
+<!-- 				<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-8 col-sm-12 col-xs-12"> -->
+<%-- 					<h2><fmt:message key="list.otras.localidades"/></h2> --%>
+			
+<!-- 				</div>	 -->
+				<div id="otros" class="amp-otras-localidades-box-right content contentleft amp-clear-floats col-md-12 col-sm-12 col-xs-12">
 					<h2><fmt:message key="list.otras.localidades"/></h2>
 			
 				</div>	
@@ -785,7 +793,7 @@ $( document ).ready(function() {
 <%-- 											<p><b>Pago online: </b><%=q.getCurrency()%> <%=q.getTotalRateEstimateInBookingCurrency()%> </p> --%>
 <%-- 											<p><b>Pago en Oficina: </b> <%=q.getCurrency()%> <%=q.getTotalRateEstimateInRentingCurrency()%> </p> --%>
                                             <div class="botones">
-                                            	<input id="bReserva<%=cont%>" name="bReserva<%=cont%>" code="<%=cont%>" class="boton reserva amp-lista-boton" type="button" value="<fmt:message key="list.car.reserva"/>" />
+                                            	<input id="bReserva<%=cont%>" name="bReserva<%=cont%>" code="<%=cont%>" class="amp-boton reserva amp-lista-boton" type="button" value="<fmt:message key="list.car.reserva"/>" />
 <%--                                                 <button id="bReserva" code="<%=cont%>" class="boton reserva" type="submit"> --%>
 <%--                                                 <fmt:message key="list.car.reserva"/> --%>
 <!--                                                 </button> -->
@@ -844,6 +852,14 @@ $( document ).ready(function() {
 			</div>
     </div>
     
+
+    
+   
+    
+<%@ include file="footer.jsp" %>
+</div>
+<!-- MODAL CONDICIONES -->
+
     <div id="dialog-condiciones" title="">
     
        <div class="container" >
@@ -912,7 +928,3 @@ $( document ).ready(function() {
        </div>
        
     </div>
-    
-   
-    
-<%@ include file="footer.jsp" %>

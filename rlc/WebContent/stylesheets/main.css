@@ -26,6 +26,16 @@ input[type="text"] {
   padding: 10px 9px 9px 9px;
   border: 1px solid #e3e3e3; }
 
+select {
+  padding: 10px 9px 9px 9px;
+  border: 1px solid #e3e3e3 !important;
+  max-height: 32px; }
+
+input[type="date"] {
+  padding: 10px 9px 9px 9px;
+  border: 1px solid #e3e3e3;
+  max-height: 32px; }
+
 input[type="button"] {
   cursor: pointer;
   transition: background 0.3s, color 0.3s; }
@@ -2025,7 +2035,7 @@ input {
 @media (min-width: 1023px) and (max-width: 1254px) {
   .amp-boton-icono {
     width: 33px; } }
-.boton {
+.amp-boton {
   background: #61b4d4;
   color: white;
   vertical-align: middle;
@@ -2033,7 +2043,7 @@ input {
   height: 34px;
   padding: 0 21px; }
 
-.boton:hover {
+.amp-boton:hover {
   background: #28597a;
   color: #ccc; }
 
@@ -2066,14 +2076,6 @@ div[data-slider="bxslider-home"] {
     top: 13px; }
     .bx-wrapper .bx-caption span {
       font-size: 2.6em; } }
-/* .slider-revolution {
-	display: none;
-}
-@media screen and (min-width: 1025px) {
-	.slider-revolution {
-		display: block;
-	}
-} */
 /**/
 /* slideshow */
 /**/
@@ -2273,6 +2275,9 @@ div[data-slider="bxslider-home"] {
 @media (max-width: 599px) {
   .amp-formulario-buscador-check-label:before {
     margin-left: 9px; } }
+@media (max-width: 1023px) {
+  #hinis-button, #hfins-button {
+    display: none; } }
 @media (min-width: 600px) and (max-width: 1023px) {
   .amp-formulario-buscador .campoleft {
     padding: 0 5px; }

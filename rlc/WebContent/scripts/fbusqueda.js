@@ -312,6 +312,19 @@ function inicializarFechas() {
 		}
 	// ,beforeShowDay:noDomingos
 	});
+	if ($("#fini").val().length > 0) {
+		var fechaInicioEsc = $("#fini").val();
+		var fechaInicioDesordenadaEsc = fechaInicioEsc.split("/");
+		var fechaInicioOrdenadaEsc = fechaInicioDesordenadaEsc[2] + "-" + fechaInicioDesordenadaEsc[1] + "-" + fechaInicioDesordenadaEsc[0];
+		$("#finidevice").val(fechaInicioOrdenadaEsc);
+
+
+		var fechaFinEsc = $("#ffin").val();
+		var fechaFinDesordenadaEsc = fechaFinEsc.split("/");
+		var fechaFinOrdenadaEsc = fechaFinDesordenadaEsc[2] + "-" + fechaFinDesordenadaEsc[1] + "-" + fechaFinDesordenadaEsc[0];
+		$("#ffindevice").val(fechaFinOrdenadaEsc);		
+	}
+
 }
 
 function inicializarHoraInicio() {

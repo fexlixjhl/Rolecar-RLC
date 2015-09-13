@@ -103,14 +103,15 @@ if(mensaj.length>0)
 						  <span id="fechainicial" class="input-group amp-boton-icono amp-boton-icono-calendar col-xs-12 col-sm-12"></span>
 				    </div>
 				    <div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
-						  <input id="fini"  name="fini" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100" type="text"  readonly >
+						  <input id="fini"  name="fini" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-xs hidden-sm" type="text"  readonly >
+						  <input id="finidevice"  name="finidevice" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-md hidden-lg" type="date">
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
 					   		
 					   	<span id="horainicial" class="input-group amp-boton-icono amp-boton-icono-clock col-xs-12 col-sm-12"></span>
 					</div>
 					<div class="campoleft sinborde amp-space-left-10 col-xs-10 col-sm-5" >		
-						<select id="hinis" class="seleccion horas" name="hinis" class="control-fecha " style="border:none;height:200px;" >
+						<select id="hinis" class="seleccion horas amp-width-100 visible-sm-block visible-xs-block " name="hinis" class="control-fecha " style="border:none;height:200px;" >
 						    <%
 						      for(int hor=0;hor<24;hor++)
 							    {
@@ -147,13 +148,14 @@ if(mensaj.length>0)
 					        <span id="fechafinal" class="input-group amp-boton-icono amp-boton-icono-calendar col-xs-12 col-sm-12"></span>
 					</div>
 					<div class="campoleft amp-width-75 amp-space-left-10 col-xs-10 col-sm-5 col-md-1">
-							<input id="ffin" name="ffin" type="text"  class="amp-formulario-buscador-calendario-input control-fecha amp-width-100" readonly />
+							<input id="ffin" name="ffin" type="text"  class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-xs hidden-sm" readonly />
+							<input id="ffindevice"  name="ffindevice" class="amp-formulario-buscador-calendario-input control-fecha amp-width-100 hidden-md hidden-lg" type="date">
 					</div>
 					<div class="campoleft amp-space-left-10 col-xs-2 col-sm-1">
 					    <span id="horafinal" class="input-group amp-boton-icono amp-boton-icono-clock col-xs-12 col-sm-12"></span>
 					</div>
 					<div class="campoleft sinborde amp-space-left-10 col-xs-10 col-sm-5">
-						<select id="hfins" class="seleccion" name="hfins" class="control-fecha" style="border:none;height:200px;" >
+						<select id="hfins" class="seleccion control-fecha amp-width-100 visible-sm-block visible-xs-block" name="hfins" >
 							 <%
 						      for(int hor=0;hor<24;hor++)
 							    {
@@ -191,7 +193,7 @@ if(mensaj.length>0)
 						</label>			    
 				    </div>
 					<div class="amp-formulario-buscador-container-boton campoleft ajustar col-xs-12 col-sm-2 amp-space-left-30">
-						<input type="button" class="boton amp-width-100 " id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
+						<input type="button" class="amp-boton amp-width-100 " id="buscar" name="buscar" value="<fmt:message key='busqueda.buscar'/>"/>
 <!-- 						<input type="reset" class="boton" id="borrar" name="borrar" value="BORRAR"/> -->
 			        </div>
 
@@ -222,7 +224,7 @@ if(mensaj.length>0)
 	<h2 align="center"><fmt:message key="busqueda.buscando"/></h2>
 	<p align="center"><img src="images/busca_files/avisbw.gif" alt="" height="58" width="151"> <img src="images/busca_files/sixtbw.gif" alt="" height="58" width="110"> <img src="images/busca_files/alamobw.gif" alt="" height="58" width="126"></p>
 </div>
-<div class="amp-otras-localidades content amp-space-down-50 ">
+<div class="amp-otras-localidades content amp-space-down-50 " style="display: none">
 	<div class="wraper wraper-margin-horizon-respon ">
 		<h2 class="amp-space-down-10">Oficinas cerca de su zona:</h2>
 		<div id="map" class="amp-map col-md-12 col-sm-12 col-xs-12">

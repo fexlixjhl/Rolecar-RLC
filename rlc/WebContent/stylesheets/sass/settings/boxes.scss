@@ -5,7 +5,21 @@
 input[type="text"] {
 	padding: 10px 9px 9px 9px;
 	border: 1px solid $grey-light;
+
 }
+select {
+  padding: 10px 9px 9px 9px;
+  border: 1px solid $grey-light !important;
+  max-height: 32px;
+  
+}
+input[type="date"] {
+  padding: 10px 9px 9px 9px;
+  border: 1px solid $grey-light;
+  max-height: 32px;
+  
+}
+
 input[type="button"] {
   cursor: pointer;
   transition: background 0.3s, color 0.3s;

@@ -4736,7 +4736,7 @@ button.close {
     width: 300px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .modal-lg {
     width: 900px;
   }
@@ -5348,7 +5348,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .visible-sm {
     display: block !important;
   }
@@ -5363,22 +5363,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .visible-sm-block {
     display: block !important;
   }
 }
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .visible-sm-inline {
     display: inline !important;
   }
 }
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .visible-sm-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .visible-md {
     display: block !important;
   }
@@ -5393,17 +5393,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .visible-md-inline {
     display: inline !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .visible-md-inline-block {
     display: inline-block !important;
   }
@@ -5443,13 +5443,13 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .hidden-sm {
     display: none !important;
   }
 }
-/*@media (min-width: 992px) and (max-width: 1199px) {*/
-@media (min-width: 992px) and (max-width: 1199px) {
+/*@media (min-width: 1024px) and (max-width: 1199px) {*/
+@media (min-width: 1024px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important;
   }

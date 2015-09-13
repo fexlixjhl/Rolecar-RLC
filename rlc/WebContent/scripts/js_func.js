@@ -303,5 +303,28 @@ $("document").ready(function(){
 
 
 	}
+	//En dispositivos moviles y tablets se cambian los inputs para que se usen por defecto los del movil por eso hay que pasar datos de estos nuevos a los de escritorio
+
+	
+	$("body").on("change", "#finidevice", function() {
+		var fechaInicio = $("#finidevice").val();
+		var fechaInicioDesordenada = fechaInicio.split("-");
+		var fechaInicioOrdenada = fechaInicioDesordenada[2] + "/" + fechaInicioDesordenada[1] + "/" + fechaInicioDesordenada[0];
+		$("#fini").val(fechaInicioOrdenada);
+	});
+	$("body").on("change", "#ffindevice", function() {
+		var fechaFin = $("#ffindevice").val();
+		var fechaFinDesordenada = fechaFin.split("-");
+		var fechaFinOrdenada = fechaFinDesordenada[2] + "/" + fechaFinDesordenada[1] + "/" + fechaFinDesordenada[0];
+		$("#ffin").val(fechaFinOrdenada);
+	});
+	//mostrar el primer resultado si se entra con un dispositivo
+	if ($(".Listado").length > 0) {
+		if ($(window).width() <= 1024) {
+			window.location.href="#coche1";	
+		};
+	};
+	
 });
+
 
